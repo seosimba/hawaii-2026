@@ -70,7 +70,7 @@ nav.days { position: sticky; top: 0; z-index: 20; background: var(--bg); border-
 .nav-in { max-width: 1100px; margin: 0 auto; padding: 8px 12px; display: grid; gap: 5px; }
 .nav-row { display: grid; gap: 5px; }
 .days-row { grid-template-columns: repeat(8, minmax(0, 1fr)); }
-.sec-row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.sec-row { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 nav.days a {
   display: flex; align-items: center; justify-content: center; gap: 3px; min-width: 0; padding: 6px 2px;
   border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text);
@@ -156,6 +156,16 @@ li::marker { color: var(--ocean); }
 }
 .gallery figcaption b { display: block; font-size: .82rem; }
 .gallery figcaption small { display: block; font-size: .62rem; opacity: .8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* 구글 지도 장소 */
+.places h3 { margin: 18px 0 6px; font-size: 1rem; }
+.places ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 6px; }
+.places li { margin: 0; }
+.places li a {
+  display: block; padding: 8px 12px; background: var(--surface); border-radius: 10px; box-shadow: var(--shadow);
+  text-decoration: none; color: var(--text); font-size: .86rem;
+}
+.places li a::before { content: "📍 "; }
 
 /* 카톡 붙여넣기 */
 .kakao { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
@@ -288,7 +298,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
   </div>
   <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,44 C220,84 470,4 720,34 C970,64 1210,14 1440,40 L1440,80 L0,80 Z"/></svg>
 </header>
-<nav class="days"><div class="nav-in"><div class="nav-row days-row"><a class="dchip c0" href="#114-수-도착-짐부터-호텔에-가볍게">11/4<small>수</small></a><a class="dchip c1" href="#115-목-진주만-와이켈레-아울렛">11/5<small>목</small></a><a class="dchip c2" href="#116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아">11/6<small>금</small></a><a class="dchip c3" href="#117-토-다이아몬드헤드-kcc-파머스마켓-알라모아나-숙소-이동">11/7<small>토</small></a><a class="dchip c4" href="#118-일-노스쇼어-종일">11/8<small>일</small></a><a class="dchip c5" href="#119-월-휴식-마노아-쇼핑-와이키키-마지막-여유일">11/9<small>월</small></a><a class="dchip c6" href="#1110-화-뵤도인-폴리네시안-문화센터-pcc">11/10<small>화</small></a><a class="dchip c7" href="#1111-수-출발-veterans-day-공휴일">11/11<small>수</small></a></div><div class="nav-row sec-row"><a href="#지금-예약확인할-것">🚨예약</a><a href="#항공-서울팀-3명-현지-시각">✈️항공</a><a href="#1-한눈에-보기">🗓요약</a><a href="#3-하이킹-가이드북-표와-조사-결과-대조">📖참고</a><a href="#출발-전-체크리스트">✅체크</a><a href="#8-카톡-공유용">💬카톡</a></div></div></nav>
+<nav class="days"><div class="nav-in"><div class="nav-row days-row"><a class="dchip c0" href="#114-수-도착-짐부터-호텔에-가볍게">11/4<small>수</small></a><a class="dchip c1" href="#115-목-진주만-와이켈레-아울렛">11/5<small>목</small></a><a class="dchip c2" href="#116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아">11/6<small>금</small></a><a class="dchip c3" href="#117-토-다이아몬드헤드-kcc-파머스마켓-알라모아나-숙소-이동">11/7<small>토</small></a><a class="dchip c4" href="#118-일-노스쇼어-종일">11/8<small>일</small></a><a class="dchip c5" href="#119-월-휴식-마노아-쇼핑-와이키키-마지막-여유일">11/9<small>월</small></a><a class="dchip c6" href="#1110-화-뵤도인-폴리네시안-문화센터-pcc">11/10<small>화</small></a><a class="dchip c7" href="#1111-수-출발-veterans-day-공휴일">11/11<small>수</small></a></div><div class="nav-row sec-row"><a href="#지금-예약확인할-것">🚨예약</a><a href="#항공-서울팀-3명-현지-시각">✈️항공</a><a href="#1-한눈에-보기">🗓요약</a><a href="#구글-지도-장소-누르면-지도-앱이-열림-저장-별표">⭐지도</a><a href="#3-하이킹-가이드북-표와-조사-결과-대조">📖참고</a><a href="#출발-전-체크리스트">✅체크</a><a href="#8-카톡-공유용">💬카톡</a></div></div></nav>
 <main>
 <blockquote class="info">
 <p><strong>2026-11-02 웹 조사 + Codex 검수 반영.</strong> (미확인) = 출처 상충 또는 공식 확인 실패 → 전날 구글맵·전화로 재확인<br />
@@ -383,7 +393,108 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li>Leonard's Bakery (05:30~)는 주차 6칸뿐이고 발렛 차를 따로 빼야 해서 이날은 비추천</li>
 </ul>
 
-</div></article></section><section class="sec ref"><div class="sec-head"><span class="sec-ic">🥾</span><h2 id="3-하이킹-가이드북-표와-조사-결과-대조">하이킹</h2><small>가이드북 표와 조사 결과 대조</small></div>
+</div></article></section><section class="sec places"><div class="sec-head"><span class="sec-ic">⭐</span><h2 id="구글-지도-장소-누르면-지도-앱이-열림-저장-별표">구글 지도 장소</h2><small>누르면 지도 앱이 열림 → 저장 → 별표</small></div>
+<blockquote>
+<p>링크를 누르면 구글 지도에서 장소가 열려요 → <strong>저장 → 별표표시된 장소</strong>. 체인점은 지점이 맞는지 주소를 한 번 보고 저장하세요.</p>
+</blockquote>
+<h3 id="숙소렌터카">🏨 숙소·렌터카</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Waikiki+Beach+Marriott+Resort+%26+Spa" target="_blank" rel="noopener">와이키키 비치 메리어트 (11/4~11/7)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Waikiki+Beach+Tower+Honolulu" target="_blank" rel="noopener">와이키키 비치 타워 (11/7~11/11)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Sixt+Rent+a+Car+Honolulu+Airport+300+Rodgers+Blvd" target="_blank" rel="noopener">Sixt 렌터카 (공항 렌터카센터)</a></li>
+</ul>
+<h3 id="114-수-도착">🗓 11/4 (수) 도착</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Highway+Inn+Kakaako+Honolulu" target="_blank" rel="noopener">Highway Inn 카카아코 — 점심</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Walmart+700+Keeaumoku+St+Honolulu" target="_blank" rel="noopener">월마트 Keeaumoku — 장보기</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Don+Quijote+801+Kaheka+St+Honolulu" target="_blank" rel="noopener">돈키호테 Kaheka — 장보기</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Arancino+di+Mare+Waikiki+Beach+Marriott" target="_blank" rel="noopener">Arancino di Mare — 저녁 (메리어트 1층)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Tiki%27s+Grill+%26+Bar+Waikiki" target="_blank" rel="noopener">Tiki's Grill &amp; Bar — 저녁 대안</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kai+Coffee+Hawaii+Hyatt+Regency+Waikiki" target="_blank" rel="noopener">Kai Coffee — 커피 (하얏트 로비)</a></li>
+</ul>
+<h3 id="115-목-진주만아울렛">🗓 11/5 (목) 진주만·아울렛</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Pearl+Harbor+National+Memorial+Visitor+Center" target="_blank" rel="noopener">진주만 방문자센터 (USS Arizona)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+604+Pearl+Harbor" target="_blank" rel="noopener">Restaurant 604 — 점심</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Waikele+Premium+Outlets" target="_blank" rel="noopener">와이켈레 프리미엄 아울렛</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Side+Street+Inn+280+Beach+Walk+Honolulu" target="_blank" rel="noopener">Side Street Inn Waikiki — 저녁</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Highway+Inn+Waipahu" target="_blank" rel="noopener">Highway Inn 와이파후 — 점심 대안</a></li>
+</ul>
+<h3 id="116-금-동부-해안">🗓 11/6 (금) 동부 해안</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Island+Brew+Coffeehouse+Hawaii+Kai" target="_blank" rel="noopener">Island Brew Coffeehouse — 커피</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Lanai+Lookout+Oahu" target="_blank" rel="noopener">라나이 룩아웃</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Halona+Blowhole+Lookout" target="_blank" rel="noopener">할로나 블로홀</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Makapuu+Point+Lighthouse+Trail" target="_blank" rel="noopener">마카푸우 등대 트레일</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kalapawai+Cafe+%26+Deli+Kailua" target="_blank" rel="noopener">Kalapawai Café &amp; Deli — 점심</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kailua+Beach+Park" target="_blank" rel="noopener">카일루아 비치파크 (주차)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Lanikai+Beach" target="_blank" rel="noopener">라니카이 비치</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Lanikai+Pillbox+Hike" target="_blank" rel="noopener">라니카이 필박스 (아들들)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Island+Snow+Hawaii+Kailua" target="_blank" rel="noopener">Island Snow — 빙수</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Target+Kailua+Hahani+St" target="_blank" rel="noopener">Target Kailua</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Whole+Foods+Market+Kailua" target="_blank" rel="noopener">Whole Foods Kailua</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Buzz%27s+Original+Steak+House+Kailua" target="_blank" rel="noopener">Buzz's Original Steak House — 저녁</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Roy%27s+Hawaii+Kai" target="_blank" rel="noopener">Roy's Hawaii Kai — 저녁 대안</a></li>
+</ul>
+<h3 id="117-토-다이아몬드헤드알라모아나">🗓 11/7 (토) 다이아몬드헤드·알라모아나</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Diamond+Head+State+Monument" target="_blank" rel="noopener">다이아몬드헤드</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=KCC+Farmers+Market+Honolulu" target="_blank" rel="noopener">KCC 파머스마켓</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ala+Moana+Center" target="_blank" rel="noopener">알라모아나 센터</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Liliha+Bakery+Ala+Moana+Center" target="_blank" rel="noopener">Liliha Bakery 알라모아나 — 점심</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Foodland+Farms+Ala+Moana" target="_blank" rel="noopener">Foodland Farms 알라모아나 — 장보기</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Westman+Cafe+Ward+Village" target="_blank" rel="noopener">Westman Cafe — 커피</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=House+Without+a+Key+Halekulani" target="_blank" rel="noopener">House Without a Key — 저녁</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Duke%27s+Waikiki" target="_blank" rel="noopener">Duke's Waikiki — 저녁 대안</a></li>
+</ul>
+<h3 id="118-일-노스쇼어">🗓 11/8 (일) 노스쇼어</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Eggs+%27n+Things+Eggspress+2464+Kalakaua+Ave+Honolulu" target="_blank" rel="noopener">Eggs 'n Things Eggspress — 아침</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Dole+Plantation" target="_blank" rel="noopener">돌 플랜테이션</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Haleiwa+Store+Lots" target="_blank" rel="noopener">할레이바 스토어 랏</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=North+Shore+Marketplace+Haleiwa" target="_blank" rel="noopener">North Shore Marketplace</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Matsumoto+Shave+Ice+Haleiwa" target="_blank" rel="noopener">마츠모토 셰이브아이스</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Island+Vintage+Coffee+Haleiwa" target="_blank" rel="noopener">Island Vintage Coffee 할레이바 — 커피</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Giovanni%27s+Shrimp+Truck+Haleiwa" target="_blank" rel="noopener">Giovanni's 할레이바 — 점심</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Laniakea+Beach" target="_blank" rel="noopener">라니아케아 비치 (거북이)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Waimea+Valley" target="_blank" rel="noopener">와이메아 밸리</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Puu+o+Mahuka+Heiau+State+Historic+Site" target="_blank" rel="noopener">푸우 오 마후카 헤이아우</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Shark%27s+Cove+Oahu" target="_blank" rel="noopener">샤크스 코브</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ted%27s+Bakery+Sunset+Beach" target="_blank" rel="noopener">Ted's Bakery — 파이</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ehukai+Beach+Park" target="_blank" rel="noopener">에후카이 비치파크 (파이프라인)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Sunset+Beach+Park+Oahu" target="_blank" rel="noopener">선셋비치</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Haleiwa+Beach+House" target="_blank" rel="noopener">Haleiwa Beach House — 저녁</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Marugame+Udon+Waikiki" target="_blank" rel="noopener">마루가메 우동 — 저녁 대안</a></li>
+</ul>
+<h3 id="119-월-마노아쇼핑">🗓 11/9 (월) 마노아·쇼핑</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Kaila+Honolulu" target="_blank" rel="noopener">Café Kaila — 아침</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Lyon+Arboretum" target="_blank" rel="noopener">라이언 수목원</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Manoa+Falls+Trail" target="_blank" rel="noopener">마노아 폭포 트레일 (아들들)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Puu+Ualakaa+State+Wayside" target="_blank" rel="noopener">푸우 우알라카아 전망대</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Merriman%27s+Honolulu" target="_blank" rel="noopener">Merriman's Honolulu — 점심</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ward+Village+Honolulu" target="_blank" rel="noopener">워드 빌리지</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Honolulu+Coffee+Bakery+on+King+2643+S+King+St" target="_blank" rel="noopener">Honolulu Coffee Bakery on King — 커피</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Michel%27s+at+the+Colony+Surf" target="_blank" rel="noopener">Michel's at the Colony Surf — 저녁</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hau+Tree+Kaimana+Beach+Hotel" target="_blank" rel="noopener">Hau Tree — 아침 대안</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Wolfgang%27s+Steakhouse+Waikiki" target="_blank" rel="noopener">Wolfgang's Steakhouse — 저녁 대안</a></li>
+</ul>
+<h3 id="1110-화-뵤도인pcc">🗓 11/10 (화) 뵤도인·PCC</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Byodo-In+Temple" target="_blank" rel="noopener">뵤도인 사원</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kualoa+Regional+Park" target="_blank" rel="noopener">쿠알로아 비치파크 (차이나맨스햇 전망)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Seven+Brothers+Burgers+Laie" target="_blank" rel="noopener">Seven Brothers 라이에 — 점심</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Giovanni%27s+Shrimp+Truck+Kahuku" target="_blank" rel="noopener">Giovanni's 카후쿠 — 점심 대안</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hukilau+Marketplace+Laie" target="_blank" rel="noopener">후킬라우 마켓플레이스</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Polynesian+Cultural+Center" target="_blank" rel="noopener">폴리네시안 문화센터</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hoomaluhia+Botanical+Garden" target="_blank" rel="noopener">호오말루히아 식물원 — 대안</a></li>
+</ul>
+<h3 id="1111-수-출발">🗓 11/11 (수) 출발</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Musubi+Cafe+Iyasume+2427+Kuhio+Ave+Honolulu" target="_blank" rel="noopener">무스비 카페 이야스메 (모나크점) — 기내 간식</a></li>
+</ul>
+
+</section><section class="sec ref"><div class="sec-head"><span class="sec-ic">🥾</span><h2 id="3-하이킹-가이드북-표와-조사-결과-대조">하이킹</h2><small>가이드북 표와 조사 결과 대조</small></div>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -934,7 +1045,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 
 </section>
 </main>
-<footer>업데이트 2026-11-03 01:01 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
+<footer>업데이트 2026-11-03 01:04 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
 <button class="top-btn" id="topBtn" aria-label="맨 위로">↑</button>
 <script>
 (function () {
