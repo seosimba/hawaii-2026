@@ -5,6 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0b3954">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<script>
+// GitHub Pages 는 HTML 을 10분 캐시한다(헤더는 못 바꿈) → 열 때마다 version.json 을 캐시 없이 확인해
+// 새 버전이면 주소에 ?v=버전 을 붙여 한 번만 새로 불러온다 (같은 버전으로 이미 시도했으면 멈춤)
+(function () {
+  var BUILD = 'aa2270dc5b';
+  try {
+    fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (v) {
+        if (!v || !v.build || v.build === BUILD) return;
+        var u = new URL(location.href);
+        if (u.searchParams.get('v') === v.build) return;
+        u.searchParams.set('v', v.build);
+        location.replace(u.toString());
+      })
+      .catch(function () {});
+  } catch (e) {}
+})();
+</script>
 <title>오아후 가족여행 일정</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
@@ -310,11 +332,12 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <div class="todo-grid"><div class="todo"><span class="when"><strong>오늘</strong></span><h4><strong>다이아몬드헤드</strong> 입장+주차</h4><div class="where"><a href="https://gostateparks.hawaii.gov/diamondhead" target="_blank" rel="noopener">gostateparks.hawaii.gov/diamondhead</a></div><div class="memo">비거주자 예약 필수 · $5×5 + 주차 $10 = <strong>$35</strong> · 카드 결제 · 30일 전 오픈이라 토요일 아침 매진 가능 → 11/7 07:00 1순위, 없으면 11/9 07:00</div></div><div class="todo"><span class="when"><strong>11/4 15:00 HST</strong> (= 한국 11/5 10:00)</span><h4><strong>USS Arizona</strong> (진주만)</h4><div class="where"><a href="https://recreation.gov" target="_blank" rel="noopener">recreation.gov</a></div><div class="memo">8주 전 물량은 소진 → <strong>전날 15:00 추가 물량</strong> · 1장 $1 · <strong>14:50 로그인 담당 1명 지정</strong> · 08:15 도착 기준 <strong>09:15 이후 슬롯</strong></div></div><div class="todo"><span class="when">지금</span><h4>저녁 예약</h4><div class="where">전화·OpenTable</div><div class="memo">Buzz's 11/6 (☎ 808-261-4661) · House Without a Key 11/7 · Michel's 11/9 (<strong>필수</strong>)</div></div><div class="todo"><span class="when">지금</span><h4>PCC 패키지</h4><div class="where"><a href="https://polynesia.com" target="_blank" rel="noopener">polynesia.com</a></div><div class="memo">11/10 화 (일·수 휴무) · 운전 부담 크면 PCC 왕복 버스 $28/인</div></div><div class="todo"><span class="when">체크인 전 전화</span><h4>메리어트 확인</h4><div class="where">프런트·벨데스크</div><div class="memo">짐 보관 (11/4 체크인 전 · 11/7 체크아웃 후) · <strong>조식 5명 포함 여부</strong> · 리조트피</div></div><div class="todo"><span class="when">지금</span><h4>KE054 출발 시간</h4><div class="where">대한항공 앱</div><div class="memo">12:05 vs 11:40 — 아래 11/11 출발 계획은 둘 다 커버</div></div></div>
 
 </section><section class="sec flight"><div class="sec-head"><span class="sec-ic">✈️</span><h2 id="항공-서울팀-3명-현지-시각">항공</h2><small>서울팀 3명 (현지 시각)</small></div>
-<div class="tickets"><div class="ticket"><div class="tk-top"><span>가는 편</span><b>KE053</b></div><div class="route"><div class="city"><small>11/4 (수)</small><b>20:35</b><span>ICN · 인천 T2</span></div><div class="plane">✈</div><div class="city r"><small>11/4 (수)</small><b>09:45</b><span>HNL · 호놀룰루</span></div></div><div class="tk-meta"><div><span>공항 도착 목표</span><b>17:35</b></div><div><span>체크인 마감</span><b>19:35</b></div><div><span>탑승 시작</span><b>20:00</b></div></div></div><div class="ticket"><div class="tk-top"><span>오는 편</span><b>KE054</b></div><div class="route"><div class="city"><small>11/11 (수)</small><b>12:05</b><span>HNL · 호놀룰루</span></div><div class="plane">✈</div><div class="city r"><small>11/12 (목)</small><b>17:35</b><span>ICN · 인천 T2</span></div></div><div class="tk-meta"><div><span>공항 도착 목표</span><b>08:20</b></div><div><span>체크인 마감</span><b>출발 1시간 전</b></div><div><span>탑승 시작</span><b>11:30</b></div></div></div></div>
+<div class="tickets"><div class="ticket"><div class="tk-top"><span>가는 편</span><b>KE053</b></div><div class="route"><div class="city"><small>11/4 (수)</small><b>20:50</b><span>ICN · 인천 T2</span></div><div class="plane">✈</div><div class="city r"><small>11/4 (수)</small><b>09:40</b><span>HNL · 호놀룰루</span></div></div><div class="tk-meta"><div><span>공항 도착 목표</span><b>17:50</b></div><div><span>체크인 마감</span><b>19:50</b></div><div><span>탑승 시작</span><b>20:15</b></div></div></div><div class="ticket"><div class="tk-top"><span>오는 편</span><b>KE054</b></div><div class="route"><div class="city"><small>11/11 (수)</small><b>12:05</b><span>HNL · 호놀룰루</span></div><div class="plane">✈</div><div class="city r"><small>11/12 (목)</small><b>17:35</b><span>ICN · 인천 T2</span></div></div><div class="tk-meta"><div><span>공항 도착 목표</span><b>08:20</b></div><div><span>체크인 마감</span><b>출발 1시간 전</b></div><div><span>탑승 시작</span><b>11:30</b></div></div></div></div>
 <ul>
 <li>탑승 시작 = 출발 35분 전 · 탑승구 마감 = 10분 전 · 체크인 마감 = 1시간 전 (대한항공 국제선)</li>
 <li>귀국일은 콘도 07:30 출발 → 08:00 렌터카 반납 (T2 길 건너 렌터카센터 4층) → 08:20 카운터</li>
-<li>⚠️ 온라인 운항정보(11/2)는 <strong>KE053 20:50 → 09:40</strong>, <strong>KE054 11:40 → 17:35</strong> — 대한항공 앱에서 확정 시간 확인. 귀국일 계획은 11:40이어도 3시간 이상 여유</li>
+<li>✅ KE053은 11/3 대한항공 공지로 <strong>20:35 → 20:50</strong> 출발 · <strong>09:40</strong> 도착으로 변경 확정</li>
+<li>⚠️ KE054는 온라인상 <strong>11:40</strong> 출발로 나옴 — 대한항공 앱에서 확인. 귀국일 계획은 11:40이어도 3시간 이상 여유</li>
 </ul>
 </section><section class="sec overview"><div class="sec-head"><span class="sec-ic">🗓</span><h2 id="1-한눈에-보기">한눈에 보기</h2></div>
 <div class="ov-grid"><a class="ov c0" href="#114-수-도착-짐부터-호텔에-가볍게"><div class="ov-head"><b>11/4</b><em>수</em><span>도착</span></div><ul><li><i>🛍</i>월마트 / 돈키호테 (장보기)</li><li><i>🍳</i>기내</li><li><i>🍱</i>Highway Inn 카카아코</li><li><i>🍽</i>Arancino di Mare / Tiki's</li></ul></a><a class="ov c1" href="#115-목-진주만-와이켈레-아울렛"><div class="ov-head"><b>11/5</b><em>목</em><span>진주만</span></div><ul><li><i>🛍</i><strong>와이켈레 아울렛</strong></li><li><i>🍳</i>메리어트 조식</li><li><i>🍱</i>Restaurant 604</li><li><i>🍽</i>Side Street Inn</li></ul></a><a class="ov c2" href="#116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아"><div class="ov-head"><b>11/6</b><em>금</em><span>동부 해안</span></div><ul><li><i>🥾</i><strong>마카푸우 등대</strong> · (선택, 아들) 라니카이 필박스</li><li><i>🛍</i><strong>카일루아</strong> Target·Whole Foods·타운</li><li><i>🍳</i>메리어트 조식</li><li><i>🍱</i>Kalapawai Café</li><li><i>🍽</i><strong>Buzz's</strong> (예약)</li></ul></a><a class="ov c3" href="#117-토-다이아몬드헤드-kcc-파머스마켓-알라모아나-숙소-이동"><div class="ov-head"><b>11/7</b><em>토</em><span>이동일</span></div><ul><li><i>🥾</i><strong>다이아몬드헤드</strong> (예약)</li><li><i>🛍</i><strong>KCC 파머스마켓 · 알라모아나</strong></li><li><i>🍳</i>메리어트 조식</li><li><i>🍱</i>릴리하 베이커리 (알라모아나)</li><li><i>🍽</i><strong>House Without a Key</strong></li></ul></a><a class="ov c4" href="#118-일-노스쇼어-종일"><div class="ov-head"><b>11/8</b><em>일</em><span>노스쇼어</span></div><ul><li><i>🥾</i><strong>와이메아 밸리 폭포</strong></li><li><i>🛍</i><strong>할레이바 타운</strong> · 돌 플랜테이션</li><li><i>🍳</i>Eggs 'n Things</li><li><i>🍱</i>Giovanni's</li><li><i>🍽</i>Haleiwa Beach House</li></ul></a><a class="ov c5" href="#119-월-휴식-마노아-쇼핑-와이키키-마지막-여유일"><div class="ov-head"><b>11/9</b><em>월</em><span>휴식·쇼핑</span></div><ul><li><i>🥾</i><strong>라이언 수목원</strong> · (선택) 마노아 폭포·탄탈루스 전망대</li><li><i>🛍</i><strong>워드 빌리지 · 돈키호테·월마트</strong></li><li><i>🍳</i>Café Kaila / Hau Tree</li><li><i>🍱</i>Merriman's</li><li><i>🍽</i><strong>Michel's</strong> (예약)</li></ul></a><a class="ov c6" href="#1110-화-뵤도인-폴리네시안-문화센터-pcc"><div class="ov-head"><b>11/10</b><em>화</em><span>PCC</span></div><ul><li><i>🥾</i><strong>뵤도인 사원</strong> (또는 호오말루히아)</li><li><i>🛍</i>후킬라우 마켓플레이스</li><li><i>🍳</i>Hau Tree / Eggs 'n Things</li><li><i>🍱</i>Seven Brothers / Giovanni's 카후쿠</li><li><i>🍽</i>PCC 루아우</li></ul></a><a class="ov c7" href="#1111-수-출발-veterans-day-공휴일"><div class="ov-head"><b>11/11</b><em>수</em><span>출발</span></div><ul><li><i>🍳</i>Eggs 'n Things 포장 (06:00)</li><li><i>🍱</i>기내</li></ul></a></div>
@@ -322,7 +345,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </section><section class="sec days"><div class="sec-head"><span class="sec-ic">📍</span><h2 id="2-날짜별-상세-시간-장소-주차">날짜별 상세</h2><small>시간 · 장소 · 주차</small></div>
 <article class="day c0" data-date="11/4"><div class="day-head"><div class="date-badge"><b>11/4</b><span>수요일</span></div><div class="day-title"><h3 id="114-수-도착-짐부터-호텔에-가볍게">도착</h3><p>짐부터 호텔에, 가볍게</p></div></div><div class="day-body">
 <p class="wx">🌤 와이키키 소나기 20% · 30°C · 바람 강함 · 시간은 입국·다른 편 도착에 따라 유동</p>
-<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:City_of_Waikiki_view.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/City_of_Waikiki_view.jpg/960px-City_of_Waikiki_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="와이키키 비치" loading="lazy" decoding="async"></a><figcaption><b>와이키키 비치</b><small>© Pickle the cool · CC BY-SA 4.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">09:45</div><div class="c"><div class="place">HNL 도착 (T2)</div><div class="what">입국·수하물 약 1시간 · eSIM 데이터 전환</div></div></li><li><div class="t">11:00</div><div class="c"><div class="place"><strong>렌트카로 픽업</strong> (작은형 운전)</div><div class="what">T2 도착층에서 5명 + 캐리어 탑승</div></div></li><li><div class="t">11:30–12:00</div><div class="c"><div class="place">와이키키 메리어트</div><div class="what"><strong>짐 먼저 맡기기</strong> (벨데스크) · 부모님 로비 휴식</div><div class="park">🅿️ 잠깐 정차</div></div></li><li><div class="t">12:15–13:15</div><div class="c"><div class="place"><strong>Highway Inn Kakaʻako</strong> (호텔 15분, 09:30–20:00)</div><div class="what">점심 — 1947년부터 하와이 전통 음식 (라우라우·칼루아 피그)</div><div class="park">🅿️ 앞 주차장·Keawe 주차빌딩 <strong>인증 1.5시간 무료</strong></div></div></li><li><div class="t">13:30–14:45</div><div class="c"><div class="place"><strong>Walmart Keeaumoku</strong> 또는 <strong>Don Quijote Kaheka</strong></div><div class="what">물·간식·선크림·기념품 1차</div><div class="park">🅿️ 월마트 실내 <strong>3시간 이내 출차</strong> (초과 시 위반 처리) · 돈키호테 자체 주차빌딩 (조건 미확인)</div></div></li><li><div class="t">14:50</div><div class="c"><div class="place">담당 1명 recreation.gov 로그인</div><div class="what">⚠️ <strong>15:00 HST USS Arizona 11/5분 예약</strong> (09:15 이후 슬롯)</div></div></li><li><div class="t">15:00</div><div class="c"><div class="place">메리어트 체크인</div><div class="what">짐 회수</div><div class="park">🅿️ 셀프 $65/일 · 발렛 $80/일 · 모운사랏 애비뉴 무료 노상은 자리 보장 없음 (표지 확인)</div></div></li><li><div class="t">17:00–19:00</div><div class="c"><div class="place"><strong>Arancino di Mare</strong> (메리어트 1층, 17–21) 또는 <strong>Tiki's Grill &amp; Bar</strong> (도보 5분)</div><div class="what">저녁 — 시차 첫날, 일찍</div><div class="park">🅿️ Arancino 투숙객 · Tiki's <strong>발렛 3시간 무료</strong> (인증)</div></div></li><li><div class="t">20:00</div><div class="c"><div class="place">취침</div><div class="what">체감 새벽 4시 도착이라 첫날 무리 금지</div></div></li></ol>
+<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:City_of_Waikiki_view.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/City_of_Waikiki_view.jpg/960px-City_of_Waikiki_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="와이키키 비치" loading="lazy" decoding="async"></a><figcaption><b>와이키키 비치</b><small>© Pickle the cool · CC BY-SA 4.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">09:40</div><div class="c"><div class="place">HNL 도착 (T2)</div><div class="what">입국·수하물 약 1시간 · eSIM 데이터 전환</div></div></li><li><div class="t">11:00</div><div class="c"><div class="place"><strong>렌트카로 픽업</strong> (작은형 운전)</div><div class="what">T2 도착층에서 5명 + 캐리어 탑승</div></div></li><li><div class="t">11:30–12:00</div><div class="c"><div class="place">와이키키 메리어트</div><div class="what"><strong>짐 먼저 맡기기</strong> (벨데스크) · 부모님 로비 휴식</div><div class="park">🅿️ 잠깐 정차</div></div></li><li><div class="t">12:15–13:15</div><div class="c"><div class="place"><strong>Highway Inn Kakaʻako</strong> (호텔 15분, 09:30–20:00)</div><div class="what">점심 — 1947년부터 하와이 전통 음식 (라우라우·칼루아 피그)</div><div class="park">🅿️ 앞 주차장·Keawe 주차빌딩 <strong>인증 1.5시간 무료</strong></div></div></li><li><div class="t">13:30–14:45</div><div class="c"><div class="place"><strong>Walmart Keeaumoku</strong> 또는 <strong>Don Quijote Kaheka</strong></div><div class="what">물·간식·선크림·기념품 1차</div><div class="park">🅿️ 월마트 실내 <strong>3시간 이내 출차</strong> (초과 시 위반 처리) · 돈키호테 자체 주차빌딩 (조건 미확인)</div></div></li><li><div class="t">14:50</div><div class="c"><div class="place">담당 1명 recreation.gov 로그인</div><div class="what">⚠️ <strong>15:00 HST USS Arizona 11/5분 예약</strong> (09:15 이후 슬롯)</div></div></li><li><div class="t">15:00</div><div class="c"><div class="place">메리어트 체크인</div><div class="what">짐 회수</div><div class="park">🅿️ 셀프 $65/일 · 발렛 $80/일 · 모운사랏 애비뉴 무료 노상은 자리 보장 없음 (표지 확인)</div></div></li><li><div class="t">17:00–19:00</div><div class="c"><div class="place"><strong>Arancino di Mare</strong> (메리어트 1층, 17–21) 또는 <strong>Tiki's Grill &amp; Bar</strong> (도보 5분)</div><div class="what">저녁 — 시차 첫날, 일찍</div><div class="park">🅿️ Arancino 투숙객 · Tiki's <strong>발렛 3시간 무료</strong> (인증)</div></div></li><li><div class="t">20:00</div><div class="c"><div class="place">취침</div><div class="what">체감 새벽 4시 도착이라 첫날 무리 금지</div></div></li></ol>
 <ul>
 <li>☕ 커피: <strong>Kai Coffee</strong> (하얏트 로비, 메리어트에서 도보 3분) · 메리어트 안 스타벅스 05:00–21:00</li>
 <li>점심 대안: <strong>Liliha Bakery 니미츠점</strong> (코코퍼프·로코모코, 무료 주차장) · <strong>Nico's Pier 38</strong> (경매장 옆 생선 요리, 공항 10분) — 짐을 아직 못 맡겼으면 차에 1명 남기기 · <del>Helena's</del> (수요일 영업하지만 주차장이 아주 작음)</li>
@@ -907,6 +930,10 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <td data-label="변경"><span class="v">Acadia 7인승 <strong>2+2+3 좌석</strong> 확인 · 진주만 투명 가방·포드섬 여권 · 고파도 물가 접근 금지 · 월마트 3시간 제한 · 공휴일 미터 · 뵤도인 요금·결제 미확인 → 전화</span></td>
 </tr>
 <tr>
+<td data-label="구분"><span class="v">11/3 항공 변경</span></td>
+<td data-label="변경"><span class="v">대한항공 공지: KE053 <strong>20:35 → 20:50</strong> 출발 · 09:45 → <strong>09:40</strong> 도착 → 인천공항 도착 목표 17:50</span></td>
+</tr>
+<tr>
 <td data-label="구분"><span class="v">11/3 사용자 확인</span></td>
 <td data-label="변경"><span class="v">큰형 추가 운전자 등록 안 함 → <strong>작은형 단독 운전</strong> · 짐칸 문제없음 → 좌석·적재 확인 삭제</span></td>
 </tr>
@@ -972,7 +999,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </div><div class="cl-card"><h3 id="4-출국-당일-114">4. 출국 당일 (11/4)</h3>
 <ul>
 <li class="task"><input type="checkbox"><span>여권 3명분</span></li>
-<li class="task"><input type="checkbox"><span><strong>인천 T2</strong> (대한항공) · <strong>17:35까지 도착</strong></span></li>
+<li class="task"><input type="checkbox"><span><strong>인천 T2</strong> (대한항공) · <strong>17:50까지 도착</strong> (KE053 20:50 출발로 변경)</span></li>
 <li class="task"><input type="checkbox"><span>위탁 수하물 23kg 초과 주의 — 귀국 때 아울렛 쇼핑 짐도</span></li>
 <li class="task"><input type="checkbox"><span>액체류 100ml 이하·투명 지퍼백 (총 1L) · 보조배터리는 기내 가방에</span></li>
 </ul>
@@ -981,8 +1008,8 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 👨‍👩‍👦‍👦 5명 · 🚙 렌터카 · 🥾 하이킹 + 🛍 쇼핑
 
 ✈️ 비행기 (서울팀)
-· 가는 편 KE053 11/4(수) 20:35 인천 T2 → 같은 날 09:45 호놀룰루
-  👉 인천공항 17:35까지 도착
+· 가는 편 KE053 11/4(수) 20:50 인천 T2 → 같은 날 09:40 호놀룰루
+  👉 인천공항 17:50까지 도착
 · 오는 편 KE054 11/11(수) 12:05 → 11/12(목) 17:35 인천
   👉 11:40으로 바뀌었을 수 있어요, 앱 확인
 
@@ -1048,20 +1075,20 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 
 </section>
 </main>
-<footer>업데이트 2026-11-03 01:07 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
+<footer>업데이트 2026-11-03 01:09 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
 <button class="top-btn" id="topBtn" aria-label="맨 위로">↑</button>
 <script>
 (function () {
   // D-day · 여행 중이면 오늘 일정 버튼
   var dday = document.getElementById('dday');
-  var dep = new Date('2026-11-04T20:35:00+09:00');
+  var dep = new Date('2026-11-04T20:50:00+09:00');
   var ret = new Date('2026-11-12T17:35:00+09:00');
   var now = new Date();
   if (now < dep) {
     var kstToday = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
     var depDay = new Date(2026, 10, 4);
     var diff = Math.round((depDay - new Date(kstToday.getFullYear(), kstToday.getMonth(), kstToday.getDate())) / 86400000);
-    dday.innerHTML = diff > 0 ? 'D-' + diff + ' <small>출발까지</small>' : 'D-DAY <small>오늘 20:35 출발</small>';
+    dday.innerHTML = diff > 0 ? 'D-' + diff + ' <small>출발까지</small>' : 'D-DAY <small>오늘 20:50 출발</small>';
   } else if (now < ret) {
     var hst = now.toLocaleDateString('en-US', { timeZone: 'Pacific/Honolulu', month: 'numeric', day: 'numeric' });
     var parts = hst.split('/');
