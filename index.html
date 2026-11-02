@@ -12,7 +12,7 @@
 // GitHub Pages 는 HTML 을 10분 캐시한다(헤더는 못 바꿈) → 열 때마다 version.json 을 캐시 없이 확인해
 // 새 버전이면 주소에 ?v=버전 을 붙여 한 번만 새로 불러온다 (같은 버전으로 이미 시도했으면 멈춤)
 (function () {
-  var BUILD = '7e28c5b77c';
+  var BUILD = 'a7b4cc1683';
   try {
     fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
@@ -335,6 +335,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <div class="tickets"><div class="ticket"><div class="tk-top"><span>가는 편</span><b>KE053</b></div><div class="route"><div class="city"><small>11/4 (수)</small><b>20:50</b><span>ICN · 인천 T2</span></div><div class="plane">✈</div><div class="city r"><small>11/4 (수)</small><b>09:40</b><span>HNL · 호놀룰루</span></div></div><div class="tk-meta"><div><span>공항 도착 목표</span><b>17:50</b></div><div><span>체크인 마감</span><b>19:50</b></div><div><span>탑승 시작</span><b>20:15</b></div></div></div><div class="ticket"><div class="tk-top"><span>오는 편</span><b>KE054</b></div><div class="route"><div class="city"><small>11/11 (수)</small><b>12:05</b><span>HNL · 호놀룰루</span></div><div class="plane">✈</div><div class="city r"><small>11/12 (목)</small><b>17:35</b><span>ICN · 인천 T2</span></div></div><div class="tk-meta"><div><span>공항 도착 목표</span><b>08:20</b></div><div><span>체크인 마감</span><b>출발 1시간 전</b></div><div><span>탑승 시작</span><b>11:30</b></div></div></div></div>
 <ul>
 <li>탑승 시작 = 출발 35분 전 · 탑승구 마감 = 10분 전 · 체크인 마감 = 1시간 전 (대한항공 국제선)</li>
+<li>🛍 출국심사 후 바로 <strong>T2 서편 인도장</strong>에서 면세품 받기 (여권·탑승권, 저녁엔 줄 김 → 20~30분 여유)</li>
 <li>귀국일은 콘도 07:30 출발 → 08:00 렌트카 반납 (위치는 예약 확인서 · 공항 렌터카센터면 T2 길 건너) → 08:20 카운터</li>
 <li>✅ KE053은 11/3 대한항공 공지로 <strong>20:35 → 20:50</strong> 출발 · <strong>09:40</strong> 도착으로 변경 확정</li>
 <li>⚠️ KE054는 온라인상 <strong>11:40</strong> 출발로 나옴 — 대한항공 앱에서 확인. 귀국일 계획은 11:40이어도 3시간 이상 여유</li>
@@ -983,6 +984,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <ul>
 <li class="task"><input type="checkbox"><span>여권 — 한국 여권은 미국 6개월 규정 예외국이라 <strong>체류 기간 동안 유효하면 됨</strong> (서울팀 3명)</span></li>
 <li class="task"><input type="checkbox"><span>달러 현금 — Giovanni's 주차 · 팁 등 현금만 받는 곳 대비</span></li>
+<li class="task"><input type="checkbox"><span><strong>귀국 면세 한도 1인 $800</strong> — 출국 때 산 면세품도 들고 들어오면 합산 (술·향수·담배는 따로) · 넘으면 입국 때 자진 신고 (세금 감면)</span></li>
 <li class="task"><input type="checkbox"><span>해외결제 <strong>실물 카드 2장 이상</strong> — 진주만 주차·다이아몬드헤드·로열 하와이안 센터 주차는 카드만, 모바일 결제 안 되는 매장 있음</span></li>
 </ul>
 </div><div class="cl-card"><h3 id="3-짐-이번-여행이라-꼭-챙길-것">3. 짐 — 이번 여행이라 꼭 챙길 것</h3>
@@ -1005,6 +1007,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <ul>
 <li class="task"><input type="checkbox"><span>여권 3명분</span></li>
 <li class="task"><input type="checkbox"><span><strong>인천 T2</strong> (대한항공) · <strong>17:50까지 도착</strong> (KE053 20:50 출발로 변경)</span></li>
+<li class="task"><input type="checkbox"><span><strong>면세품 받기</strong> — 출국심사 후 바로 <strong>T2 서편 인도장</strong> (여권·탑승권) · 저녁엔 줄이 길어 20~30분 여유 · 신세계면세점 앱 MY → 주문내역</span></li>
 <li class="task"><input type="checkbox"><span>위탁 수하물 23kg 초과 주의 — 귀국 때 아울렛 쇼핑 짐도</span></li>
 <li class="task"><input type="checkbox"><span>액체류 100ml 이하·투명 지퍼백 (총 1L) · 보조배터리는 기내 가방에</span></li>
 </ul>
@@ -1015,6 +1018,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 ✈️ 비행기 (서울팀)
 · 가는 편 KE053 11/4(수) 20:50 인천 T2 → 같은 날 09:40 호놀룰루
   👉 인천공항 17:50까지 도착
+  👉 출국심사 후 T2 서편 인도장에서 면세품 찾기
 · 오는 편 KE054 11/11(수) 12:05 → 11/12(목) 17:35 인천
   👉 11:40으로 바뀌었을 수 있어요, 앱 확인
 
@@ -1081,7 +1085,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 
 </section>
 </main>
-<footer>업데이트 2026-11-03 01:50 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
+<footer>업데이트 2026-11-03 01:56 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
 <button class="top-btn" id="topBtn" aria-label="맨 위로">↑</button>
 <script>
 (function () {
