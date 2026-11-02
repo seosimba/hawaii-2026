@@ -1,0 +1,1525 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>오아후 가족여행 일정</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f7f5f0; --surface: #ffffff; --text: #1f2328; --muted: #5d646d;
+  --border: #e3ded3; --accent: #0b7a75; --accent-soft: #e2f2f0;
+  --warn-soft: #fff4dc; --th: #f1ede4; --link: #0a6a8f;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171a; --surface: #1c2024; --text: #e6e8ea; --muted: #a0a7af;
+    --border: #2e343a; --accent: #4fc1b9; --accent-soft: #1d3634;
+    --warn-soft: #3a3120; --th: #242a30; --link: #6cc4e8;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171a; --surface: #1c2024; --text: #e6e8ea; --muted: #a0a7af;
+  --border: #2e343a; --accent: #4fc1b9; --accent-soft: #1d3634;
+  --warn-soft: #3a3120; --th: #242a30; --link: #6cc4e8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.65 "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+  -webkit-text-size-adjust: 100%; overflow-wrap: break-word;
+}
+header.hero { padding: 28px 16px 18px; max-width: 1100px; margin: 0 auto; }
+.hero h1 { margin: 0 0 6px; font-size: 1.6rem; letter-spacing: -0.01em; }
+.hero p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+nav.days {
+  position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(6px); border-bottom: 1px solid var(--border);
+  display: flex; gap: 6px; overflow-x: auto; padding: 10px 16px; scrollbar-width: none;
+}
+nav.days::-webkit-scrollbar { display: none; }
+nav.days a {
+  flex: 0 0 auto; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); text-decoration: none; font-size: 0.85rem; white-space: nowrap;
+}
+nav.days a:hover, nav.days a.on { background: var(--accent-soft); border-color: var(--accent); }
+main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 64px; }
+h2 { margin: 40px 0 12px; font-size: 1.3rem; padding-bottom: 6px; border-bottom: 2px solid var(--accent); }
+h3 {
+  margin: 28px 0 10px; font-size: 1.1rem; background: var(--surface); border-left: 4px solid var(--accent);
+  padding: 8px 12px; border-radius: 6px;
+}
+a { color: var(--link); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 28px 0; }
+blockquote {
+  margin: 12px 0; padding: 10px 14px; background: var(--warn-soft); border-radius: 8px; color: var(--text);
+}
+blockquote p { margin: 4px 0; }
+.tw { overflow-x: auto; margin: 10px 0 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+th { background: var(--th); font-weight: 700; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { white-space: nowrap; }
+ul { padding-left: 1.2em; }
+li { margin: 3px 0; }
+li.task { list-style: none; margin-left: -1.2em; }
+li.task input { width: 1.05em; height: 1.05em; margin-right: 6px; vertical-align: -2px; accent-color: var(--accent); }
+li.task:has(input:checked) { color: var(--muted); text-decoration: line-through; }
+footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 0.8rem; }
+@media (max-width: 640px) {
+  body { font-size: 14.5px; }
+  .hero h1 { font-size: 1.35rem; }
+  .tw { border: 0; background: none; overflow: visible; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { display: none; }
+  tr { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin: 0 0 8px; padding: 6px 10px; }
+  td { border: 0; padding: 3px 0; white-space: normal !important; display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 8px; overflow-wrap: anywhere; }
+  td::before { content: attr(data-label); color: var(--muted); font-size: 0.8rem; padding-top: 1px; }
+  td[data-label=""] { grid-template-columns: 1fr; }
+  td[data-label=""]::before { display: none; }
+  td:first-child { font-weight: 700; }
+}
+@media print { nav.days { display: none; } .tw { overflow: visible; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>🌺 오아후 가족여행 · 11/4 – 11/11</h1>
+  <p>5인 · 렌터카 · 하이킹 + 쇼핑 · 끼니별 식당·커피·주차 · 업데이트 2026-11-02 23:54 KST</p>
+</header>
+<nav class="days"><a href="#지금-예약확인할-것">🚨 지금 예약·확인할 것</a><a href="#항공-서울팀-3명-현지-시각">✈️ 항공</a><a href="#0-날씨-112-예보-기준-매일-갱신">날씨</a><a href="#1-한눈에-보기">한눈에 보기</a><a href="#114-수-도착-짐부터-호텔에-가볍게">11/4 (수)</a><a href="#115-목-진주만-와이켈레-아울렛">11/5 (목)</a><a href="#116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아">11/6 (금)</a><a href="#117-토-다이아몬드헤드-kcc-파머스마켓-알라모아나-숙소-이동">11/7 (토)</a><a href="#118-일-노스쇼어-종일">11/8 (일)</a><a href="#119-월-휴식-마노아-쇼핑-와이키키-마지막-여유일">11/9 (월)</a><a href="#1110-화-뵤도인-폴리네시안-문화센터-pcc">11/10 (화)</a><a href="#1111-수-출발-veterans-day-공휴일">11/11 (수)</a><a href="#3-하이킹-가이드북-표와-조사-결과-대조">하이킹</a><a href="#4-가이드북-코스와-대조-시간동선-체크">가이드북 코스와 대조</a><a href="#5-가이드북-식당명소-현재-영업-확인-112">가이드북 식당·명소</a><a href="#6-주차-한눈에">주차 한눈에</a><a href="#7-codex-검수-반영-이력-112">Codex 검수 반영 이력 (11/2)</a><a href="#출발-전-체크리스트">✅ 출발 전 체크리스트</a></nav>
+<main>
+<blockquote>
+<p><strong>2026-11-02 웹 조사 + Codex 검수 반영.</strong> (미확인) = 출처 상충 또는 공식 확인 실패 → 전날 구글맵·전화로 재확인<br />
+자전거 대신 렌터카(Sixt GMC Acadia 또는 동급)로 <strong>하이킹 + 쇼핑</strong> 위주. 메리어트 조식 있는 날(11/5·6·7)은 점심·저녁만, 없는 날은 아침·점심·저녁 모두</p>
+</blockquote>
+<hr />
+<h2 id="지금-예약확인할-것">🚨 지금 예약·확인할 것</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>무엇</th>
+<th>언제</th>
+<th>어디서</th>
+<th>메모</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="무엇"><span class="v"><strong>다이아몬드헤드</strong> 입장+주차</span></td>
+<td data-label="언제"><span class="v"><strong>오늘</strong></span></td>
+<td data-label="어디서"><span class="v">gostateparks.hawaii.gov/diamondhead</span></td>
+<td data-label="메모"><span class="v">비거주자 예약 필수 · $5×5 + 주차 $10 = <strong>$35</strong> · 카드 결제 · 30일 전 오픈이라 토요일 아침 매진 가능 → 11/7 07:00 1순위, 없으면 11/9 07:00</span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v"><strong>USS Arizona</strong> (진주만)</span></td>
+<td data-label="언제"><span class="v"><strong>11/4 15:00 HST</strong> (= 한국 11/5 10:00)</span></td>
+<td data-label="어디서"><span class="v">recreation.gov</span></td>
+<td data-label="메모"><span class="v">8주 전 물량은 소진 → <strong>전날 15:00 추가 물량</strong> · 1장 $1 · <strong>14:50 로그인 담당 1명 지정</strong> · 08:15 도착 기준 <strong>09:15 이후 슬롯</strong></span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v"><strong>큰형 추가 운전자 등록</strong></span></td>
+<td data-label="언제"><span class="v"><strong>11/4 도착 직후</strong></span></td>
+<td data-label="어디서"><span class="v">Sixt 카운터 (T2 길 건너 렌터카센터)</span></td>
+<td data-label="메모"><span class="v">작은형(계약자) + 큰형 동행 · 면허증·신분증 실물 · 등록 전엔 작은형만 운전</span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v"><strong>렌터카 좌석·짐칸</strong></span></td>
+<td data-label="언제"><span class="v"><strong>11/3 픽업 때</strong> (작은형)</span></td>
+<td data-label="어디서"><span class="v">Sixt</span></td>
+<td data-label="메모"><span class="v">7인승 Acadia는 <strong>2+2+3 배열</strong> → 3열을 다 접으면 4명뿐. 3열 40%(1석) 세우고 60% 접어 캐리어 — 안 들어가면 11/4 <strong>짐용 택시 1대</strong></span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v">저녁 예약</span></td>
+<td data-label="언제"><span class="v">지금</span></td>
+<td data-label="어디서"><span class="v">전화·OpenTable</span></td>
+<td data-label="메모"><span class="v">Buzz's 11/6 (☎ 808-261-4661) · House Without a Key 11/7 · Michel's 11/9 (<strong>필수</strong>)</span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v">PCC 패키지</span></td>
+<td data-label="언제"><span class="v">지금</span></td>
+<td data-label="어디서"><span class="v">polynesia.com</span></td>
+<td data-label="메모"><span class="v">11/10 화 (일·수 휴무) · 운전 부담 크면 PCC 왕복 버스 $28/인</span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v">메리어트 확인</span></td>
+<td data-label="언제"><span class="v">체크인 전 전화</span></td>
+<td data-label="어디서"><span class="v">프런트·벨데스크</span></td>
+<td data-label="메모"><span class="v">짐 보관 (11/4 체크인 전 · 11/7 체크아웃 후) · <strong>조식 5명 포함 여부</strong> · 리조트피</span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v">뵤도인 요금·결제</span></td>
+<td data-label="언제"><span class="v">11/10 전</span></td>
+<td data-label="어디서"><span class="v">☎ 808-239-8811</span></td>
+<td data-label="메모"><span class="v">입장료·카드 전용 여부·주차 요금 공식 확인 안 됨</span></td>
+</tr>
+<tr>
+<td data-label="무엇"><span class="v">KE054 출발 시간</span></td>
+<td data-label="언제"><span class="v">지금</span></td>
+<td data-label="어디서"><span class="v">대한항공 앱</span></td>
+<td data-label="메모"><span class="v">12:05 vs 11:40 — 아래 11/11 출발 계획은 둘 다 커버</span></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="항공-서울팀-3명-현지-시각">✈️ 항공 — 서울팀 3명 (현지 시각)</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>편명</th>
+<th>출발</th>
+<th>도착</th>
+<th>탑승 시작</th>
+<th>체크인 마감</th>
+<th>공항 도착 목표</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="구분"><span class="v">가는 편</span></td>
+<td data-label="편명"><span class="v">KE053</span></td>
+<td data-label="출발"><span class="v"><strong>11/4 (수) 20:35</strong> 인천 T2</span></td>
+<td data-label="도착"><span class="v">11/4 (수) 09:45 호놀룰루</span></td>
+<td data-label="탑승 시작"><span class="v"><strong>20:00</strong></span></td>
+<td data-label="체크인 마감"><span class="v">19:35</span></td>
+<td data-label="공항 도착 목표"><span class="v"><strong>17:35</strong></span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">오는 편</span></td>
+<td data-label="편명"><span class="v">KE054</span></td>
+<td data-label="출발"><span class="v"><strong>11/11 (수) 12:05</strong> 호놀룰루</span></td>
+<td data-label="도착"><span class="v">11/12 (목) 17:35 인천 T2</span></td>
+<td data-label="탑승 시작"><span class="v"><strong>11:30</strong></span></td>
+<td data-label="체크인 마감"><span class="v">출발 1시간 전</span></td>
+<td data-label="공항 도착 목표"><span class="v"><strong>08:20</strong> (콘도 07:30 출발 → 08:00 렌터카 반납)</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>탑승 시작 = 출발 35분 전 · 탑승구 마감 = 10분 전 · 체크인 마감 = 1시간 전 (대한항공 국제선)</li>
+<li>⚠️ 온라인 운항정보(11/2)는 <strong>KE053 20:50 → 09:40</strong>, <strong>KE054 11:40 → 17:35</strong> — 대한항공 앱에서 확정 시간 확인. 귀국일 계획(08:20 카운터 도착)은 11:40이어도 3시간 이상 여유</li>
+</ul>
+<hr />
+<h2 id="0-날씨-112-예보-기준-매일-갱신">0. 날씨 — 11/2 예보 기준 (매일 갱신)</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>와이키키 (숙소·시내)</th>
+<th>카일루아 (동부)</th>
+<th>할레이바 (노스쇼어)</th>
+<th>바람 (와이키키)</th>
+<th>메모</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="날짜"><span class="v">11/4 수</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">소나기 20% · 30/24°C</span></td>
+<td data-label="카일루아 (동부)"><span class="v">40% · 27°C</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">20% (아침) · 28°C</span></td>
+<td data-label="바람 (와이키키)"><span class="v">동북동 초속 10m · 돌풍 14m</span></td>
+<td data-label="메모"><span class="v"></span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/5 목</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">20% · 30/24°C</span></td>
+<td data-label="카일루아 (동부)"><span class="v">40% (오전) · 27°C</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">20% (아침) · 29°C</span></td>
+<td data-label="바람 (와이키키)"><span class="v">초속 11m · 돌풍 15m</span></td>
+<td data-label="메모"><span class="v">북서 너울 → 북·서쪽 해안 고파도 (목~금)</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/6 금</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">20% (오전) · 30/24°C</span></td>
+<td data-label="카일루아 (동부)"><span class="v">30% (오전) · 27°C</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">20% (아침) · 29°C</span></td>
+<td data-label="바람 (와이키키)"><span class="v">초속 9~10m · 돌풍 13m</span></td>
+<td data-label="메모"><span class="v">동부 해안 파도 거침</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/7 토</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">20% · 29/24°C</span></td>
+<td data-label="카일루아 (동부)"><span class="v">30% · 27°C</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">20% · 28°C</span></td>
+<td data-label="바람 (와이키키)"><span class="v">초속 9m · 돌풍 13m</span></td>
+<td data-label="메모"><span class="v"></span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/8 일</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">20% · 29°C</span></td>
+<td data-label="카일루아 (동부)"><span class="v">30% · 27°C</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">20% 대체로 맑음 · 28°C</span></td>
+<td data-label="바람 (와이키키)"><span class="v">초속 9~10m · 돌풍 14m</span></td>
+<td data-label="메모"><span class="v">노스쇼어 중대형 파도 → <strong>물가·암반 접근 금지</strong></span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/9 월 ※</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">24% · 2mm</span></td>
+<td data-label="카일루아 (동부)"><span class="v">56% · 6mm</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">67% · 4mm</span></td>
+<td data-label="바람 (와이키키)"><span class="v">비슷</span></td>
+<td data-label="메모"><span class="v">마노아(산 쪽) 소나기·진흙</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/10 화 ※</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">18% · 2mm</span></td>
+<td data-label="카일루아 (동부)"><span class="v">52% · 6mm</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">라이에 65% · 3mm</span></td>
+<td data-label="바람 (와이키키)"><span class="v">라이에 강함</span></td>
+<td data-label="메모"><span class="v">PCC 야외 → 우비</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/11 수 ※</span></td>
+<td data-label="와이키키 (숙소·시내)"><span class="v">30% · 2mm</span></td>
+<td data-label="카일루아 (동부)"><span class="v">60% · 4mm</span></td>
+<td data-label="할레이바 (노스쇼어)"><span class="v">63% · 1mm</span></td>
+<td data-label="바람 (와이키키)"><span class="v">약해짐</span></td>
+<td data-label="메모"><span class="v"></span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>11/4~11/8: 미국 기상청(NWS Honolulu) 7일 예보, 11/2 04:02 HST 발표. ※ 11/9~11/11: 공식 예보 범위 밖이라 수치모델(Open-Meteo) 참고값</li>
+<li>큰 비 예보 없음. 동북동 무역풍이 일주일 내내 강함 → <strong>모자 턱끈</strong>, 동부·노스쇼어는 짧은 소나기 잦음(밤·아침 위주). 와이키키(남쪽)는 비교적 맑음</li>
+<li>남쪽 해안(와이키키) 파도는 아주 작음 → 해수욕은 와이키키가 무난</li>
+<li>NHC가 하와이 남동쪽 열대 요란을 감시 중(발달 가능성 70%) — <strong>현재 직접 영향 가능성 낮음, 매일 갱신 확인</strong></li>
+<li>일몰 17:52경 · 일출 06:36~06:40경</li>
+</ul>
+<hr />
+<h2 id="1-한눈에-보기">1. 한눈에 보기</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>테마</th>
+<th>🥾 하이킹·산책</th>
+<th>🛍 쇼핑</th>
+<th>🍳 아침</th>
+<th>🍱 점심</th>
+<th>🍽 저녁</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="날짜"><span class="v">11/4 수</span></td>
+<td data-label="테마"><span class="v">도착</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v">—</span></td>
+<td data-label="🛍 쇼핑"><span class="v">월마트 / 돈키호테 (장보기)</span></td>
+<td data-label="🍳 아침"><span class="v">기내</span></td>
+<td data-label="🍱 점심"><span class="v">Highway Inn 카카아코</span></td>
+<td data-label="🍽 저녁"><span class="v">Arancino di Mare / Tiki's</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/5 목</span></td>
+<td data-label="테마"><span class="v">진주만</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v">—</span></td>
+<td data-label="🛍 쇼핑"><span class="v"><strong>와이켈레 아울렛</strong></span></td>
+<td data-label="🍳 아침"><span class="v">메리어트 조식</span></td>
+<td data-label="🍱 점심"><span class="v">Restaurant 604</span></td>
+<td data-label="🍽 저녁"><span class="v">Side Street Inn</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/6 금</span></td>
+<td data-label="테마"><span class="v">동부 해안</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v"><strong>마카푸우 등대</strong> · (선택, 아들) 라니카이 필박스</span></td>
+<td data-label="🛍 쇼핑"><span class="v"><strong>카일루아</strong> Target·Whole Foods·타운</span></td>
+<td data-label="🍳 아침"><span class="v">메리어트 조식</span></td>
+<td data-label="🍱 점심"><span class="v">Kalapawai Café</span></td>
+<td data-label="🍽 저녁"><span class="v"><strong>Buzz's</strong> (예약)</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/7 토</span></td>
+<td data-label="테마"><span class="v">이동일</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v"><strong>다이아몬드헤드</strong> (예약)</span></td>
+<td data-label="🛍 쇼핑"><span class="v"><strong>KCC 파머스마켓 · 알라모아나</strong></span></td>
+<td data-label="🍳 아침"><span class="v">메리어트 조식</span></td>
+<td data-label="🍱 점심"><span class="v">릴리하 베이커리 (알라모아나)</span></td>
+<td data-label="🍽 저녁"><span class="v"><strong>House Without a Key</strong></span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/8 일</span></td>
+<td data-label="테마"><span class="v">노스쇼어</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v"><strong>와이메아 밸리 폭포</strong></span></td>
+<td data-label="🛍 쇼핑"><span class="v"><strong>할레이바 타운</strong> · 돌 플랜테이션</span></td>
+<td data-label="🍳 아침"><span class="v">Eggs 'n Things</span></td>
+<td data-label="🍱 점심"><span class="v">Giovanni's</span></td>
+<td data-label="🍽 저녁"><span class="v">Haleiwa Beach House</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/9 월</span></td>
+<td data-label="테마"><span class="v">휴식·쇼핑</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v"><strong>라이언 수목원</strong> · (선택) 마노아 폭포·탄탈루스 전망대</span></td>
+<td data-label="🛍 쇼핑"><span class="v"><strong>워드 빌리지 · 돈키호테·월마트</strong></span></td>
+<td data-label="🍳 아침"><span class="v">Café Kaila / Hau Tree</span></td>
+<td data-label="🍱 점심"><span class="v">Merriman's</span></td>
+<td data-label="🍽 저녁"><span class="v"><strong>Michel's</strong> (예약)</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/10 화</span></td>
+<td data-label="테마"><span class="v">PCC</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v"><strong>뵤도인 사원</strong> (또는 호오말루히아)</span></td>
+<td data-label="🛍 쇼핑"><span class="v">후킬라우 마켓플레이스</span></td>
+<td data-label="🍳 아침"><span class="v">Hau Tree / Eggs 'n Things</span></td>
+<td data-label="🍱 점심"><span class="v">Seven Brothers / Giovanni's 카후쿠</span></td>
+<td data-label="🍽 저녁"><span class="v">PCC 루아우</span></td>
+</tr>
+<tr>
+<td data-label="날짜"><span class="v">11/11 수</span></td>
+<td data-label="테마"><span class="v">출발</span></td>
+<td data-label="🥾 하이킹·산책"><span class="v">—</span></td>
+<td data-label="🛍 쇼핑"><span class="v">—</span></td>
+<td data-label="🍳 아침"><span class="v">Eggs 'n Things 포장 (06:00)</span></td>
+<td data-label="🍱 점심"><span class="v">기내</span></td>
+<td data-label="🍽 저녁"><span class="v">—</span></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-날짜별-상세-시간-장소-주차">2. 날짜별 상세 — 시간 · 장소 · 주차</h2>
+<h3 id="114-수-도착-짐부터-호텔에-가볍게">11/4 (수) · 도착 — 짐부터 호텔에, 가볍게</h3>
+<p>날씨: 와이키키 소나기 20% · 30°C · 바람 강함 · 시간은 입국·다른 편 도착에 따라 유동</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">09:45</span></td>
+<td data-label="장소"><span class="v">HNL 도착 (T2)</span></td>
+<td data-label="할 것"><span class="v">입국·수하물 약 1시간 · eSIM 데이터 전환</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">10:45–11:15</span></td>
+<td data-label="장소"><span class="v"><strong>Sixt 카운터</strong> (T2 길 건너 렌터카센터, 300 Rodgers Blvd)</span></td>
+<td data-label="할 것"><span class="v"><strong>큰형 추가 운전자 등록</strong> (작은형 + 큰형, 면허·신분증) · 나머지는 짐과 대기</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">11:15</span></td>
+<td data-label="장소"><span class="v">작은형 차로 출발</span></td>
+<td data-label="할 것"><span class="v">3열 40%(1석) 세우고 60% 접어 캐리어 · 안 되면 짐용 택시 1대</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">11:45–12:15</span></td>
+<td data-label="장소"><span class="v">와이키키 메리어트</span></td>
+<td data-label="할 것"><span class="v"><strong>짐 먼저 맡기기</strong> (벨데스크) · 부모님 로비 휴식</span></td>
+<td data-label="🅿️ 주차"><span class="v">잠깐 정차</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:30–13:30</span></td>
+<td data-label="장소"><span class="v"><strong>Highway Inn Kakaʻako</strong> (호텔 15분, 09:30–20:00)</span></td>
+<td data-label="할 것"><span class="v">점심 — 1947년부터 하와이 전통 음식 (라우라우·칼루아 피그)</span></td>
+<td data-label="🅿️ 주차"><span class="v">앞 주차장·Keawe 주차빌딩 <strong>인증 1.5시간 무료</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">13:45–14:45</span></td>
+<td data-label="장소"><span class="v"><strong>Walmart Keeaumoku</strong> 또는 <strong>Don Quijote Kaheka</strong></span></td>
+<td data-label="할 것"><span class="v">물·간식·선크림·기념품 1차</span></td>
+<td data-label="🅿️ 주차"><span class="v">월마트 실내 <strong>3시간 이내 출차</strong> (초과 시 위반 처리) · 돈키호테 자체 주차빌딩 (조건 미확인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">14:50</span></td>
+<td data-label="장소"><span class="v">담당 1명 recreation.gov 로그인</span></td>
+<td data-label="할 것"><span class="v">⚠️ <strong>15:00 HST USS Arizona 11/5분 예약</strong> (09:15 이후 슬롯)</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">15:00</span></td>
+<td data-label="장소"><span class="v">메리어트 체크인</span></td>
+<td data-label="할 것"><span class="v">짐 회수</span></td>
+<td data-label="🅿️ 주차"><span class="v">셀프 $65/일 · 발렛 $80/일 · 모운사랏 애비뉴 무료 노상은 자리 보장 없음 (표지 확인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">17:00–19:00</span></td>
+<td data-label="장소"><span class="v"><strong>Arancino di Mare</strong> (메리어트 1층, 17–21) 또는 <strong>Tiki's Grill &amp; Bar</strong> (도보 5분)</span></td>
+<td data-label="할 것"><span class="v">저녁 — 시차 첫날, 일찍</span></td>
+<td data-label="🅿️ 주차"><span class="v">Arancino 투숙객 · Tiki's <strong>발렛 3시간 무료</strong> (인증)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">20:00</span></td>
+<td data-label="장소"><span class="v">취침</span></td>
+<td data-label="할 것"><span class="v">체감 새벽 4시 도착이라 첫날 무리 금지</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>☕ 커피: <strong>Kai Coffee</strong> (하얏트 로비, 메리어트에서 도보 3분) · 메리어트 안 스타벅스 05:00–21:00</li>
+<li>점심 대안: <strong>Liliha Bakery 니미츠점</strong> (코코퍼프·로코모코, 무료 주차장) · <strong>Nico's Pier 38</strong> (경매장 옆 생선 요리, 공항 10분) — 짐을 아직 못 맡겼으면 차에 1명 남기기 · ~~Helena's~~ (수요일 영업하지만 주차장이 아주 작음)</li>
+<li>캐리어 실은 차는 털이 표적 → <strong>호텔 짐 보관을 점심보다 먼저</strong></li>
+</ul>
+<h3 id="115-목-진주만-와이켈레-아울렛">11/5 (목) · 진주만 → 와이켈레 아울렛</h3>
+<p>날씨: 와이키키 20% · 30°C · 돌풍 15m</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">06:30–07:20</span></td>
+<td data-label="장소"><span class="v">메리어트</span></td>
+<td data-label="할 것"><span class="v">조식 (포함)</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">07:20</span></td>
+<td data-label="장소"><span class="v">출발 (30~40분)</span></td>
+<td data-label="할 것"><span class="v">—</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">08:15</span></td>
+<td data-label="장소"><span class="v"><strong>진주만 방문자센터</strong></span></td>
+<td data-label="할 것"><span class="v">예약 시각 <strong>1시간 전 도착 권장</strong>, 극장은 10~15분 전 · USS Arizona 프로그램 약 45분 (영상 + 보트)</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>$7/일 · 카드·QR 결제</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">~11:00</span></td>
+<td data-label="장소"><span class="v">방문자센터 전시 마무리</span></td>
+<td data-label="할 것"><span class="v">—</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">11:00–12:00</span></td>
+<td data-label="장소"><span class="v"><strong>Restaurant 604</strong> (10:30~)</span></td>
+<td data-label="할 것"><span class="v">점심 — 항구 옆 피시앤칩스·아히 카츠 · 진주만 주차장에 차 두고 <strong>도보 10분</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">진주만 주차장</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:00–12:30</span></td>
+<td data-label="장소"><span class="v">와이켈레 이동 (20분)</span></td>
+<td data-label="할 것"><span class="v">☕ Waikele Center 스타벅스 / Leonard's 말라사다 트럭 (07–19, 카드만)</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:30–17:00</span></td>
+<td data-label="장소"><span class="v">🛍 <strong>와이켈레 프리미엄 아울렛</strong> (10–19)</span></td>
+<td data-label="할 것"><span class="v">Coach·Polo·Tory Burch·Michael Kors·Kate Spade·Tumi · <strong>VIP Shopper Club 무료 가입 → 쿠폰</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>무료</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">17:00</span></td>
+<td data-label="장소"><span class="v">와이키키로 (40~60분)</span></td>
+<td data-label="할 것"><span class="v">H-1 퇴근 정체</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">18:00–20:00</span></td>
+<td data-label="장소"><span class="v"><strong>Side Street Inn Waikiki</strong> (280 Beach Walk, 2026.9 이전 오픈, 목 16:00–20:30)</span></td>
+<td data-label="할 것"><span class="v">저녁 — 폭찹·볶음밥·갈비 패밀리 스타일 (4~5인 세트 $195)</span></td>
+<td data-label="🅿️ 주차"><span class="v">길 건너 Bank of Hawaii 주차 <strong>2시간 인증</strong> (기본 30분 $4, 카드만)</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>⚠️ 진주만: <strong>불투명 일반 가방 반입 불가</strong> (보관 $7/개) · 투명 가방·복용약은 검색 후 허용될 수 있음 · 사진 신분증</li>
+<li>선택: 미주리 전함 ($42.99) · 태평양항공박물관 ($29.99) — 포드섬 무료 셔틀, <strong>외국인은 여권 지참</strong>. 넣으면 점심 13:30 이후, 아울렛 14:30부터</li>
+<li>점심 대안: <strong>Highway Inn 와이파후</strong> (무료 전용 주차장, 아울렛 가는 길) · <strong>Forty Niner</strong> (1947년, 사이민, 포장·야외석)</li>
+<li>아이에아 루프는 삭제 — 공원 화장실 3곳 모두 11/25까지 폐쇄, 4.8마일이라 블록이 빠듯</li>
+</ul>
+<h3 id="116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아">11/6 (금) · 동부 해안 → 카일루아 (해안 먼저, 저녁은 카일루아)</h3>
+<p>날씨: 카일루아 30% (오전 소나기) · 27°C · 돌풍 13m — 마카푸우는 바람 매우 강함</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">07:30</span></td>
+<td data-label="장소"><span class="v">호텔 출발</span></td>
+<td data-label="할 것"><span class="v"><strong>짐·귀중품은 호텔에서 미리 트렁크에</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">07:50–08:10</span></td>
+<td data-label="장소"><span class="v">☕ <strong>Island Brew Coffeehouse</strong> (하와이카이, 06–18)</span></td>
+<td data-label="할 것"><span class="v">마리나 뷰 커피</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">08:20–08:40</span></td>
+<td data-label="장소"><span class="v">라나이 룩아웃 → 할로나 블로홀</span></td>
+<td data-label="할 것"><span class="v">절벽·블로홀 사진, 각 10분</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료 소형 (15대 / 20~25대)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">08:50–10:35</span></td>
+<td data-label="장소"><span class="v">🥾 <strong>마카푸우 등대 트레일</strong></span></td>
+<td data-label="할 것"><span class="v">왕복 3.2km 포장길 · +150m · 약 2시간 · <strong>그늘·화장실·식수 없음</strong> · 고래 시즌 시작</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료, 07:00 개방, 협소</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">10:35–11:05</span></td>
+<td data-label="장소"><span class="v">와이마날로 경유 → 카일루아</span></td>
+<td data-label="할 것"><span class="v">해안 드라이브</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">11:05–12:00</span></td>
+<td data-label="장소"><span class="v"><strong>Kalapawai Café &amp; Deli</strong> (06–21)</span></td>
+<td data-label="할 것"><span class="v">점심 — 샌드위치·플랫브레드</span></td>
+<td data-label="🅿️ 주차"><span class="v">자체 lot (미확인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:15–14:15</span></td>
+<td data-label="장소"><span class="v">카일루아 비치파크 → 라니카이 비치 (도보 15~20분)</span></td>
+<td data-label="할 것"><span class="v">부모님: 해변 산책 + <strong>Island Snow</strong> 빙수 · (선택) 🥾 아들들 <strong>라니카이 필박스</strong> — 비치파크에서 왕복 포함 약 2시간, 초반 로프 급경사</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>카일루아 비치파크 무료</strong> — 라니카이 Mokulua Dr <strong>종일 주차금지</strong> (2026.7.1~)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">14:30–16:45</span></td>
+<td data-label="장소"><span class="v">🛍 <strong>카일루아 쇼핑</strong></span></td>
+<td data-label="할 것"><span class="v">Target Kailua (07–22) → Whole Foods Kailua (07–22) → 카일루아 타운 부티크</span></td>
+<td data-label="🅿️ 주차"><span class="v">매장별 무료 lot</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">17:00–18:30</span></td>
+<td data-label="장소"><span class="v"><strong>Buzz's Original Steak House</strong> (16:30–21:00)</span></td>
+<td data-label="할 것"><span class="v">저녁 — 비치 앞 스테이크하우스 · 일몰 17:54 · <strong>16:30 이후 탱크톱 불가</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">소형 lot 혼잡 → 비치파크</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">18:30–19:15</span></td>
+<td data-label="장소"><span class="v">팔리 하이웨이로 복귀</span></td>
+<td data-label="할 것"><span class="v">팔리 전망대 (06–18, 비거주자 $7)는 이미 폐장 → 들르려면 저녁 전에</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>쇼핑을 줄이면 <strong>호오말루히아 식물원</strong> (무료, 금 09–16) 추가 가능 · 뵤도인은 <strong>11/10</strong>로 옮김 (이날 넣으면 이동시간이 안 맞음)</li>
+<li>점심 대안: Buzz's 점심 (11–15) · Moena Cafe (코코 마리나, 07–14) · 'Ai Love Nalo (와이마날로, 비건)</li>
+<li>B안 (저녁을 하와이카이에서): 팔리 하이웨이 → 카일루아 점심·쇼핑 → 15:00 마카푸우 → 할로나 → 17:30 <strong>Roy's Hawaii Kai</strong> (16:30–21:30, OpenTable) — 마카푸우를 더운 오후에 걷는 단점</li>
+<li>하나우마 베이: 금요일 영업 · 이틀 전 07:00 HST 예약 → <strong>작은형이 11/4 07:00에 예약 가능</strong>. 넣으려면 마카푸우·카일루아 일부를 빼고 대체 (추가하지 않기)</li>
+<li>코코 크레이터 계단·마우나윌리 폭포(2021년부터 폐쇄)는 제외</li>
+</ul>
+<h3 id="117-토-다이아몬드헤드-kcc-파머스마켓-알라모아나-숙소-이동">11/7 (토) · 다이아몬드헤드 → KCC 파머스마켓 → 알라모아나 → 숙소 이동</h3>
+<p>날씨: 와이키키 20% · 29°C · 다이아몬드헤드 그늘 없음 → 아침 일찍</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">05:45–06:30</span></td>
+<td data-label="장소"><span class="v">메리어트 Kuhio Beach Grill (05:00~)</span></td>
+<td data-label="할 것"><span class="v">조식 (포함) — 일찍</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">06:40</span></td>
+<td data-label="장소"><span class="v">출발 (10분)</span></td>
+<td data-label="할 것"><span class="v">—</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">07:00–08:40</span></td>
+<td data-label="장소"><span class="v">🥾 <strong>다이아몬드헤드</strong></span></td>
+<td data-label="할 것"><span class="v">입장 후 바로 등산 · 왕복 2.6km · +170m · 마지막 계단 · <strong>08:35~08:40 차량 복귀 목표</strong> — 늦으면 정상보다 시간 우선</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>예약 주차 2시간 → 09:00까지 출차</strong> · 슬롯 시작 30분 안에 도착 (늦으면 환불 불가)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">08:55–10:00</span></td>
+<td data-label="장소"><span class="v">🛍 <strong>KCC 파머스마켓</strong> (토 07:30–11:00, 5분)</span></td>
+<td data-label="할 것"><span class="v">구운 전복, 그린토마토 튀김, 열대과일 · 인기 품목 일찍 품절</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>무료</strong> (Lot C·E)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">10:15–11:00</span></td>
+<td data-label="장소"><span class="v">메리어트 복귀 → <strong>11:00 체크아웃</strong></span></td>
+<td data-label="할 것"><span class="v">짐은 벨데스크 보관 — <strong>차에 두지 않기</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">11:30–14:30</span></td>
+<td data-label="장소"><span class="v">🛍 <strong>알라모아나 센터</strong> (10–20)</span></td>
+<td data-label="할 것"><span class="v">점심: <strong>Liliha Bakery</strong> (Macy's 3층, 코코퍼프) 또는 Makai Market 푸드코트 · 쇼핑: Target(2층) · <strong>마지막 30분 Foodland Farms (몰 안)에서 콘도 아침거리 장보기</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>쇼핑객 무료</strong> — 몰 밖 용무로 세우면 견인</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">14:45–15:00</span></td>
+<td data-label="장소"><span class="v">메리어트 짐 회수 → <strong>비치타워 체크인</strong> (15:00)</span></td>
+<td data-label="할 것"><span class="v">호스트에게 도착 전화 · 도보 3분 · 휴식</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>발렛 1대 무료</strong> (높이 6'2")</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">17:30–20:00</span></td>
+<td data-label="장소"><span class="v"><strong>House Without a Key</strong> (할레쿨라니, 17:00–21:30)</span></td>
+<td data-label="할 것"><span class="v">저녁 — 바다 앞 · 매일 밤 훌라 18:30–20:30 · <strong>식당 구역은 예약, 잔디 구역 일몰 칵테일·훌라 좌석은 선착순</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">인증 무료 시간 (미확인)</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>☕ 커피: KCC 마켓 커피 부스 · <strong>Westman Cafe</strong> (워드 빌리지, 07:30–14:00, 수플레 팬케이크·코나커피)</li>
+<li>다이아몬드헤드 매진이면: 07:30 KCC 개장에 맞춰 가고, 다이아몬드헤드는 <strong>월요일 07:00</strong>로</li>
+<li>저녁 대안: <strong>Duke's Waikiki</strong> (해변 앞, 16시부터 라이브) — Outrigger 주차 인증 4시간 $6</li>
+</ul>
+<h3 id="118-일-노스쇼어-종일">11/8 (일) · 노스쇼어 종일</h3>
+<p>날씨: 할레이바 20% 대체로 맑음 · 28°C · 주말 중대형 파도 → 큰 파도는 마른 모래까지 덮칠 수 있음</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">07:15–08:15</span></td>
+<td data-label="장소"><span class="v"><strong>Eggs 'n Things Eggspress</strong> (2464 Kalakaua, 06:00–14:00)</span></td>
+<td data-label="할 것"><span class="v">아침 — 마카다미아 팬케이크·로코모코</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>도보 1분</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">08:30</span></td>
+<td data-label="장소"><span class="v">출발 (H-1→H-2→99번, 약 50분)</span></td>
+<td data-label="할 것"><span class="v">발렛 출차 미리 요청</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">09:30–10:30</span></td>
+<td data-label="장소"><span class="v"><strong>돌 플랜테이션</strong> (09:30–17:30)</span></td>
+<td data-label="할 것"><span class="v">정원 무료 · 기차 $15 · 미로 $10 · 3종 $28 (현장 판매) · Dole Whip</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료 (미확인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">10:45–12:00</span></td>
+<td data-label="장소"><span class="v">🛍 <strong>할레이바 타운</strong></span></td>
+<td data-label="할 것"><span class="v">Haleiwa Store Lots · North Shore Marketplace (서핑 브랜드, Clark Little 갤러리) · <strong>마츠모토 셰이브아이스</strong> (10–18) · ☕ <strong>Island Vintage Coffee 할레이바</strong> (07–17)</span></td>
+<td data-label="🅿️ 주차"><span class="v">고객용 무료</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:00–12:45</span></td>
+<td data-label="장소"><span class="v"><strong>Giovanni's 할레이바</strong> (10:30–17:00)</span></td>
+<td data-label="할 것"><span class="v">점심 — 갈릭 쉬림프 스캠피</span></td>
+<td data-label="🅿️ 주차"><span class="v">푸드트럭 주차장 <strong>$2–3 현금</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">13:00–13:20</span></td>
+<td data-label="장소"><span class="v">라니아케아</span></td>
+<td data-label="할 것"><span class="v">바다거북 (3m 이상 거리) · <strong>안전하게 건너고 볼 자리 없으면 통과</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">길 건너 비포장 · 도로 이설 공사 중단 상태</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">13:30–15:30</span></td>
+<td data-label="장소"><span class="v">🥾 <strong>와이메아 밸리</strong> (화–일 09–16)</span></td>
+<td data-label="할 것"><span class="v">폭포까지 포장 산책 · 성인 $26 · 62세 이상 $20 · 셔틀 편도 $10</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>1시간 $2 · 최대 4시간 $5</strong> (입장객 전용, 해변용 주차 시 견인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">15:45–16:30</span></td>
+<td data-label="장소"><span class="v"><strong>Ted's Bakery</strong> (초코 하우피아 파이) 또는 푸우 오 마후카 헤이아우 (무료 전망) — <strong>둘 중 하나</strong></span></td>
+<td data-label="할 것"><span class="v">—</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">16:45–17:55</span></td>
+<td data-label="장소"><span class="v"><strong>선셋비치</strong> 또는 <strong>에후카이(파이프라인)</strong> 한 곳에 미리 자리 잡기</span></td>
+<td data-label="할 것"><span class="v">파도·일몰 — <strong>물가·암반에서 떨어진 높은 곳, 구조요원 지시 우선</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">길가 / 공원 무료 소형</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">18:30–19:30</span></td>
+<td data-label="장소"><span class="v"><strong>Haleiwa Beach House</strong> (저녁 17:00–20:00, 화 휴무)</span></td>
+<td data-label="할 것"><span class="v">저녁 — 워크인</span></td>
+<td data-label="🅿️ 주차"><span class="v">미확인</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">19:30–20:30</span></td>
+<td data-label="장소"><span class="v">귀가 (약 60분)</span></td>
+<td data-label="할 것"><span class="v">—</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>부모님 피곤하면: Ted's 이후 바로 귀가 (18:00 와이키키) → 저녁은 <strong>마루가메 우동</strong> (도보 10~12분, 10:00–23:00)</li>
+<li>에후카이 필박스는 삭제 — 진흙 급경사 + 일몰 직전 하산이라 뒤 일정이 연쇄 지연</li>
+<li>저녁 대안: Haleiwa Joe's (예약 불가) · 점심 대안: Ted's Bakery 플레이트 런치 · Romy's (카후쿠, 영업시간 출처 상충)</li>
+<li>⚠️ <strong>Coffee Gallery 폐업</strong> (2026.1.31) · Fumi's 폐업 표기 (미확인) · <strong>Seven Brothers 일요일 휴무</strong></li>
+<li>돌 플랜테이션은 할레이바 가는 길에 있어 <strong>먼저 들르는 게 동선상 맞음</strong> (가이드북 기본 코스와 같은 순서)</li>
+</ul>
+<h3 id="119-월-휴식-마노아-쇼핑-와이키키-마지막-여유일">11/9 (월) · 휴식 + 마노아 + 쇼핑 (와이키키 마지막 여유일)</h3>
+<p>날씨: 와이키키 24% · 마노아(산 쪽)는 소나기·진흙 → 우비·모기기피제</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">08:00–09:00</span></td>
+<td data-label="장소"><span class="v"><strong>Café Kaila</strong> (Market City, 월 07:00–18:00)</span></td>
+<td data-label="할 것"><span class="v">아침 — 수상 경력 팬케이크 · 평일이라 대기 짧음</span></td>
+<td data-label="🅿️ 주차"><span class="v">Market City 주차장 (요금 미확인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">09:30–11:00</span></td>
+<td data-label="장소"><span class="v">🥾 <strong>라이언 수목원</strong> (월–금 09–15)</span></td>
+<td data-label="할 것"><span class="v">부모님 기준 — Inspiration Point까지 자갈길 편도 20분 · $10 기부 권장 · 공사로 간헐 휴관 → 당일 확인</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>무료 방문자 전용</strong> (폭포 등산객 주차 시 견인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">(선택)</span></td>
+<td data-label="장소"><span class="v">🥾 아들들: 바로 옆 <strong>마노아 폭포</strong> (왕복 2.6km, 진흙)</span></td>
+<td data-label="할 것"><span class="v">가면 전망대는 생략</span></td>
+<td data-label="🅿️ 주차"><span class="v">Paradise Park <strong>$7</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">(선택) 11:15–11:45</span></td>
+<td data-label="장소"><span class="v"><strong>푸우 우알라카아 전망대</strong> (07:00–18:45)</span></td>
+<td data-label="할 것"><span class="v">호놀룰루·다이아몬드헤드 전경</span></td>
+<td data-label="🅿️ 주차"><span class="v">비거주자 차량 <strong>$7</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:00–13:00</span></td>
+<td data-label="장소"><span class="v"><strong>Merriman's Honolulu</strong> (워드 빌리지, 11–21)</span></td>
+<td data-label="할 것"><span class="v">점심 — 하와이 지역 식재료 요리</span></td>
+<td data-label="🅿️ 주차"><span class="v">Anaha·워드 빌리지 주차장 <strong>무료</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">13:00–16:30</span></td>
+<td data-label="장소"><span class="v">🛍 <strong>워드 빌리지</strong> → <strong>돈키호테 + 월마트</strong></span></td>
+<td data-label="할 것"><span class="v">하와이 소품 편집숍 → 마카다미아·기념품 과자 대량 구매</span></td>
+<td data-label="🅿️ 주차"><span class="v">워드 무료 · 월마트 <strong>3시간 이내</strong> · 돈키호테 노상 미터 $1.50/시간</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">16:30–17:30</span></td>
+<td data-label="장소"><span class="v">콘도 휴식 · <strong>짐 대부분 싸기</strong></span></td>
+<td data-label="할 것"><span class="v">11/10은 22시 귀가, 11/11 07:30 출발</span></td>
+<td data-label="🅿️ 주차"><span class="v">발렛</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">17:30–20:00</span></td>
+<td data-label="장소"><span class="v"><strong>Michel's at the Colony Surf</strong> (2895 Kalakaua, 17:00–21:00)</span></td>
+<td data-label="할 것"><span class="v"><strong>마지막 만찬</strong> — 오션프런트 프렌치 · 일몰 · <strong>예약 필수 · 스마트 캐주얼</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">발렛 (무료 여부 미확인)</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>아침 대안: <strong>Hau Tree</strong> (카이마나 비치 호텔, 평일 08:00–13:30, 바다 바로 앞, 발렛) · <strong>Koko Head Cafe</strong> (카이무키, 월 08–13)</li>
+<li>☕ 커피: <strong>Honolulu Coffee "Bakery on King"</strong> (2643 S King St, 06–16) · Westman Cafe (워드) — 칼라카우아의 Honolulu Coffee Experience Center는 2024.10 폐점</li>
+<li>저녁 대안: <strong>Wolfgang's Steakhouse</strong> (로열 하와이안 센터 — $25↑ 구매 시 첫 1시간 무료, 2·3시간째 $3, 4시간째부터 $8/시간, <strong>카드만, 높이 1.88m</strong>)</li>
+<li>다이아몬드헤드를 토요일에 못 갔으면: 07:00 다이아몬드헤드 → 카할라 몰·Whole Foods 카할라 → 오후 쇼핑 (마노아 대신)</li>
+<li>하나우마 베이는 월·화 휴무</li>
+</ul>
+<h3 id="1110-화-뵤도인-폴리네시안-문화센터-pcc">11/10 (화) · 뵤도인 → 폴리네시안 문화센터 (PCC)</h3>
+<p>날씨: 라이에 소나기 65% (모델) · 바람 강함 → 우비 · <strong>밤 운전 1시간+</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">08:00–09:00</span></td>
+<td data-label="장소"><span class="v"><strong>Hau Tree</strong> (평일 08:00~) 또는 Eggs 'n Things</span></td>
+<td data-label="할 것"><span class="v">아침</span></td>
+<td data-label="🅿️ 주차"><span class="v">발렛 / 도보</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">09:15</span></td>
+<td data-label="장소"><span class="v">출발 — Likelike → Kahekili</span></td>
+<td data-label="할 것"><span class="v">짐은 전날 밤 정리 완료</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">09:45–10:45</span></td>
+<td data-label="장소"><span class="v"><strong>뵤도인 사원</strong> (08:30–16:30, 최종 입장 16:15)</span></td>
+<td data-label="할 것"><span class="v">사원·잉어 연못 · 요금·결제수단은 전화 확인 · <strong>해변복 차림 피하기</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">유료 (금액 확인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">10:50</span></td>
+<td data-label="장소"><span class="v">쿠알로아 지나며 차이나맨스햇 전망</span></td>
+<td data-label="할 것"><span class="v">쿠알로아 랜치는 예약 투어라 참고만</span></td>
+<td data-label="🅿️ 주차"><span class="v">쿠알로아 비치파크 무료 (미확인)</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">11:20–12:00</span></td>
+<td data-label="장소"><span class="v"><strong>Seven Brothers 라이에</strong> (화 11–21) 또는 <strong>Giovanni's 카후쿠</strong> (10:30–18:30) 또는 후킬라우 마켓플레이스</span></td>
+<td data-label="할 것"><span class="v">점심</span></td>
+<td data-label="🅿️ 주차"><span class="v">PCC 주차장 무료 / Giovanni's 카후쿠 전용 무료</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:00</span></td>
+<td data-label="장소"><span class="v"><strong>PCC 도착</strong></span></td>
+<td data-label="할 것"><span class="v">—</span></td>
+<td data-label="🅿️ 주차"><span class="v"><strong>무료 · 입구 셔틀</strong></span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">12:15–17:30</span></td>
+<td data-label="장소"><span class="v">PCC 마을 관람</span></td>
+<td data-label="할 것"><span class="v">6개 마을 · <strong>카누쇼 12:50 프리쇼, 13:00–13:20 본공연</strong> · 마을 관람은 루아우 집합 시각에 맞춰 마무리</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">16:40경</span></td>
+<td data-label="장소"><span class="v">루아우</span></td>
+<td data-label="할 것"><span class="v">Aliʻi Lūʻau (~18:05) / Gateway 뷔페 (~19:00)</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">18:45</span></td>
+<td data-label="장소"><span class="v"><strong>HĀ: Breath of Life</strong> 착석</span></td>
+<td data-label="할 것"><span class="v">공연 19:15–20:35</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">20:50–22:05</span></td>
+<td data-label="장소"><span class="v">귀가 (약 75분)</span></td>
+<td data-label="할 것"><span class="v">Kam Hwy 조명 적은 2차선 → <strong>운전자 지정</strong> · 출발 전 GoAkamai로 Likelike·H-3 야간 통제 확인</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>PCC 패키지 (성인 1인, 세금 별도): Super Ambassador $293.95 · <strong>Aliʻi Lūʻau $197.95</strong> · Gateway Buffet $157.95 (할인 $138.95 표시 — 11/10 적용은 결제창 확인) · Lūʻau &amp; HĀ $138.95 (16:40부터, 마을 없음) · Islands + HĀ $123.95 (저녁 없음)</li>
+<li>밤 운전이 부담되면 <strong>PCC 공식 왕복 버스 $28/인</strong> (와이키키 22:30경 도착)</li>
+<li>뵤도인 대신 <strong>호오말루히아 식물원</strong> (화 09–16, 무료, 권장 체류 약 2시간)도 가능 — 하나만</li>
+<li>느슨한 B안: 오전 와이키키 쇼핑 (로열 하와이안 센터·인터내셔널 마켓플레이스, 10시 오픈) → 10:45 바로 출발 → 라이에 점심</li>
+<li>Kahuku Farms 카페는 화요일 휴무</li>
+</ul>
+<h3 id="1111-수-출발-veterans-day-공휴일">11/11 (수) · 출발 (Veterans Day 공휴일)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>장소</th>
+<th>할 것</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="시간"><span class="v">06:15–06:50</span></td>
+<td data-label="장소"><span class="v"><strong>Eggs 'n Things Eggspress</strong> (06:00~, 도보 1분) 포장 또는 콘도</span></td>
+<td data-label="할 것"><span class="v">아침 · 기내 간식은 <strong>무스비 카페 이야스메</strong> (Kuhio Ave, 06:30~)</span></td>
+<td data-label="🅿️ 주차"><span class="v">도보</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">07:00</span></td>
+<td data-label="장소"><span class="v">발렛 출차 요청</span></td>
+<td data-label="할 것"><span class="v">☕ Kai Coffee (하얏트, 도보 2분)</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v"><strong>07:30</strong></span></td>
+<td data-label="장소"><span class="v">콘도 출발 → 주유</span></td>
+<td data-label="할 것"><span class="v">반납 전 주유 (선불 주유 옵션이면 생략)</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">08:00</span></td>
+<td data-label="장소"><span class="v"><strong>Sixt 반납</strong> — 렌터카센터 <strong>4층</strong> "Car rental returns"</span></td>
+<td data-label="할 것"><span class="v">짐 내리고 도보로 T2</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="시간"><span class="v">08:20</span></td>
+<td data-label="장소"><span class="v">T2 대한항공 카운터</span></td>
+<td data-label="할 것"><span class="v"><strong>출발 3시간 이상 전</strong> 도착 (11:40이든 12:05이든 커버) · 체크인 마감 = 출발 1시간 전 · 탑승 시작 = 35분 전</span></td>
+<td data-label="🅿️ 주차"><span class="v">—</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>공휴일이어도 와이키키 일부 미터는 유료 → 현장 표지 우선</li>
+<li>Leonard's Bakery (05:30~)는 주차 6칸뿐이고 발렛 차를 따로 빼야 해서 이날은 비추천</li>
+</ul>
+<hr />
+<h2 id="3-하이킹-가이드북-표와-조사-결과-대조">3. 하이킹 — 가이드북 표와 조사 결과 대조</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>코스</th>
+<th>가이드북 (난이도 · 왕복 · 해발 · 시간)</th>
+<th>조사 결과 (2026.11)</th>
+<th>판정</th>
+<th>부모님</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="코스"><span class="v">① 라니카이 필박스</span></td>
+<td data-label="가이드북 (난이도 · 왕복 · 해발 · 시간)"><span class="v">초중급 · 2.9km · 198m · 1h30</span></td>
+<td data-label="조사 결과 (2026.11)"><span class="v">왕복 약 1시간 (비치파크 접근 포함 약 2시간) · <strong>초반 로프 잡는 급경사 흙길, 난간 없음</strong> · 라니카이 길가 <strong>종일 주차금지</strong> (2026.7~) → 카일루아 비치파크에서 도보 15분</span></td>
+<td data-label="판정"><span class="v">거리 비슷 · <strong>난이도는 가이드북보다 어려움</strong> · 주차 정보 바뀜</span></td>
+<td data-label="부모님"><span class="v">비추천 (아들만, 선택)</span></td>
+</tr>
+<tr>
+<td data-label="코스"><span class="v">② 마카푸우</span></td>
+<td data-label="가이드북 (난이도 · 왕복 · 해발 · 시간)"><span class="v">초급 · 4km · 154m · 1h30</span></td>
+<td data-label="조사 결과 (2026.11)"><span class="v">DLNR 왕복 2마일(<strong>3.2km</strong>) 포장길 · +150m(500ft) · 약 2시간 · 그늘·화장실·식수 없음</span></td>
+<td data-label="판정"><span class="v">고도 일치 · <strong>거리는 가이드북이 길게 적음</strong> · 시간은 부모님 기준 2시간</span></td>
+<td data-label="부모님"><span class="v"><strong>가능</strong></span></td>
+</tr>
+<tr>
+<td data-label="코스"><span class="v">③ 코코 헤드</span></td>
+<td data-label="가이드북 (난이도 · 왕복 · 해발 · 시간)"><span class="v">중급 · 2.9km (1,048계단) · 302m · 1~2h</span></td>
+<td data-label="조사 결과 (2026.11)"><span class="v">1,048 침목계단 · 급경사·무그늘 · 2025년 사고로 일시 폐쇄, 2026 개방 보도 (공식 미확인)</span></td>
+<td data-label="판정"><span class="v">수치 일치 · <strong>'중급'은 과소평가</strong></span></td>
+<td data-label="부모님"><span class="v">비추천</span></td>
+</tr>
+<tr>
+<td data-label="코스"><span class="v">④ 다이아몬드 헤드</span></td>
+<td data-label="가이드북 (난이도 · 왕복 · 해발 · 시간)"><span class="v">초급 · 2.9km · 138m · 1h30</span></td>
+<td data-label="조사 결과 (2026.11)"><span class="v">DLNR 왕복 1.6마일(<strong>2.6km</strong>) · +560ft(<strong>171m</strong>) · 마지막 계단 · 1.5~2시간 · <strong>비거주자 예약 필수</strong> ($5/인 + 주차 $10, 주차 슬롯 2시간)</span></td>
+<td data-label="판정"><span class="v">거리·고도 조금 차이 · <strong>예약 필수 정보 누락</strong></span></td>
+<td data-label="부모님"><span class="v"><strong>가능</strong> (천천히)</span></td>
+</tr>
+<tr>
+<td data-label="코스"><span class="v">⑤ 마노아 폭포</span></td>
+<td data-label="가이드북 (난이도 · 왕복 · 해발 · 시간)"><span class="v">초급 · 2.6km · 163m · 1h30</span></td>
+<td data-label="조사 결과 (2026.11)"><span class="v">왕복 1.6마일(2.6km) · <strong>진흙·미끄럼</strong> · Paradise Park 주차 $7 (08–18)</span></td>
+<td data-label="판정"><span class="v">거리 일치 · 고도 미확인 · 비 오면 진흙</span></td>
+<td data-label="부모님"><span class="v">선택 (부모님은 옆 라이언 수목원)</span></td>
+</tr>
+<tr>
+<td data-label="코스"><span class="v">⑥ 카에나 포인트</span></td>
+<td data-label="가이드북 (난이도 · 왕복 · 해발 · 시간)"><span class="v">고급 · 9km · 135m · 4h</span></td>
+<td data-label="조사 결과 (2026.11)"><span class="v">DLNR 편도 2.5마일 (왕복 약 8km) · 그늘 없음 · 폭풍 피해로 차량 접근 폐쇄</span></td>
+<td data-label="판정"><span class="v">대체로 일치</span></td>
+<td data-label="부모님"><span class="v">비추천</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>가이드북에 없는 공통 주의: <strong>2026년 9월 허리케인 Lowell·Nolo 이후 트레일 상태 변동</strong> → 출발 전 DLNR 공지 확인 · <strong>트레일 입구 차량털이</strong> 잦음</li>
+<li>가이드북 밖에서 부모님용으로 추가: <strong>와이메아 밸리 폭포</strong> (포장 산책) · <strong>라이언 수목원</strong> · <strong>호오말루히아 식물원</strong> · <strong>푸우 우알라카아 전망대</strong> (차로)</li>
+</ul>
+<hr />
+<h2 id="4-가이드북-코스와-대조-시간동선-체크">4. 가이드북 코스와 대조 — 시간·동선 체크</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>우리 날짜</th>
+<th>우리 동선</th>
+<th>가이드북에서 같은 조합</th>
+<th>체크 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="우리 날짜"><span class="v">11/5 목</span></td>
+<td data-label="우리 동선"><span class="v">진주만 → 604 점심 → 와이켈레</span></td>
+<td data-label="가이드북에서 같은 조합"><span class="v">아이와 함께 DAY04 (펄하버 → 점심 → 와이켈레 → 루스 크리스)</span></td>
+<td data-label="체크 결과"><span class="v">✅ 같은 조합 · 진주만 주차 $7·불투명 가방 반입 불가 추가 · 예약 1시간 전 도착 · 귀가 H-1 정체</span></td>
+</tr>
+<tr>
+<td data-label="우리 날짜"><span class="v">11/6 금</span></td>
+<td data-label="우리 동선"><span class="v">해안 전망대 → 마카푸우 → 카일루아 점심·해변 → 카일루아 쇼핑 → Buzz's</span></td>
+<td data-label="가이드북에서 같은 조합"><span class="v">쇼핑 DAY03 (코코헤드 카페 → 카할라 몰 → 동부 해안 → 마카푸우 → 할로나 → 오노 스테이크&amp;쉬림프 → 카일루아 타운)</span></td>
+<td data-label="체크 결과"><span class="v">✅ 비슷 · 가이드북은 카할라 몰(10시 오픈)을 아침에 넣어 <strong>마카푸우를 한낮에 걷게 됨</strong> → 우리 순서(해안 먼저)가 덜 더움 · 뵤도인은 이동시간 때문에 11/10로</span></td>
+</tr>
+<tr>
+<td data-label="우리 날짜"><span class="v">11/7 토</span></td>
+<td data-label="우리 동선"><span class="v">다이아몬드헤드 → KCC → 알라모아나</span></td>
+<td data-label="가이드북에서 같은 조합"><span class="v">기본 DAY02 (KCC(토) → 다이아몬드헤드 → 보가츠 카페 → 이올라니 궁전 → 모쿠 키친 → 탄탈루스 야경)</span></td>
+<td data-label="체크 결과"><span class="v">✅ 같은 조합 (KCC는 <strong>토요일만</strong> → 우리 11/7 토 ✓) · 가이드북의 <strong>마루가메 우동 아침은 불가</strong> (10시 오픈) · <strong>탄탈루스 야경은 공원 18:45 폐장</strong>이라 일몰~18:45만</span></td>
+</tr>
+<tr>
+<td data-label="우리 날짜"><span class="v">11/8 일</span></td>
+<td data-label="우리 동선"><span class="v">돌 → 할레이바 → 라니아케아 → 와이메아 → 선셋비치</span></td>
+<td data-label="가이드북에서 같은 조합"><span class="v">기본 DAY03 (레인보우 드라이브인 → 돌 → 할레이바 → 라니아케아 → 로미스 → 와이켈레 → 루스 크리스)</span></td>
+<td data-label="체크 결과"><span class="v">✅ 같은 순서 · 와이켈레는 11/5에 이미 · 레인보우 드라이브인은 공식 매일 07–21이지만 임시휴업 공지도 있어 전화 확인 · Seven Brothers 일요일 휴무</span></td>
+</tr>
+<tr>
+<td data-label="우리 날짜"><span class="v">11/9 월</span></td>
+<td data-label="우리 동선"><span class="v">수목원 → (전망대) → 워드·쇼핑</span></td>
+<td data-label="가이드북에서 같은 조합"><span class="v">쇼핑 DAY04 (모닝 글라스 커피 → 차이나타운 → 카카아코 그래피티 → 모쿠 키친 → 워드 빌리지)</span></td>
+<td data-label="체크 결과"><span class="v">일부 반영 (워드) · 카카아코 벽화는 워드 근처라 쇼핑 중 추가 가능 · <strong>모닝 글라스 커피는 월요일 휴무 (추정)</strong> · 이올라니 궁전은 월요일 휴관</span></td>
+</tr>
+<tr>
+<td data-label="우리 날짜"><span class="v">11/10 화</span></td>
+<td data-label="우리 동선"><span class="v">뵤도인 → 라이에 점심 → PCC</span></td>
+<td data-label="가이드북에서 같은 조합"><span class="v">역사·문화 DAY03 (동부 해안 → 마카푸우 → 할로나 → 점심 → PCC → PCC 뷔페)</span></td>
+<td data-label="체크 결과"><span class="v">PCC <strong>일·수 휴무</strong> → 화요일 ✓ · 가이드북처럼 동부 해안까지 묶으면 하루가 너무 김 → 우리는 분리 (11/6)</span></td>
+</tr>
+<tr>
+<td data-label="우리 날짜"><span class="v">11/4 수</span></td>
+<td data-label="우리 동선"><span class="v">공항 → 추가 운전자 등록 → 호텔 짐 → 점심 → 장보기 → 체크인</span></td>
+<td data-label="가이드북에서 같은 조합"><span class="v">기본 DAY01 (공항 → 호텔 → 하드락 카페 → 알라모아나 → 마이 타이 바)</span></td>
+<td data-label="체크 결과"><span class="v">시차 첫날이라 장보기 위주로 가볍게</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>하루 밀도: 가이드북 4박6일은 하루 4~5곳 → 우리는 7박이라 <strong>하루 메인 1~2곳 + 식사</strong> 리듬 유지</li>
+<li>가이드북에만 있는 곳 (선택 추가): 하나우마 베이 (예약·월화 휴무) · 이올라니 궁전 · 비숍 박물관 · 호놀룰루 미술관 · 차이나타운 · 선셋 크루즈 · 쿠알로아 랜치</li>
+</ul>
+<hr />
+<h2 id="5-가이드북-식당명소-현재-영업-확인-112">5. 가이드북 식당·명소 — 현재 영업 확인 (11/2)</h2>
+<ul>
+<li>❌ <strong>폐업</strong>: 마리포사 (니먼마커스 알라모아나와 함께 2026.5 폐업) · 알라모아나 마이 타이 바 (2020) → 칵테일은 <strong>로열 하와이안 마이 타이 바</strong> (매일 11–23)</li>
+<li>❓ <strong>영업 미확인</strong> → 출발 전 전화: 오노 스테이크 앤 슈림프 쉑 (☎ 808-259-0808) · 스윗 이즈 카페 (☎ 808-737-7771) · 오아후 멕시칸 그릴 · "로라 이모네" (가게 식별 불가)</li>
+<li>⚠️ <strong>출처 상충</strong>: 레인보우 드라이브인 — 공식 사이트는 매일 07–21, 2026년 임시휴업 공지도 있음 → ☎ 808-737-0177</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>가이드북 장소</th>
+<th>상태</th>
+<th>영업·휴무 → 우리 날짜 영향</th>
+<th>🅿️ 주차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="가이드북 장소"><span class="v">하드락 카페</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">월–목 11–22 · 금 11–23 · 토 09–23 · 일 09–22 · 11/11 재향군인의 날 행사로 혼잡</span></td>
+<td data-label="🅿️ 주차"><span class="v">Bank of Hawaii 차고 인증 4시간 $7 · 카드만</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">마이 타이 바 (로열 하와이안)</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 11–23</span></td>
+<td data-label="🅿️ 주차"><span class="v">로열 하와이안 센터 차고</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">마루가메 우동</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 10–23 → <strong>가이드북의 '아침'은 불가</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">없음 · 도보</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">보가츠 카페</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 07–15 → 11/7 다이아몬드헤드 뒤 브런치 대안</span></td>
+<td data-label="🅿️ 주차"><span class="v">소규모 공용 + 노상 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">모쿠 키친 (카카아코)</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">일–수 11–21 · 목–토 11–22</span></td>
+<td data-label="🅿️ 주차"><span class="v">SALT 차고 1시간 무료 · 인증 2시간 $2</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">루스 크리스 와이키키</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">저녁 위주 (시간 미확인)</span></td>
+<td data-label="🅿️ 주차"><span class="v">Embassy Suites 유료 발렛</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">테디스 비거 버거스</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 10–21</span></td>
+<td data-label="🅿️ 주차"><span class="v">없음 · 도보 5분</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">알로하 비어 컴퍼니</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">시간 출처 상충 → 전화</span></td>
+<td data-label="🅿️ 주차"><span class="v">인증 발렛 $6</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">카페 카일라</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">월–금 07–18 · 토·일 07–15 → <strong>11/9 아침 ✓</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">마켓시티 무료 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">아일랜드 빈티지 커피 / 와인 바</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">와인 바 매일 07–22</span></td>
+<td data-label="🅿️ 주차"><span class="v">로열 하와이안 센터 $25↑ 첫 1시간 무료</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">토미 바하마</span></td>
+<td data-label="상태"><span class="v">영업 (추정)</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">시간 미확인</span></td>
+<td data-label="🅿️ 주차"><span class="v">Bank of Hawaii 차고 인증 4시간 $7</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">릴리하 베이커리 (인터내셔널 마켓플레이스)</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 07–22 · 비치워크 지점 신규</span></td>
+<td data-label="🅿️ 주차"><span class="v">마켓플레이스 유료 차고</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">스프라우트 샌드위치 숍</span></td>
+<td data-label="상태"><span class="v">영업 (2026.10 기사)</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">시간 미확인 · 온라인 주문 픽업</span></td>
+<td data-label="🅿️ 주차"><span class="v">노상 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">야드 하우스</span></td>
+<td data-label="상태"><span class="v">영업 (추정)</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">시간 미확인</span></td>
+<td data-label="🅿️ 주차"><span class="v">자체 없음 · 근처 2시간 $12</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">무스비 카페 이야스메</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">모나크점 매일 06:30–21 → <strong>11/11 아침·기내 간식 ✓</strong></span></td>
+<td data-label="🅿️ 주차"><span class="v">없음 · 도보</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">헤븐리 아일랜드 라이프스타일</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 07–21:30 → 콘도 근처 아침 대안</span></td>
+<td data-label="🅿️ 주차"><span class="v">Hyatt Centric 차고 $30↑ 2시간 인증</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">니코스 피어 38</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">월–토 06:30–21 · 일 10–21 → 11/4 점심 대안</span></td>
+<td data-label="🅿️ 주차"><span class="v">부두 무료 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">코코 헤드 카페</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">브런치 월–금 08–13 · 토·일 08–14 → 11/9 아침 대안 ✓</span></td>
+<td data-label="🅿️ 주차"><span class="v">노상 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">푹 유엔 시푸드</span></td>
+<td data-label="상태"><span class="v">영업 (추정)</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">시간 미확인</span></td>
+<td data-label="🅿️ 주차"><span class="v">맥컬리 쇼핑센터 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">모닝 글라스 커피</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">화–금 07–14 · 토·일 08–14 · <strong>월 휴무 (추정)</strong> → 11/9 불가</span></td>
+<td data-label="🅿️ 주차"><span class="v">노상 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">마우이 브루잉 와이키키</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 11–23</span></td>
+<td data-label="🅿️ 주차"><span class="v">호텔 유료 발렛</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">헬레나스 하와이안 푸드</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v"><strong>화–금만</strong> 10–19:30 → 11/4·11/5만 가능</span></td>
+<td data-label="🅿️ 주차"><span class="v">작은 자체 주차장</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">훌라 그릴 와이키키</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 07–22:30</span></td>
+<td data-label="🅿️ 주차"><span class="v">호텔 유료 발렛</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">로미스 카후쿠</span></td>
+<td data-label="상태"><span class="v">영업 (추정)</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 vs 목–일 출처 상충</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료 비포장 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">세븐 브라더스</span></td>
+<td data-label="상태"><span class="v">영업</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">11–21 · 라이에·할레이바 <strong>일요일 휴무</strong> → 11/10 화 ✓</span></td>
+<td data-label="🅿️ 주차"><span class="v">자체 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">쿠알로아 랜치</span></td>
+<td data-label="상태"><span class="v">운영</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">07:30–18:00 · UTV 투어는 몇 주 전 매진</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료 (추정)</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">이올라니 궁전</span></td>
+<td data-label="상태"><span class="v">운영</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">투어 화–토 · <strong>일·월 휴관</strong> → 11/9 불가 · 11/10 오전 가능 · 예약 권장</span></td>
+<td data-label="🅿️ 주차"><span class="v">궁전 미터 2시간 $4</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">비숍 박물관</span></td>
+<td data-label="상태"><span class="v">운영</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">매일 09–17 (공식)</span></td>
+<td data-label="🅿️ 주차"><span class="v">비거주자 $16</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">호놀룰루 미술관</span></td>
+<td data-label="상태"><span class="v">운영</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v"><strong>월·화 휴관</strong> · 수·목·토·일 10–18 · 금 10–21 · $25</span></td>
+<td data-label="🅿️ 주차"><span class="v">1111 Victoria St 시간당 $3 · 카드만</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">카카아코 벽화</span></td>
+<td data-label="상태"><span class="v">상시</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">워드 빌리지 근처 → 11/9 추가 가능</span></td>
+<td data-label="🅿️ 주차"><span class="v">SALT 차고 1시간 무료</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">탄탈루스 (푸우 우알라카아)</span></td>
+<td data-label="상태"><span class="v">운영</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">07:00–18:45 → <strong>깜깜한 야경 불가</strong>, 일몰~18:45만</span></td>
+<td data-label="🅿️ 주차"><span class="v">비거주자 $7</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">선셋 크루즈 (Star of Honolulu)</span></td>
+<td data-label="상태"><span class="v">운영</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">17:30–19:30 · 금요일 불꽃놀이 · 성인 $129~</span></td>
+<td data-label="🅿️ 주차"><span class="v">항구 근처 유료 차고</span></td>
+</tr>
+<tr>
+<td data-label="가이드북 장소"><span class="v">와이마날로 베이 비치파크</span></td>
+<td data-label="상태"><span class="v">운영</span></td>
+<td data-label="영업·휴무 → 우리 날짜 영향"><span class="v">—</span></td>
+<td data-label="🅿️ 주차"><span class="v">무료 (추정) · 차량털이 주의</span></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="6-주차-한눈에">6. 주차 한눈에</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="구분"><span class="v">숙소</span></td>
+<td data-label="내용"><span class="v">메리어트 셀프 $65/일 · 발렛 $80/일 (리조트피 불포함) · 모운사랏 애비뉴 무료 노상은 <strong>자리 보장 없음</strong> · 비치타워 <strong>발렛 1대 무료</strong> (높이 6'2" = 188cm)</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">렌터카</span></td>
+<td data-label="내용"><span class="v">Sixt = T2 길 건너 <strong>렌터카센터</strong> (300 Rodgers Blvd) · 반납 <strong>4층</strong> · 차종은 "또는 동급" → 실제 차 높이·좌석 현장 확인</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">예약·유료</span></td>
+<td data-label="내용"><span class="v">다이아몬드헤드 $10 (예약 슬롯 2시간) · 진주만 $7 (카드) · 팔리 전망대 $7 · 푸우 우알라카아 $7 · 마노아 폭포 $7 · 와이메아 밸리 1시간 $2 · 최대 4시간 $5 · 뵤도인 유료 (금액 확인)</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">현금만</span></td>
+<td data-label="내용"><span class="v">Giovanni's 할레이바 푸드트럭 주차장 $2–3</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">카드만</span></td>
+<td data-label="내용"><span class="v">진주만 · 다이아몬드헤드 · 로열 하와이안 센터 주차장</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">무료</span></td>
+<td data-label="내용"><span class="v">알라모아나 (쇼핑객만) · 워드 빌리지 · 와이켈레 · 카일루아 매장 · KCC · 마카푸우 · 카일루아 비치파크 · PCC · 라이언 수목원 (방문자만)</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">시간 제한</span></td>
+<td data-label="내용"><span class="v">월마트 <strong>3시간 이내</strong> (초과 시 위반 처리) · 로열 하와이안 센터 4시간째부터 $8/시간 · 공휴일에도 와이키키 일부 미터 유료</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">주차 금지·견인</span></td>
+<td data-label="내용"><span class="v">라니카이 Mokulua Dr 종일 금지 · 알라모아나 몰 밖 용무 · 와이메아 밸리 해변용 · 라이언 수목원 폭포 등산객</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">높이 제한 1.88m</span></td>
+<td data-label="내용"><span class="v">로열 하와이안 센터 · 비치타워 — Acadia 실제 연식·트림 높이 확인 · <strong>풀사이즈 SUV 업그레이드 거절</strong></span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">차량털이</span></td>
+<td data-label="내용"><span class="v">마카푸우 · 할로나 · 라나이 룩아웃 · 카일루아 · 라니아케아 · 트레일 입구 → <strong>차 안 비우기, 짐은 숙소에서 미리 트렁크에</strong></span></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="7-codex-검수-반영-이력-112">7. Codex 검수 반영 이력 (11/2)</h2>
+<p>Codex가 실시간 웹 검색으로 28건 지적 → <strong>전부 반영</strong> (기각 0). 주요 변경:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>변경</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="구분"><span class="v">사실 수정</span></td>
+<td data-label="변경"><span class="v">Sixt는 공항 밖 셔틀이 아니라 <strong>T2 길 건너 렌터카센터</strong> · 팔리 전망대 <strong>폐쇄 아님</strong> (06–18) · Honolulu Coffee Experience Center <strong>폐점</strong> → Bakery on King · 미주리 $44.99 → <strong>$42.99</strong> · PCC 카누쇼 12:40 → <strong>12:50/13:00</strong> · 와이메아 주차 <strong>$2/1시간, 최대 $5</strong> · 로열 하와이안 센터 4시간째부터 $8 · 비숍 박물관 화요일 휴관설 삭제 · 일출 06:36~06:40</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">동선·시간</span></td>
+<td data-label="변경"><span class="v">귀국일 콘도 <strong>07:30 출발</strong> · 11/4 <strong>추가 운전자 등록 + 호텔 짐 보관을 점심보다 먼저</strong> · 11/5 USS Arizona <strong>1시간 전 도착 → 09:15 이후 슬롯</strong> · 11/6 뵤도인 → 11/10로 이동, 필박스는 2시간 선택 · 11/7 다이아몬드헤드 <strong>09:00 출차</strong> 기준 · 11/7 장보기 왕복 제거 · 11/8 <strong>에후카이 필박스 삭제</strong> · 11/9 수목원 위주로 축소 · 11/10 짐은 전날 밤</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">리스크</span></td>
+<td data-label="변경"><span class="v">Acadia 7인승 <strong>2+2+3 좌석</strong> 확인 · 진주만 투명 가방·포드섬 여권 · 고파도 물가 접근 금지 · 월마트 3시간 제한 · 공휴일 미터 · 뵤도인 요금·결제 미확인 → 전화</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">체크리스트</span></td>
+<td data-label="변경"><span class="v">여권 6개월 규정 예외(한국) · ESTA는 서울팀 기준 · 보조배터리 대한항공 현행 규정 · 렌터카 보험·주유·추가 운전자 · 조식 인원·리조트피 · 예약 QR 오프라인 저장</span></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="출처-주요">출처 (주요)</h2>
+<ul>
+<li>날씨: <a href="https://forecast.weather.gov/MapClick.php?lat=21.2766&amp;lon=-157.8228" target="_blank" rel="noopener">NWS Honolulu 7일 예보</a> · <a href="https://forecast.weather.gov/product.php?site=HFO&amp;issuedby=HFO&amp;product=AFD" target="_blank" rel="noopener">NWS 예보 토론</a> · <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> · <a href="https://www.timeanddate.com/sun/usa/honolulu" target="_blank" rel="noopener">일출·일몰</a></li>
+<li>하이킹: <a href="https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/" target="_blank" rel="noopener">DLNR 다이아몬드헤드</a> · <a href="https://gostateparks.hawaii.gov/diamondhead/about" target="_blank" rel="noopener">다이아몬드헤드 예약</a> · <a href="https://dlnr.hawaii.gov/dsp/hiking/oahu/makapuu-point-lighthouse-trail/" target="_blank" rel="noopener">DLNR 마카푸우</a> · <a href="https://dlnr.hawaii.gov/dsp/hiking/oahu/aiea-loop-trail" target="_blank" rel="noopener">DLNR 아이에아 루프</a> · <a href="https://dlnr.hawaii.gov/dsp/hiking/oahu/kaena-point-trail/" target="_blank" rel="noopener">DLNR 카에나 포인트</a> · <a href="https://manoa.hawaii.edu/lyon/visit/visit-lyon" target="_blank" rel="noopener">라이언 수목원</a> · <a href="https://dlnr.hawaii.gov/dsp/parks/oahu/puu-ualakaa-state-wayside" target="_blank" rel="noopener">푸우 우알라카아</a> · <a href="https://www.kailuabeachadventures.com/kailua-currents//new-lanikai-parking-restrictions-what-visitors-need-to-know-before-visiting-in-2026" target="_blank" rel="noopener">라니카이 주차 제한 2026</a> · <a href="https://dlnr.hawaii.gov/dsp/parks/oahu/nuuanu-pali-state-wayside" target="_blank" rel="noopener">팔리 전망대</a> · <a href="https://www.waimeavalley.net/admission" target="_blank" rel="noopener">와이메아 밸리</a> · <a href="https://www.waimeavalley.net/direction-parking" target="_blank" rel="noopener">와이메아 주차</a> · <a href="https://oceansafety.hawaii.gov/safety-around-the-shoreline/" target="_blank" rel="noopener">하와이 해안 안전</a></li>
+<li>진주만: <a href="https://www.nps.gov/perl/planyourvisit/basicinfo.htm" target="_blank" rel="noopener">NPS 기본 정보</a> · <a href="https://www.nps.gov/perl/planyourvisit/safety.htm" target="_blank" rel="noopener">NPS 반입 규정</a> · <a href="https://www.recreation.gov/ticket/facility/233338" target="_blank" rel="noopener">USS Arizona 예약</a> · <a href="https://ussmissouri.org/buy-tickets" target="_blank" rel="noopener">미주리 요금</a></li>
+<li>렌터카: <a href="https://www.sixt.com/car-rental/usa/honolulu/hnl-honolulu-airport/" target="_blank" rel="noopener">Sixt 호놀룰루 공항</a> · <a href="https://www.sixt.com/help-center/articles/additional-driver/" target="_blank" rel="noopener">Sixt 추가 운전자</a></li>
+<li>쇼핑: <a href="https://www.alamoanacenter.com/en/visit" target="_blank" rel="noopener">알라모아나</a> · <a href="https://www.royalhawaiiancenter.com/visit" target="_blank" rel="noopener">로열 하와이안 센터</a> · <a href="https://www.premiumoutlets.com/outlet/waikele/about" target="_blank" rel="noopener">와이켈레</a> · <a href="https://hfbf.org/farmers-markets/kcc/" target="_blank" rel="noopener">KCC 파머스마켓</a> · <a href="https://www.secureparkinghi.com/700-keeaumoku/" target="_blank" rel="noopener">월마트 주차</a> · <a href="https://www.hawaiinewsnow.com/2026/01/29/dfs-hawaii-closes-doors-waikiki/" target="_blank" rel="noopener">T Galleria 폐점</a></li>
+<li>식당: <a href="https://eggsnthings.com/locations" target="_blank" rel="noopener">Eggs 'n Things</a> · <a href="https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/dining" target="_blank" rel="noopener">Marriott 다이닝</a> · <a href="https://tikis.com/news/where-to-park-in-waikiki-free-valet-parking-at-tikis-and-affordable-waikiki-parking-tips" target="_blank" rel="noopener">Tiki's 주차</a> · <a href="https://sidestreetinn.com/" target="_blank" rel="noopener">Side Street Inn</a> · <a href="https://www.halekulani.com/dining/house-without-a-key" target="_blank" rel="noopener">House Without a Key</a> · <a href="https://michelshawaii.com" target="_blank" rel="noopener">Michel's</a> · <a href="https://www.merrimanshawaii.com/honolulu" target="_blank" rel="noopener">Merriman's</a> · <a href="https://www.myhighwayinn.com" target="_blank" rel="noopener">Highway Inn</a> · <a href="https://nicospier38.com" target="_blank" rel="noopener">Nico's Pier 38</a> · <a href="https://cafe-kaila-hawaii.com" target="_blank" rel="noopener">Café Kaila</a> · <a href="https://www.buzzsoriginalsteakhouse.com/" target="_blank" rel="noopener">Buzz's</a> · <a href="https://www.royyamaguchi.com/roys-hawaiikai-sidebar" target="_blank" rel="noopener">Roy's Hawaii Kai</a> · <a href="https://www.giovannisshrimptruck.com/" target="_blank" rel="noopener">Giovanni's</a> · <a href="https://www.hawaiinewsnow.com/2026/01/23/north-shore-coffee-shop-close-after-nearly-4-decades/" target="_blank" rel="noopener">Coffee Gallery 폐업</a> · <a href="https://www.honolulucoffee.com/pages/bakery-on-king" target="_blank" rel="noopener">Honolulu Coffee Bakery on King</a> · <a href="https://www.haleiwabeachhouse.com/" target="_blank" rel="noopener">Haleiwa Beach House</a> · <a href="https://www.sevenbrothersburgers.com/locations" target="_blank" rel="noopener">Seven Brothers</a></li>
+<li>명소: <a href="https://byodo-in.com/visit" target="_blank" rel="noopener">뵤도인</a> · <a href="https://www.honolulu.gov/dpr/honolulu-botanical-gardens/hoomaluhia-botanical-garden" target="_blank" rel="noopener">호오말루히아</a> · <a href="https://www.doleplantation.com/tour-Packages/" target="_blank" rel="noopener">돌 플랜테이션</a> · <a href="https://www.polynesia.com/faq/hours-of-operation" target="_blank" rel="noopener">PCC 운영시간</a> · <a href="https://www.polynesia.com/packages" target="_blank" rel="noopener">PCC 패키지</a> · <a href="https://polynesia.com/faq/direction-and-parking" target="_blank" rel="noopener">PCC 주차</a> · <a href="https://www.bishopmuseum.org/visit/" target="_blank" rel="noopener">비숍 박물관</a></li>
+</ul>
+<hr />
+<hr />
+<h2 id="출발-전-체크리스트">✅ 출발 전 체크리스트</h2>
+<blockquote>
+<p>가이드북 「체크리스트」·「D-1 짐 싸기」 두 페이지 + 기존 노트 미처리 항목을 합쳤다. <strong>굵은 글씨</strong> = 우리 일정 때문에 추가·수정한 항목</p>
+</blockquote>
+<h3 id="1-지금-예약확인-d-2">1. 지금 예약·확인 (D-2)</h3>
+<ul>
+<li class="task"><input type="checkbox"> <strong>다이아몬드헤드 예약</strong> — 11/7 (토) 07:00 1순위, 없으면 11/9 (월) 07:00 · $5×5 + 주차 $10 · gostateparks.hawaii.gov/diamondhead</li>
+<li class="task"><input type="checkbox"> <strong>USS Arizona</strong> — 11/4 15:00 HST (한국 11/5 10:00) 전날 판매분 · recreation.gov · <strong>14:50 로그인 담당 1명</strong> · 09:15 이후 슬롯</li>
+<li class="task"><input type="checkbox"> <strong>저녁 예약</strong> — Buzz's 11/6 (☎ 808-261-4661) · House Without a Key 11/7 · Michel's 11/9 (필수)</li>
+<li class="task"><input type="checkbox"> <strong>PCC 패키지</strong> — 11/10 (화) · 밤 운전 부담되면 왕복 버스 $28/인</li>
+<li class="task"><input type="checkbox"> <strong>KE054 출발 시간</strong> 대한항공 앱 확인 (12:05 vs 11:40)</li>
+<li class="task"><input type="checkbox"> <strong>메리어트 확인</strong> — 벨데스크 짐 보관 (11/4 체크인 전 · 11/7 체크아웃 후) · <strong>조식 5명 포함 여부</strong> · 리조트피</li>
+<li class="task"><input type="checkbox"> <strong>렌터카 (작은형, 11/3 픽업 때)</strong> — 7인승 2+2+3 좌석이라 5명 + 캐리어 적재 방법 확인 · 실제 차 높이 (비치타워 6'2") · 보험·주유 방식 (선불 주유 or 반납 전 주유)</li>
+<li class="task"><input type="checkbox"> <strong>큰형 추가 운전자 등록</strong> — 11/4 도착 직후 Sixt 카운터 (T2 길 건너 렌터카센터), 작은형 동행, 면허증·신분증 실물 · 8일 $104~120</li>
+<li class="task"><input type="checkbox"> <strong>뵤도인 요금·결제수단</strong> 전화 확인 ☎ 808-239-8811</li>
+<li class="task"><input type="checkbox"> 내 항공권 발권 여부 (인천 3인 중 2인분만 보였음)</li>
+<li class="task"><input type="checkbox"> 비치타워 호스트에게 연락받을 휴대폰 번호 전달 (체크인 전화 필수) · 발렛 조건 서면 확인</li>
+<li class="task"><input type="checkbox"> eSIM 3회선 설치 (아빠·엄마·나) — 부모님 폰 <code>*#06#</code> EID 확인</li>
+<li class="task"><input type="checkbox"> <strong>예약 QR·바우처 오프라인 저장</strong> (스크린샷) — 다이아몬드헤드·USS Arizona·PCC·렌터카·숙소</li>
+</ul>
+<h3 id="2-필수-준비물">2. 필수 준비물</h3>
+<ul>
+<li class="task"><input type="checkbox"> 여권 — 가이드북은 "6개월 이상"이지만 <strong>한국 여권은 미국 6개월 규정 예외국 → 체류 기간 동안 유효하면 됨</strong> (여유 있게 확인) · 서울팀 3명</li>
+<li class="task"><input type="checkbox"> 여권 사본·사진 (폰에도 저장)</li>
+<li class="task"><input type="checkbox"> 항공권 E-티켓 — 서울팀 <strong>3명 모두 발권</strong> 확인 · 입국심사 때 귀국편 확인 요청 가능</li>
+<li class="task"><input type="checkbox"> <strong>ESTA 승인서</strong> — 서울팀 3명, <strong>ESTA의 여권번호가 지금 여권과 일치</strong>하는지 · 형들은 각자 미국 입국 자격(신분)에 따라</li>
+<li class="task"><input type="checkbox"> 바우처 — 메리어트(아고다) · 에어비앤비 · <strong>Sixt 렌터카 · PCC · 다이아몬드헤드 · USS Arizona</strong></li>
+<li class="task"><input type="checkbox"> 달러 현금 — <strong>Giovanni's 주차 · 팁 · 스왑밋</strong> 등 현금만 받는 곳 대비</li>
+<li class="task"><input type="checkbox"> 해외결제 카드 <strong>2장 이상</strong> — <strong>진주만 주차·다이아몬드헤드·뵤도인·로열 하와이안 센터 주차는 카드만</strong></li>
+<li class="task"><input type="checkbox"> 여행자보험 가입·증서</li>
+<li class="task"><input type="checkbox"> ~~국제운전면허증~~ — 가이드북은 "렌트 시 필수"지만 <strong>운전은 형 둘(미국·호주 영문 면허)이라 불필요</strong>. 나·부모님은 운전 안 함. 운전자는 <strong>본국 면허증 실물</strong> 지참</li>
+</ul>
+<h3 id="3-기내-용품">3. 기내 용품</h3>
+<ul>
+<li class="task"><input type="checkbox"> 목베개 · 귀마개 · 수면안대</li>
+<li class="task"><input type="checkbox"> 얇은 외투 (기내 추움)</li>
+<li class="task"><input type="checkbox"> 수분 크림 · 립밤</li>
+<li class="task"><input type="checkbox"> 필기구 — <strong>하와이 농산물 신고서</strong> 작성용</li>
+<li class="task"><input type="checkbox"> 영화·드라마 등 볼거리</li>
+<li class="task"><input type="checkbox"> 액체류는 100ml 이하 용기, 투명 지퍼백 1개 (총 1L)</li>
+</ul>
+<h3 id="4-전자기기">4. 전자기기</h3>
+<ul>
+<li class="task"><input type="checkbox"> 휴대폰 충전기 · 멀티탭</li>
+<li class="task"><input type="checkbox"> <strong>돼지코 어댑터</strong> — 미국 110V A타입</li>
+<li class="task"><input type="checkbox"> 보조배터리 — <strong>기내 반입만, 위탁 금지</strong> · 대한항공 현행: <strong>1인 2개</strong>, 100Wh 이하 (100~160Wh는 승인) · <strong>기내 사용·충전 금지, 선반 보관 금지</strong> · 단자 절연테이프 또는 개별 지퍼백</li>
+<li class="task"><input type="checkbox"> 카메라 · 셀카봉</li>
+<li class="task"><input type="checkbox" checked> ~~유심·포켓 와이파이~~ → eSIM 구매 완료 (수령 불필요)</li>
+</ul>
+<h3 id="5-의류신발">5. 의류·신발</h3>
+<ul>
+<li class="task"><input type="checkbox"> 여름옷 + <strong>긴팔·바람막이</strong> (에어컨·아침저녁·기내, 동부 해안 강풍·소나기)</li>
+<li class="task"><input type="checkbox"> <strong>모자 (턱끈)</strong> — 동북동 무역풍이 일주일 내내 강함 (돌풍 초속 13~15m)</li>
+<li class="task"><input type="checkbox"> 선글라스</li>
+<li class="task"><input type="checkbox"> 수영복·비치웨어 (현지 구매도 가능)</li>
+<li class="task"><input type="checkbox"> 양말 · 속옷 · 잠옷</li>
+<li class="task"><input type="checkbox"> <strong>편한 운동화</strong> — 다이아몬드헤드·마카푸우 + 마노아·필박스는 진흙 → 더러워져도 되는 신발</li>
+<li class="task"><input type="checkbox"> 슬리퍼·샌들</li>
+<li class="task"><input type="checkbox"> <strong>스마트 캐주얼 1벌</strong> — Michel's 드레스코드, Buzz's는 16:30 이후 탱크톱 불가</li>
+</ul>
+<h3 id="6-세면도구화장품">6. 세면도구·화장품</h3>
+<ul>
+<li class="task"><input type="checkbox"> 치약·칫솔 · 면도기 · 클렌징</li>
+<li class="task"><input type="checkbox"> 샴푸·린스·바디워시 — <strong>콘도 4박은 어메니티 없을 수 있음</strong></li>
+<li class="task"><input type="checkbox"> 선크림 SPF50 PA+++ — <strong>리프세이프(옥시벤존·옥티녹세이트 없는 제품)</strong> 권장, 하와이는 이 성분 판매 금지</li>
+<li class="task"><input type="checkbox"> 마스크팩 (햇볕 진정)</li>
+<li class="task"><input type="checkbox"> 화장품</li>
+</ul>
+<h3 id="7-기타">7. 기타</h3>
+<ul>
+<li class="task"><input type="checkbox"> 지퍼백·비닐봉투 (젖은 옷)</li>
+<li class="task"><input type="checkbox"> <strong>에코백</strong> — 호놀룰루는 비닐봉투 금지, 종이봉투 유료</li>
+<li class="task"><input type="checkbox"> 보조가방 — <strong>진주만은 불투명 가방 반입 불가</strong> → 투명 가방이나 주머니 · 포드섬(미주리·항공박물관) 가면 <strong>여권</strong></li>
+<li class="task"><input type="checkbox"> 간식</li>
+<li class="task"><input type="checkbox"> <strong>모기 퇴치제</strong> — 마노아·라이언 수목원·와이메아 밸리</li>
+<li class="task"><input type="checkbox"> 상비약 — 소화제 · 해열제 · <strong>멀미약</strong> (노스쇼어·PCC 왕복 장거리) · <strong>부모님 복용약 + 영문 처방전</strong></li>
+<li class="task"><input type="checkbox"> <strong>우산·우비</strong> — 동부·노스쇼어·라이에 소나기 (PCC 야외)</li>
+<li class="task"><input type="checkbox"> 휴지·물티슈</li>
+<li class="task"><input type="checkbox"> 콘도용 커피·조미료·식용유 (미제공) — 현지 조달 가능</li>
+<li class="task"><input type="checkbox"> <strong>물병</strong> — 마카푸우·다이아몬드헤드 그늘·식수 없음 (1인 1L)</li>
+</ul>
+<h3 id="8-출국-전-최종-점검-114-오후">8. 출국 전 최종 점검 (11/4 오후)</h3>
+<ul>
+<li class="task"><input type="checkbox"> 여권 5명분 (서울팀 3명)</li>
+<li class="task"><input type="checkbox"> 출국 터미널 — <strong>인천 T2</strong> (대한항공) · <strong>17:35까지 도착</strong></li>
+<li class="task"><input type="checkbox"> 위탁 수하물 크기·무게 — 23kg 넘으면 추가 요금 (대한항공 홈페이지에서 개수 확인)</li>
+<li class="task"><input type="checkbox"> 기내 반입 금지·위탁 금지 품목 (보조배터리, 라이터 등)</li>
+<li class="task"><input type="checkbox"> 결제용 <strong>실물 카드</strong> 지참 (House Without a Key 등 모바일 결제 불가 매장)</li>
+<li class="task"><input type="checkbox" checked> ~~유심·포켓 와이파이 수령 장소~~ → eSIM이라 해당 없음 (설치만)</li>
+</ul>
+<hr />
+</main>
+<footer>영업시간·주차는 2026-11-02 웹 조사 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다.</footer>
+<script>
+(function () {
+  var boxes = document.querySelectorAll('li.task input');
+  var KEY = 'oahu-2026-checks';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+  boxes.forEach(function (b, i) {
+    if (i in saved) b.checked = saved[i];
+    b.addEventListener('change', function () {
+      saved[i] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.days a'));
+  var targets = links.map(function (a) { return document.getElementById(decodeURIComponent(a.hash.slice(1))); });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var idx = targets.indexOf(en.target);
+        links.forEach(function (l, j) { l.classList.toggle('on', j === idx); });
+        if (idx >= 0) links[idx].scrollIntoView({ inline: 'center', block: 'nearest' });
+      });
+    }, { rootMargin: '-70px 0px -70% 0px' });
+    targets.forEach(function (t) { if (t) io.observe(t); });
+  }
+})();
+</script>
+</body>
+</html>
