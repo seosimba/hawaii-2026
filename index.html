@@ -12,7 +12,7 @@
 // GitHub Pages 는 HTML 을 10분 캐시한다(헤더는 못 바꿈) → 열 때마다 version.json 을 캐시 없이 확인해
 // 새 버전이면 주소에 ?v=버전 을 붙여 한 번만 새로 불러온다 (같은 버전으로 이미 시도했으면 멈춤)
 (function () {
-  var BUILD = '73b654f42d';
+  var BUILD = '31aeeea7d9';
   try {
     fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
@@ -92,7 +92,7 @@ nav.days { position: sticky; top: 0; z-index: 20; background: var(--bg); border-
 .nav-in { max-width: 1100px; margin: 0 auto; padding: 8px 12px; display: grid; gap: 5px; }
 .nav-row { display: grid; gap: 5px; }
 .days-row { grid-template-columns: repeat(8, minmax(0, 1fr)); }
-.sec-row { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.sec-row { grid-template-columns: repeat(8, minmax(0, 1fr)); }
 nav.days a {
   display: flex; align-items: center; justify-content: center; gap: 3px; min-width: 0; padding: 6px 2px;
   border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text);
@@ -320,10 +320,10 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
   </div>
   <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,44 C220,84 470,4 720,34 C970,64 1210,14 1440,40 L1440,80 L0,80 Z"/></svg>
 </header>
-<nav class="days"><div class="nav-in"><div class="nav-row days-row"><a class="dchip c0" href="#114-수-도착-짐부터-호텔에-가볍게">11/4<small>수</small></a><a class="dchip c1" href="#115-목-진주만-와이켈레-아울렛">11/5<small>목</small></a><a class="dchip c2" href="#116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아">11/6<small>금</small></a><a class="dchip c3" href="#117-토-kcc-파머스마켓-다이아몬드헤드-알라모아나-숙소-이동">11/7<small>토</small></a><a class="dchip c4" href="#118-일-노스쇼어-종일">11/8<small>일</small></a><a class="dchip c5" href="#119-월-서쪽-해안-93번-드라이브-쇼핑-와이키키-마지막-여유일">11/9<small>월</small></a><a class="dchip c6" href="#1110-화-뵤도인-폴리네시안-문화센터-pcc">11/10<small>화</small></a><a class="dchip c7" href="#1111-수-출발-veterans-day-공휴일">11/11<small>수</small></a></div><div class="nav-row sec-row"><a href="#지금-예약확인할-것">🚨예약</a><a href="#항공-서울팀-3명-현지-시각">✈️항공</a><a href="#1-한눈에-보기">🗓요약</a><a href="#구글-지도-장소-누르면-지도-앱이-열림-저장-별표">⭐지도</a><a href="#3-하이킹-가이드북-표와-조사-결과-대조">📖참고</a><a href="#출발-전-체크리스트">✅체크</a><a href="#8-카톡-공유용">💬카톡</a></div></div></nav>
+<nav class="days"><div class="nav-in"><div class="nav-row days-row"><a class="dchip c0" href="#114-수-도착-짐부터-호텔에-가볍게">11/4<small>수</small></a><a class="dchip c1" href="#115-목-진주만-와이켈레-아울렛">11/5<small>목</small></a><a class="dchip c2" href="#116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아">11/6<small>금</small></a><a class="dchip c3" href="#117-토-kcc-파머스마켓-다이아몬드헤드-알라모아나-숙소-이동">11/7<small>토</small></a><a class="dchip c4" href="#118-일-노스쇼어-종일">11/8<small>일</small></a><a class="dchip c5" href="#119-월-서쪽-해안-93번-드라이브-쇼핑-와이키키-마지막-여유일">11/9<small>월</small></a><a class="dchip c6" href="#1110-화-뵤도인-폴리네시안-문화센터-pcc">11/10<small>화</small></a><a class="dchip c7" href="#1111-수-출발-veterans-day-공휴일">11/11<small>수</small></a></div><div class="nav-row sec-row"><a href="#지금-예약확인할-것">🚨예약</a><a href="#항공-서울팀-3명-현지-시각">✈️항공</a><a href="#1-한눈에-보기">🗓요약</a><a href="#장소-우선순위-구글-리뷰-수-순-113">🏆순위</a><a href="#구글-지도-장소-누르면-지도-앱이-열림-저장-별표">⭐지도</a><a href="#3-하이킹-가이드북-표와-조사-결과-대조">📖참고</a><a href="#출발-전-체크리스트">✅체크</a><a href="#8-카톡-공유용">💬카톡</a></div></div></nav>
 <main>
 <blockquote class="info">
-<p><strong>2026-11-02 웹 조사 + Codex 검수 반영.</strong> (미확인) = 출처 상충 또는 공식 확인 실패 → 전날 구글맵·전화로 재확인<br />
+<p><strong>2026-11-02 웹 조사 + Codex 검수 반영.</strong> <strong>11/3</strong> 가이드북 지도 316곳 대조 · 구글 리뷰 순위 · 현지인 평가 · 메뉴 가격 추가. (미확인) = 출처 상충 또는 공식 확인 실패 → 전날 구글맵·전화로 재확인<br />
 자전거 대신 렌트카(7인승 SUV · 작은형 예약 · 11/4 09:00 픽업)로 <strong>하이킹 + 쇼핑</strong> 위주. 메리어트 조식 있는 날(11/5·6·7)은 점심·저녁만, 없는 날은 아침·점심·저녁 모두</p>
 </blockquote>
 
@@ -348,13 +348,13 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <p class="wx">⛅ 와이키키 소나기 23% · 30°C · 6개 모델 모두 거의 맑음 · 바람 강함 · 시간은 입국·다른 편 도착에 따라 유동</p>
 <div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:City_of_Waikiki_view.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/City_of_Waikiki_view.jpg/960px-City_of_Waikiki_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="와이키키 비치" loading="lazy" decoding="async"></a><figcaption><b>와이키키 비치</b><small>© Pickle the cool · CC BY-SA 4.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">09:40</div><div class="c"><div class="place">HNL 도착 (T2)</div><div class="what">입국·수하물 약 1시간 · eSIM 데이터 전환</div></div></li><li><div class="t">11:00</div><div class="c"><div class="place"><strong>렌트카로 픽업</strong> (작은형 운전)</div><div class="what">작은형이 09:00 렌트카를 받아 마중 · T2 도착층에서 5명 + 캐리어 탑승</div></div></li><li><div class="t">11:30–12:00</div><div class="c"><div class="place">와이키키 메리어트</div><div class="what"><strong>짐 먼저 맡기기</strong> (벨데스크) · 부모님 로비 휴식</div><div class="park">🅿️ 잠깐 정차</div></div></li><li><div class="t">12:15–13:15</div><div class="c"><div class="place"><strong>Highway Inn Kakaʻako</strong> (호텔 15분, 09:30–20:00)</div><div class="what">점심 — 1947년부터 하와이 전통 음식 (라우라우·칼루아 피그)</div><div class="park">🅿️ 앞 주차장·Keawe 주차빌딩 <strong>인증 1.5시간 무료</strong></div></div></li><li><div class="t">13:30–14:45</div><div class="c"><div class="place"><strong>Walmart Keeaumoku</strong> 또는 <strong>Don Quijote Kaheka</strong></div><div class="what">물·간식·선크림·기념품 1차</div><div class="park">🅿️ 월마트 실내 <strong>3시간 이내 출차</strong> (초과 시 위반 처리) · 돈키호테 자체 주차빌딩 (조건 미확인)</div></div></li><li><div class="t">14:50</div><div class="c"><div class="place">담당 1명 recreation.gov 로그인</div><div class="what">⚠️ <strong>15:00 HST USS Arizona 11/5분 예약</strong> (10:45 이후 슬롯)</div></div></li><li><div class="t">15:00</div><div class="c"><div class="place">메리어트 체크인</div><div class="what">짐 회수</div><div class="park">🅿️ <strong>와이키키 반얀 주차장</strong> (201 Ohua Ave, 호텔 뒤 도보 2~3분, 24시간 약 $15~18, 밤샘 가능 — 현장 요금 확인) · 호텔은 셀프 $65/일</div></div></li><li><div class="t">17:00–19:00</div><div class="c"><div class="place"><strong>Arancino di Mare</strong> (메리어트 1층, 17–21) 또는 <strong>Tiki's Grill &amp; Bar</strong> (도보 5분)</div><div class="what">저녁 — 시차 첫날, 일찍</div><div class="park">🅿️ Arancino 투숙객 · Tiki's <strong>발렛 3시간 무료</strong> (인증)</div></div></li><li><div class="t">20:00</div><div class="c"><div class="place">취침</div><div class="what">체감 새벽 4시 도착이라 첫날 무리 금지</div></div></li></ol>
 <ul>
-<li>☕ 커피: <strong>Kai Coffee</strong> (하얏트 로비, 메리어트에서 도보 3분) · 메리어트 안 스타벅스 05:00–21:00</li>
+<li>☕ 커피: <strong>Kona Coffee Purveyors</strong> (인터내셔널 마켓플레이스, 도보 8분 · 페이스트리 유명 · <strong>수 07–16</strong> → 체크인 뒤 바로) · 가까운 곳은 Kai Coffee (하얏트 로비, 도보 3분) · 메리어트 안 스타벅스 05:00–21:00</li>
 <li>점심 대안: <strong>Liliha Bakery 니미츠점</strong> (코코퍼프·로코모코, 무료 주차장) · <strong>Nico's Pier 38</strong> (경매장 옆 생선 요리, 공항 10분) — 짐을 아직 못 맡겼으면 차에 1명 남기기 · <del>Helena's</del> (수요일 영업하지만 주차장이 아주 작음)</li>
 <li>캐리어 실은 차는 털이 표적 → <strong>호텔 짐 보관을 점심보다 먼저</strong></li>
 </ul>
 </div></article><article class="day c1" data-date="11/5"><div class="day-head"><div class="date-badge"><b>11/5</b><span>목요일</span></div><div class="day-title"><h3 id="115-목-진주만-와이켈레-아울렛">진주만 → 와이켈레 아울렛</h3></div></div><div class="day-body">
 <p class="wx">🌤 진주만 소나기 17% (오전에 잠깐, 유럽 모델만) · 29°C · 바람 강함 — 영향 적음</p>
-<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:USS_Arizona_Memorial_(aerial_view).jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/USS_Arizona_Memorial_%28aerial_view%29.jpg/960px-USS_Arizona_Memorial_%28aerial_view%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="USS 애리조나 기념관" loading="lazy" decoding="async"></a><figcaption><b>USS 애리조나 기념관</b><small>© DoD photo by: PH3(AW/SW) JAYME PASTORIC, · Public domain</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Missouri_post_refit.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Missouri_post_refit.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="미주리 전함" loading="lazy" decoding="async"></a><figcaption><b>미주리 전함</b><small>© Wikimedia Commons · Public domain</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place">메리어트</div><div class="what">조식 (포함)</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 (30~40분)</div></div></li><li><div class="t">09:40</div><div class="c"><div class="place"><strong>진주만 방문자센터</strong></div><div class="what">예약 시각 <strong>1시간 전 도착 권장</strong> → <strong>10:45 이후 슬롯</strong>, 극장은 10~15분 전 · USS Arizona 프로그램 약 45분 (영상 + 보트)</div><div class="park">🅿️ <strong>$7/일 · 카드·QR 결제</strong></div></div></li><li><div class="t">~12:30</div><div class="c"><div class="place">방문자센터 전시 마무리</div></div></li><li><div class="t">12:30–13:30</div><div class="c"><div class="place"><strong>Restaurant 604</strong> (10:30~)</div><div class="what">점심 — 항구 옆 피시앤칩스·아히 카츠 · 진주만 주차장에 차 두고 <strong>도보 10분</strong></div><div class="park">🅿️ 진주만 주차장</div></div></li><li><div class="t">13:30–14:00</div><div class="c"><div class="place">와이켈레 이동 (20분)</div><div class="what">☕ Waikele Center 스타벅스 / Leonard's 말라사다 트럭 (07–19, 카드만)</div><div class="park">🅿️ 무료</div></div></li><li><div class="t">14:00–17:00</div><div class="c"><div class="place">🛍 <strong>와이켈레 프리미엄 아울렛</strong> (10–19)</div><div class="what">Coach·Polo·Tory Burch·Michael Kors·Kate Spade·Tumi · <strong>VIP Shopper Club 무료 가입 → 쿠폰</strong></div><div class="park">🅿️ <strong>무료</strong></div></div></li><li><div class="t">17:00</div><div class="c"><div class="place">와이키키로 (40~60분)</div><div class="what">H-1 퇴근 정체</div></div></li><li><div class="t">18:00–20:00</div><div class="c"><div class="place"><strong>Side Street Inn Waikiki</strong> (280 Beach Walk, 2026.9 이전 오픈, 목 16:00–20:30)</div><div class="what">저녁 — 폭찹·볶음밥·갈비 패밀리 스타일 (4~5인 세트 $195)</div><div class="park">🅿️ 길 건너 Bank of Hawaii 주차 <strong>2시간 인증</strong> (기본 30분 $4, 카드만)</div></div></li></ol>
+<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:USS_Arizona_Memorial_(aerial_view).jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/USS_Arizona_Memorial_%28aerial_view%29.jpg/960px-USS_Arizona_Memorial_%28aerial_view%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="USS 애리조나 기념관" loading="lazy" decoding="async"></a><figcaption><b>USS 애리조나 기념관</b><small>© DoD photo by: PH3(AW/SW) JAYME PASTORIC, · Public domain</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Missouri_post_refit.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Missouri_post_refit.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="미주리 전함" loading="lazy" decoding="async"></a><figcaption><b>미주리 전함</b><small>© Wikimedia Commons · Public domain</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place">메리어트</div><div class="what">조식 (포함)</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 (30~40분)</div></div></li><li><div class="t">09:40</div><div class="c"><div class="place"><strong>진주만 방문자센터</strong></div><div class="what">예약 시각 <strong>1시간 전 도착 권장</strong> → <strong>10:45 이후 슬롯</strong>, 극장은 10~15분 전 · USS Arizona 프로그램 약 45분 (영상 + 보트)</div><div class="park">🅿️ <strong>$7/일 · 카드·QR 결제</strong></div></div></li><li><div class="t">~12:30</div><div class="c"><div class="place">방문자센터 전시 마무리</div></div></li><li><div class="t">12:30–13:30</div><div class="c"><div class="place"><strong>Restaurant 604</strong> (10:30~)</div><div class="what">점심 — 항구 옆 피시앤칩스·아히 카츠 · 진주만 주차장에 차 두고 <strong>도보 10분</strong></div><div class="park">🅿️ 진주만 주차장</div></div></li><li><div class="t">13:30–14:00</div><div class="c"><div class="place">와이켈레 이동 (20분)</div><div class="what">☕ Waikele Center 스타벅스 / Leonard's 말라사다 트럭 (07–19, 카드만) · 🍧 <strong>Mountain Magic</strong> 셰이브아이스 (아울렛 맞은편 94-817 Lumiaina St · 목 11:30–18:30 · 현지 독자 투표 1위)</div><div class="park">🅿️ 무료</div></div></li><li><div class="t">14:00–17:00</div><div class="c"><div class="place">🛍 <strong>와이켈레 프리미엄 아울렛</strong> (10–19)</div><div class="what">Coach·Polo·Tory Burch·Michael Kors·Kate Spade·Tumi · <strong>VIP Shopper Club 무료 가입 → 쿠폰</strong></div><div class="park">🅿️ <strong>무료</strong></div></div></li><li><div class="t">17:00</div><div class="c"><div class="place">와이키키로 (40~60분)</div><div class="what">H-1 퇴근 정체</div></div></li><li><div class="t">18:00–20:00</div><div class="c"><div class="place"><strong>Side Street Inn Waikiki</strong> (280 Beach Walk, 2026.9 이전 오픈, 목 16:00–20:30)</div><div class="what">저녁 — 폭찹·볶음밥·갈비 패밀리 스타일 (4~5인 세트 $195)</div><div class="park">🅿️ 길 건너 Bank of Hawaii 주차 <strong>2시간 인증</strong> (기본 30분 $4, 카드만)</div></div></li></ol>
 <ul>
 <li>⚠️ 진주만: <strong>불투명 일반 가방 반입 불가</strong> (보관 $7/개) · 투명 가방·복용약은 검색 후 허용될 수 있음 · 사진 신분증</li>
 <li>선택: 미주리 전함 ($42.99) · 태평양항공박물관 ($29.99) — 포드섬 무료 셔틀, <strong>외국인은 여권 지참</strong>. 넣으면 점심 14:30 이후, 아울렛 15:30부터</li>
@@ -364,11 +364,11 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </ul>
 </div></article><article class="day c2" data-date="11/6"><div class="day-head"><div class="date-badge"><b>11/6</b><span>금요일</span></div><div class="day-title"><h3 id="116-금-동부-해안-카일루아-해안-먼저-저녁은-카일루아">동부 해안 → 카일루아 (해안 먼저, 저녁은 카일루아)</h3></div></div><div class="day-body">
 <p class="wx">🌤 마카푸우 비 없음 (6개 모델·앙상블 0%) · 돌풍 초속 11~15m · 카일루아 오후 지나가는 소나기 29~45% · 27°C</p>
-<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:Makapuu_point_light.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Makapuu_point_light.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="마카푸우 등대" loading="lazy" decoding="async"></a><figcaption><b>마카푸우 등대</b><small>© Wikimedia Commons · Public domain</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Halona_Blowhole_a0002860.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Halona_Blowhole_a0002860.jpg/960px-Halona_Blowhole_a0002860.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="할로나 블로홀" loading="lazy" decoding="async"></a><figcaption><b>할로나 블로홀</b><small>© This file was created by Thomas Tunsch.  · CC BY-SA 4.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Lanikai_Beach,_Hawaii.JPG" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Lanikai_Beach%2C_Hawaii.JPG/960px-Lanikai_Beach%2C_Hawaii.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="라니카이 비치" loading="lazy" decoding="async"></a><figcaption><b>라니카이 비치</b><small>© Cristo Vlahos · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kailua_Beach_Park_-_Oahu_-_Hawaii.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Kailua_Beach_Park_-_Oahu_-_Hawaii.jpg/960px-Kailua_Beach_Park_-_Oahu_-_Hawaii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="카일루아 비치" loading="lazy" decoding="async"></a><figcaption><b>카일루아 비치</b><small>© Tony Webster · CC BY 2.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place">메리어트</div><div class="what">조식 (포함)</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">호텔 출발</div><div class="what"><strong>짐·귀중품은 호텔에서 미리 트렁크에</strong></div></div></li><li><div class="t">09:20–09:40</div><div class="c"><div class="place">☕ <strong>Island Brew Coffeehouse</strong> (하와이카이, 06–18)</div><div class="what">마리나 뷰 커피</div><div class="park">🅿️ 무료</div></div></li><li><div class="t">09:50–10:10</div><div class="c"><div class="place">라나이 룩아웃 → 할로나 블로홀</div><div class="what">절벽·블로홀 사진, 각 10분</div><div class="park">🅿️ 무료 소형 (15대 / 20~25대)</div></div></li><li><div class="t">10:20–12:05</div><div class="c"><div class="place">🥾 <strong>마카푸우 등대 트레일</strong></div><div class="what">한낮 전이라 <strong>물·모자 필수</strong> · 왕복 3.2km 포장길 · +150m · 약 2시간 · <strong>그늘·화장실·식수 없음</strong> · 고래 시즌 시작</div><div class="park">🅿️ 무료, 07:00 개방, 협소</div></div></li><li><div class="t">12:05–12:35</div><div class="c"><div class="place">와이마날로 경유 → 카일루아</div><div class="what">해안 드라이브</div></div></li><li><div class="t">12:35–13:30</div><div class="c"><div class="place"><strong>Kalapawai Café &amp; Deli</strong> (06–21)</div><div class="what">점심 — 샌드위치·플랫브레드</div><div class="park">🅿️ 자체 lot (미확인)</div></div></li><li><div class="t">13:45–15:30</div><div class="c"><div class="place">카일루아 비치파크 → 라니카이 비치 (도보 15~20분)</div><div class="what">부모님: 해변 산책 + <strong>Island Snow</strong> 빙수 · (선택) 🥾 아들들 <strong>라니카이 필박스</strong> — 비치파크에서 왕복 포함 약 2시간, 초반 로프 급경사</div><div class="park">🅿️ <strong>카일루아 비치파크 무료</strong> — 라니카이 Mokulua Dr <strong>종일 주차금지</strong> (2026.7.1~)</div></div></li><li><div class="t">15:45–17:00</div><div class="c"><div class="place">🛍 <strong>카일루아 쇼핑</strong></div><div class="what">Target Kailua (07–22) → Whole Foods Kailua (07–22) → 카일루아 타운 부티크</div><div class="park">🅿️ 매장별 무료 lot</div></div></li><li><div class="t">17:00–18:30</div><div class="c"><div class="place"><strong>Buzz's Original Steak House</strong> (16:30–21:00)</div><div class="what">저녁 — 비치 앞 스테이크하우스 · 일몰 17:54 · <strong>16:30 이후 탱크톱 불가</strong></div><div class="park">🅿️ 소형 lot 혼잡 → 비치파크</div></div></li><li><div class="t">18:30–19:15</div><div class="c"><div class="place">팔리 하이웨이로 복귀</div><div class="what">팔리 전망대 (06–18, 비거주자 $7)는 이미 폐장 → 들르려면 저녁 전에</div></div></li></ol>
+<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:Makapuu_point_light.JPG" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Makapuu_point_light.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="마카푸우 등대" loading="lazy" decoding="async"></a><figcaption><b>마카푸우 등대</b><small>© Wikimedia Commons · Public domain</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Halona_Blowhole_a0002860.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Halona_Blowhole_a0002860.jpg/960px-Halona_Blowhole_a0002860.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="할로나 블로홀" loading="lazy" decoding="async"></a><figcaption><b>할로나 블로홀</b><small>© This file was created by Thomas Tunsch.  · CC BY-SA 4.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Lanikai_Beach,_Hawaii.JPG" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Lanikai_Beach%2C_Hawaii.JPG/960px-Lanikai_Beach%2C_Hawaii.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="라니카이 비치" loading="lazy" decoding="async"></a><figcaption><b>라니카이 비치</b><small>© Cristo Vlahos · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kailua_Beach_Park_-_Oahu_-_Hawaii.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Kailua_Beach_Park_-_Oahu_-_Hawaii.jpg/960px-Kailua_Beach_Park_-_Oahu_-_Hawaii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="카일루아 비치" loading="lazy" decoding="async"></a><figcaption><b>카일루아 비치</b><small>© Tony Webster · CC BY 2.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place">메리어트</div><div class="what">조식 (포함)</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">호텔 출발</div><div class="what"><strong>짐·귀중품은 호텔에서 미리 트렁크에</strong></div></div></li><li><div class="t">09:20–09:40</div><div class="c"><div class="place">☕ <strong>Island Brew Coffeehouse</strong> (하와이카이, 06–18)</div><div class="what">마리나 뷰 커피</div><div class="park">🅿️ 무료</div></div></li><li><div class="t">09:50–10:10</div><div class="c"><div class="place">라나이 룩아웃 → 할로나 블로홀</div><div class="what">절벽·블로홀 사진, 각 10분 · <strong>전망대 아래 바위로 내려가지 않기</strong> (파도 사고)</div><div class="park">🅿️ 무료 소형 (15대 / 20~25대)</div></div></li><li><div class="t">10:20–12:05</div><div class="c"><div class="place">🥾 <strong>마카푸우 등대 트레일</strong></div><div class="what">한낮 전이라 <strong>물·모자 필수</strong> · 왕복 3.2km 포장길 · +150m · 약 2시간 · <strong>그늘·화장실·식수 없음</strong> · 고래 시즌 시작</div><div class="park">🅿️ 무료, 07:00 개방, 협소</div></div></li><li><div class="t">12:05–12:35</div><div class="c"><div class="place">와이마날로 경유 → 카일루아</div><div class="what">해안 드라이브</div></div></li><li><div class="t">12:35–13:30</div><div class="c"><div class="place"><strong>Kalapawai Café &amp; Deli</strong> (06–21)</div><div class="what">점심 — 샌드위치·플랫브레드</div><div class="park">🅿️ 자체 lot (미확인)</div></div></li><li><div class="t">13:45–15:30</div><div class="c"><div class="place">카일루아 비치파크 → 라니카이 비치 (도보 15~20분)</div><div class="what">부모님: 해변 산책 + <strong>Island Snow</strong> 빙수 · (선택) 🥾 아들들 <strong>라니카이 필박스</strong> — 비치파크에서 왕복 포함 약 2시간, 초반 로프 급경사</div><div class="park">🅿️ <strong>카일루아 비치파크 무료</strong> — 라니카이 Mokulua Dr <strong>종일 주차금지 계획</strong> (시정부 단계별 시행 — 7/1 시행 여부는 확인 불가, 현장 표지판 우선)</div></div></li><li><div class="t">15:45–17:00</div><div class="c"><div class="place">🛍 <strong>카일루아 쇼핑</strong></div><div class="what">Target Kailua (07–22) → Whole Foods Kailua (07–22) → 카일루아 타운 부티크</div><div class="park">🅿️ 매장별 무료 lot</div></div></li><li><div class="t">17:00–18:30</div><div class="c"><div class="place"><strong>Buzz's Original Steak House</strong> (16:30–21:00)</div><div class="what">저녁 — 비치 앞 스테이크하우스 · 일몰 17:54 · <strong>16:30 이후 탱크톱 불가</strong></div><div class="park">🅿️ 소형 lot 혼잡 → 비치파크</div></div></li><li><div class="t">18:30–19:15</div><div class="c"><div class="place">팔리 하이웨이로 복귀</div><div class="what">팔리 전망대 (06–18, 비거주자 $7)는 이미 폐장 → 들르려면 저녁 전에</div></div></li></ol>
 <ul>
 <li>☔ 카일루아에서 소나기 오면: 쇼핑(Target·Whole Foods)을 먼저 하고 해변은 갠 뒤에 — 무역풍 소나기는 보통 10~20분이면 지나감</li>
 <li>쇼핑을 줄이면 <strong>호오말루히아 식물원</strong> (무료, 금 09–16) 추가 가능 · 뵤도인은 <strong>11/10</strong>로 옮김 (이날 넣으면 이동시간이 안 맞음)</li>
-<li>점심 대안: Buzz's 점심 (11–15) · Moena Cafe (코코 마리나, 07–14) · 'Ai Love Nalo (와이마날로, 비건)</li>
+<li>점심 대안: Buzz's 점심 (11–15) · Moena Cafe (코코 마리나, 07–14)</li>
 <li>B안 (저녁을 하와이카이에서): 팔리 하이웨이 → 카일루아 점심·쇼핑 → 15:00 마카푸우 → 할로나 → 17:30 <strong>Roy's Hawaii Kai</strong> (16:30–21:30, OpenTable) — 마카푸우를 더운 오후에 걷는 단점</li>
 <li>하나우마 베이: 금요일 영업 · 이틀 전 07:00 HST 예약 → <strong>작은형이 11/4 07:00에 예약 가능</strong>. 넣으려면 마카푸우·카일루아 일부를 빼고 대체 (추가하지 않기)</li>
 <li>코코 크레이터 계단·마우나윌리 폭포(2021년부터 폐쇄)는 제외</li>
@@ -377,14 +377,15 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <p class="wx">🌤 다이아몬드헤드 10~12시 비 없음 (6개 모델·앙상블 0%) — 일정 중 가장 좋은 날 · 29°C · 그늘 없음 → 물·모자 필수</p>
 <div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:Diamond_Head_Hawaii_From_Round_Top_Rd.JPG" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Diamond_Head_Hawaii_From_Round_Top_Rd.JPG/960px-Diamond_Head_Hawaii_From_Round_Top_Rd.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="다이아몬드헤드" loading="lazy" decoding="async"></a><figcaption><b>다이아몬드헤드</b><small>© mar1865 · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Ala_Moana_Centerstage_at_the_Ala_Mona_Center.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ala_Moana_Centerstage_at_the_Ala_Mona_Center.jpg/960px-Ala_Moana_Centerstage_at_the_Ala_Mona_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="알라모아나 센터" loading="lazy" decoding="async"></a><figcaption><b>알라모아나 센터</b><small>© Richard N Horne · CC BY-SA 4.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Halekulani_Hotel.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Halekulani_Hotel.jpg/960px-Halekulani_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="할레쿨라니 (House Without a Key)" loading="lazy" decoding="async"></a><figcaption><b>할레쿨라니 (House Without a Key)</b><small>© TastyPoutine · CC BY-SA 3.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:40</div><div class="c"><div class="place">메리어트 Kuhio Beach Grill</div><div class="what">조식 (포함)</div></div></li><li><div class="t">08:40–09:00</div><div class="c"><div class="place">🧳 <strong>메리어트 체크아웃</strong> (11:00 마감 전에 미리)</div><div class="what">짐은 <strong>벨데스크에 15시까지 보관</strong> — 차에 두지 않기 · 작은형은 반얀 주차장에서 차 가져오기</div></div></li><li><div class="t">09:10–10:00</div><div class="c"><div class="place">🛍 <strong>KCC 파머스마켓</strong> (토 07:30–11:00, 10분)</div><div class="what">구운 전복, 그린토마토 튀김, 열대과일 · 인기 품목 일찍 품절</div><div class="park">🅿️ <strong>무료</strong> (Lot C·E)</div></div></li><li><div class="t">10:00–12:00</div><div class="c"><div class="place">🥾 <strong>다이아몬드헤드</strong> (KCC에서 5분)</div><div class="what">입장 후 바로 등산 · 왕복 2.6km · +170m · 마지막 계단 · 한낮이라 <strong>물·모자 필수</strong> · <strong>11:35~11:40 차량 복귀 목표</strong> — 늦으면 정상보다 시간 우선</div><div class="park">🅿️ <strong>예약 주차 2시간 → 12:00까지 출차</strong> · 슬롯 시작 30분 안에 도착 (늦으면 환불 불가)</div></div></li><li><div class="t">12:30–14:15</div><div class="c"><div class="place">🛍 <strong>알라모아나 센터</strong> (10–20)</div><div class="what">점심: <strong>Liliha Bakery</strong> (Macy's 3층, 코코퍼프) 또는 Makai Market 푸드코트 · 쇼핑: Target(2층) · <strong>마지막 30분 Foodland Farms (몰 안)에서 콘도 아침거리 장보기</strong> — 콘도에 커피·조미료·식용유·지퍼백 없음</div><div class="park">🅿️ <strong>쇼핑객 무료</strong> — 몰 밖 용무로 세우면 견인</div></div></li><li><div class="t">14:30–15:00</div><div class="c"><div class="place">🧳 <strong>숙소 이동</strong> — 메리어트 벨데스크에서 짐 찾기 → 렌트카에 싣고 비치타워로 → <strong>15:00 체크인</strong></div><div class="what">도착하면 <strong>관리자에게 전화</strong> → 만나서 체크인 또는 셀프 체크인 안내 (관리자 연락처는 11/4 자동 발송 · 전화는 한국 번호 로밍 또는 작은형 폰) · 휴식</div><div class="park">🅿️ <strong>발렛 1대 무료</strong> (높이 6'2") · 차는 칼라카우아 → <strong>릴리우오칼라니 애비뉴</strong> 좌회전, 왼쪽 건물</div></div></li><li><div class="t">17:30–20:00</div><div class="c"><div class="place"><strong>House Without a Key</strong> (할레쿨라니, 17:00–21:30)</div><div class="what">저녁 — 바다 앞 · 매일 밤 훌라 18:30–20:30 · <strong>식당 구역은 예약, 잔디 구역 일몰 칵테일·훌라 좌석은 선착순</strong></div><div class="park">🅿️ 인증 무료 시간 (미확인)</div></div></li></ol>
 <ul>
-<li>☕ 커피: KCC 마켓 커피 부스 · <strong>Westman Cafe</strong> (워드 빌리지, 07:30–14:00, 수플레 팬케이크·코나커피)</li>
+<li>☕ 커피: KCC 마켓 커피 부스</li>
 <li>다이아몬드헤드 10시 무렵 슬롯이 없으면: KCC → 알라모아나로 바로 가고, 다이아몬드헤드는 <strong>월요일 10시 무렵</strong>으로</li>
 <li>저녁 대안: <strong>Duke's Waikiki</strong> (해변 앞, 16시부터 라이브) — Outrigger 주차 인증 4시간 $6</li>
 </ul>
 </div></article><article class="day c4" data-date="11/8"><div class="day-head"><div class="date-badge"><b>11/8</b><span>일요일</span></div><div class="day-title"><h3 id="118-일-노스쇼어-종일">노스쇼어 종일</h3></div></div><div class="day-body">
 <p class="wx">🌤 노스쇼어 소나기 19% (유럽 모델은 오후 약한 소나기) · 28°C · 주말 중대형 파도 → 큰 파도는 마른 모래까지 덮칠 수 있음</p>
-<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:Dolejf2103.JPG" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Dolejf2103.JPG/960px-Dolejf2103.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="돌 플랜테이션" loading="lazy" decoding="async"></a><figcaption><b>돌 플랜테이션</b><small>© Ramon FVelasquez · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Haleiwa_bridge.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Haleiwa_bridge.jpg/960px-Haleiwa_bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="할레이바 타운" loading="lazy" decoding="async"></a><figcaption><b>할레이바 타운</b><small>© Eric Guinther · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Ore_Haleiwa_Hawaii_Oahu_Matsumoto_Shave_Ice_(33673670325).jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Ore_Haleiwa_Hawaii_Oahu_Matsumoto_Shave_Ice_%2833673670325%29.jpg/960px-Ore_Haleiwa_Hawaii_Oahu_Matsumoto_Shave_Ice_%2833673670325%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="마츠모토 셰이브아이스" loading="lazy" decoding="async"></a><figcaption><b>마츠모토 셰이브아이스</b><small>© Anthony Quintano from Honolulu, HI, Unit · CC BY 2.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="바다거북 (호누)" loading="lazy" decoding="async"></a><figcaption><b>바다거북 (호누)</b><small>© Charles J. Sharp · CC BY-SA 4.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:WaimeaValleyEntrance.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/WaimeaValleyEntrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="와이메아 밸리" loading="lazy" decoding="async"></a><figcaption><b>와이메아 밸리</b><small>© Travis.Thurston · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Empty_wave_at_Banzai_Pipeline.jpeg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Empty_wave_at_Banzai_Pipeline.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="선셋비치·파이프라인" loading="lazy" decoding="async"></a><figcaption><b>선셋비치·파이프라인</b><small>© Mat-fa · CC BY-SA 3.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place"><strong>Eggs 'n Things Eggspress</strong> (2464 Kalakaua, 06:00–14:00)</div><div class="what">아침 — 마카다미아 팬케이크·로코모코</div><div class="park">🅿️ <strong>도보 1분</strong></div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 (H-1→H-2→99번, 약 50분)</div><div class="what">발렛 출차 미리 요청</div></div></li><li><div class="t">09:50–10:50</div><div class="c"><div class="place"><strong>돌 플랜테이션</strong> (09:30–17:30)</div><div class="what">정원 무료 · 기차 $15 · 미로 $10 · 3종 $28 (현장 판매) · Dole Whip</div><div class="park">🅿️ 무료 (미확인)</div></div></li><li><div class="t">11:05–12:15</div><div class="c"><div class="place">🛍 <strong>할레이바 타운</strong></div><div class="what">Haleiwa Store Lots · North Shore Marketplace (서핑 브랜드, Clark Little 갤러리) · <strong>마츠모토 셰이브아이스</strong> (10–18) · ☕ <strong>Island Vintage Coffee 할레이바</strong> (07–17)</div><div class="park">🅿️ 고객용 무료</div></div></li><li><div class="t">12:15–13:00</div><div class="c"><div class="place"><strong>Giovanni's 할레이바</strong> (10:30–17:00)</div><div class="what">점심 — 갈릭 쉬림프 스캠피</div><div class="park">🅿️ 푸드트럭 주차장 <strong>$2–3 현금</strong></div></div></li><li><div class="t">13:15–13:35</div><div class="c"><div class="place">라니아케아</div><div class="what">바다거북 (3m 이상 거리) · <strong>안전하게 건너고 볼 자리 없으면 통과</strong></div><div class="park">🅿️ 길 건너 비포장 · 도로 이설 공사 중단 상태</div></div></li><li><div class="t">13:45–15:30</div><div class="c"><div class="place">🥾 <strong>와이메아 밸리</strong> (화–일 09–16)</div><div class="what">폭포까지 포장 산책 · 성인 $26 · 62세 이상 $20 · 셔틀 편도 $10</div><div class="park">🅿️ <strong>1시간 $2 · 최대 4시간 $5</strong> (입장객 전용, 해변용 주차 시 견인)</div></div></li><li><div class="t">15:45–16:30</div><div class="c"><div class="place"><strong>Ted's Bakery</strong> (초코 하우피아 파이) 또는 푸우 오 마후카 헤이아우 (무료 전망) — <strong>둘 중 하나</strong></div><div class="park">🅿️ 무료</div></div></li><li><div class="t">16:45–17:55</div><div class="c"><div class="place"><strong>선셋비치</strong> 또는 <strong>에후카이(파이프라인)</strong> 한 곳에 미리 자리 잡기</div><div class="what">파도·일몰 — <strong>물가·암반에서 떨어진 높은 곳, 구조요원 지시 우선</strong></div><div class="park">🅿️ 길가 / 공원 무료 소형</div></div></li><li><div class="t">18:30–19:30</div><div class="c"><div class="place"><strong>Haleiwa Beach House</strong> (저녁 17:00–20:00, 화 휴무)</div><div class="what">저녁 — 워크인</div><div class="park">🅿️ 미확인</div></div></li><li><div class="t">19:30–20:30</div><div class="c"><div class="place">귀가 (약 60분)</div></div></li></ol>
+<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:Dolejf2103.JPG" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Dolejf2103.JPG/960px-Dolejf2103.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="돌 플랜테이션" loading="lazy" decoding="async"></a><figcaption><b>돌 플랜테이션</b><small>© Ramon FVelasquez · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Haleiwa_bridge.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Haleiwa_bridge.jpg/960px-Haleiwa_bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="할레이바 타운" loading="lazy" decoding="async"></a><figcaption><b>할레이바 타운</b><small>© Eric Guinther · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Ore_Haleiwa_Hawaii_Oahu_Matsumoto_Shave_Ice_(33673670325).jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Ore_Haleiwa_Hawaii_Oahu_Matsumoto_Shave_Ice_%2833673670325%29.jpg/960px-Ore_Haleiwa_Hawaii_Oahu_Matsumoto_Shave_Ice_%2833673670325%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="마츠모토 셰이브아이스" loading="lazy" decoding="async"></a><figcaption><b>마츠모토 셰이브아이스</b><small>© Anthony Quintano from Honolulu, HI, Unit · CC BY 2.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="바다거북 (호누)" loading="lazy" decoding="async"></a><figcaption><b>바다거북 (호누)</b><small>© Charles J. Sharp · CC BY-SA 4.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:WaimeaValleyEntrance.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/WaimeaValleyEntrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="와이메아 밸리" loading="lazy" decoding="async"></a><figcaption><b>와이메아 밸리</b><small>© Travis.Thurston · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Empty_wave_at_Banzai_Pipeline.jpeg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Empty_wave_at_Banzai_Pipeline.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="선셋비치·파이프라인" loading="lazy" decoding="async"></a><figcaption><b>선셋비치·파이프라인</b><small>© Mat-fa · CC BY-SA 3.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place"><strong>Eggs 'n Things Eggspress</strong> (2464 Kalakaua, 06:00–14:00)</div><div class="what">아침 — 마카다미아 팬케이크·로코모코</div><div class="park">🅿️ <strong>도보 1분</strong></div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 (H-1→H-2→99번, 약 45분)</div><div class="what">발렛 출차 미리 요청</div></div></li><li><div class="t">09:45–10:05</div><div class="c"><div class="place">☕ <strong>Green World Coffee Farm</strong> (와히아와 99번 길가, 07:00~)</div><div class="what">커피 농장 카페 — 구글 리뷰 4,971 · 돌 플랜테이션 5분 전</div><div class="park">🅿️ 무료</div></div></li><li><div class="t">10:10–10:50</div><div class="c"><div class="place"><strong>돌 플랜테이션</strong> (09:30–17:30)</div><div class="what"><strong>짧게</strong> — 현지인은 "지나가며 잠깐 들르는 곳" 평 · Dole Whip · 정원 무료 (기차 $15 · 미로 $10은 선택)</div><div class="park">🅿️ 무료 (미확인)</div></div></li><li><div class="t">11:05–12:15</div><div class="c"><div class="place">🛍 <strong>할레이바 타운</strong></div><div class="what">Haleiwa Store Lots · North Shore Marketplace (서핑 브랜드, Clark Little 갤러리) · <strong>마츠모토 셰이브아이스</strong> (10–18, 줄이 길면 옆집 <strong>Aoki's</strong> — 현지인 선호) · Island Vintage Coffee 할레이바 (07–17, 아사이볼)</div><div class="park">🅿️ 고객용 무료</div></div></li><li><div class="t">12:15–13:00</div><div class="c"><div class="place"><strong>Giovanni's 할레이바</strong> (10:30–17:00)</div><div class="what">점심 — 갈릭 쉬림프 스캠피 · 줄이 길면 <strong>Big Wave Shrimp</strong> (갈릭 쉬림프 독자 투표 1위) 또는 근처 한식 트럭 <strong>Young's Lunch Wagon</strong> (66-521 · 가이드북 '로라 이모네'로 추정)</div><div class="park">🅿️ 푸드트럭 주차장 <strong>$2–3 현금</strong></div></div></li><li><div class="t">13:15–13:35</div><div class="c"><div class="place">라니아케아</div><div class="what">바다거북 (3m 이상 거리) · <strong>안전하게 건너고 볼 자리 없으면 통과</strong></div><div class="park">🅿️ 길 건너 비포장 · 도로 이설 공사 중단 상태</div></div></li><li><div class="t">13:45–15:30</div><div class="c"><div class="place">🥾 <strong>와이메아 밸리</strong> (화–일 09–16)</div><div class="what">폭포까지 포장 산책 · 성인 $26 · 62세 이상 $20 · 셔틀 편도 $10</div><div class="park">🅿️ <strong>1시간 $2 · 최대 4시간 $5</strong> (입장객 전용, 해변용 주차 시 견인)</div></div></li><li><div class="t">15:45–16:30</div><div class="c"><div class="place"><strong>Ted's Bakery</strong> (초코 하우피아 파이) 또는 푸우 오 마후카 헤이아우 (무료 전망) — <strong>둘 중 하나</strong></div><div class="park">🅿️ 무료</div></div></li><li><div class="t">16:45–17:55</div><div class="c"><div class="place"><strong>선셋비치</strong> 또는 <strong>에후카이(파이프라인)</strong> 한 곳에 미리 자리 잡기</div><div class="what">파도·일몰 — <strong>물가·암반에서 떨어진 높은 곳, 구조요원 지시 우선</strong></div><div class="park">🅿️ 길가 / 공원 무료 소형 · 꽉 차면 <strong>터틀베이 무료 공영 주차장</strong> (표지판)</div></div></li><li><div class="t">18:30–19:30</div><div class="c"><div class="place"><strong>Haleiwa Beach House</strong> (저녁 17:00–20:00, 화 휴무)</div><div class="what">저녁 — 워크인</div><div class="park">🅿️ 미확인</div></div></li><li><div class="t">19:30–20:30</div><div class="c"><div class="place">귀가 (약 60분)</div></div></li></ol>
 <ul>
+<li>🚗 <strong>주말 정체:</strong> 날씨 좋은 일요일엔 할레이바 → 와이메아 구간(라니아케아 포함)이 1시간 넘게 막힐 수 있어요 (현지 경고) → 라니아케아가 붐비면 건너뛰고 와이메아 밸리로 바로</li>
 <li>☔ 소나기 오면: 와이메아 밸리 길이 미끄러워짐 → 할레이바 쇼핑을 늘리고 밸리는 갠 뒤에</li>
 <li>부모님 피곤하면: Ted's 이후 바로 귀가 (18:00 와이키키) → 저녁은 <strong>마루가메 우동</strong> (도보 10~12분, 10:00–23:00)</li>
 <li>에후카이 필박스는 삭제 — 진흙 급경사 + 일몰 직전 하산이라 뒤 일정이 연쇄 지연</li>
@@ -394,26 +395,27 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </ul>
 </div></article><article class="day c5" data-date="11/9"><div class="day-head"><div class="date-badge"><b>11/9</b><span>월요일</span></div><div class="day-title"><h3 id="119-월-서쪽-해안-93번-드라이브-쇼핑-와이키키-마지막-여유일">서쪽 해안 93번 드라이브 + 쇼핑 (와이키키 마지막 여유일)</h3></div></div><div class="day-body">
 <p class="wx">🌤 서쪽 해안은 섬에서 가장 건조한 곳 · 주말 북서 너울로 마카하·요코하마 파도 큼 → 구경만, 입수 금지</p>
-<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:M%C4%81kaha_Valley,_Hawaii.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/M%C4%81kaha_Valley%2C_Hawaii.jpg/960px-M%C4%81kaha_Valley%2C_Hawaii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="마카하 비치" loading="lazy" decoding="async"></a><figcaption><b>마카하 비치</b><small>© The Eloquent Peasant · CC BY-SA 4.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kaena_Point_Aerial.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Kaena_Point_Aerial.jpg/960px-Kaena_Point_Aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="카에나 포인트·요코하마 베이" loading="lazy" decoding="async"></a><figcaption><b>카에나 포인트·요코하마 베이</b><small>© Travis.Thurston · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Skyline_and_boat_from_Kaka%27ako_Waterfront_Park.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Skyline_and_boat_from_Kaka%27ako_Waterfront_Park.jpg/960px-Skyline_and_boat_from_Kaka%27ako_Waterfront_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="워드 빌리지" loading="lazy" decoding="async"></a><figcaption><b>워드 빌리지</b><small>© The Eloquent Peasant · CC BY-SA 4.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place"><strong>Café Kaila</strong> (Market City, 월 07:00–18:00)</div><div class="what">아침 — 수상 경력 팬케이크 · 평일이라 대기 짧음</div><div class="park">🅿️ Market City 주차장 (요금 미확인)</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 — H-1 서쪽 끝(카폴레이) → <strong>93번 Farrington Hwy</strong></div><div class="what">약 45분 · 가이드북 「93번 서쪽 코스」</div></div></li><li><div class="t">09:45–10:30</div><div class="c"><div class="place">🏝 <strong>코올리나 라군</strong></div><div class="what">바다를 막아 만든 잔잔한 인공 라군 4개 · 산책로로 이어짐</div><div class="park">🅿️ <strong>무료 공용 주차</strong> (일출~일몰, 선착순 · 라군 4가 약 100칸으로 가장 큼)</div></div></li><li><div class="t">10:30–11:00</div><div class="c"><div class="place">93번 따라 북쪽으로</div><div class="what">나나쿨리 → 와이아나에 해안 드라이브</div></div></li><li><div class="t">11:00–11:20</div><div class="c"><div class="place"><strong>마카하 비치 파크</strong></div><div class="what">서쪽 대표 해변 · 큰 파도 구경</div><div class="park">🅿️ 무료 · 차량털이 주의</div></div></li><li><div class="t">11:30–12:00</div><div class="c"><div class="place"><strong>요코하마 베이 (케아와울라 비치)</strong></div><div class="what"><strong>93번 도로가 끝나는 곳</strong> · 카에나 포인트 쪽 거친 해안</div><div class="park">🅿️ 무료 · 카에나 포인트 비포장 차량 진입로는 폭풍 피해로 폐쇄 (걸어서만)</div></div></li><li><div class="t">12:00–12:40</div><div class="c"><div class="place">코올리나로 돌아오기</div></div></li><li><div class="t">12:45–13:45</div><div class="c"><div class="place"><strong>Monkeypod Kitchen</strong> (코올리나, 점심 11:00–15:30)</div><div class="what">점심 — 하와이 식재료 피자·버거·피시 타코</div><div class="park">🅿️ 유료일 수 있음 (영수증 인증, 미확인)</div></div></li><li><div class="t">13:45–14:30</div><div class="c"><div class="place">와이키키 쪽으로 (H-1 동쪽, 40~50분)</div></div></li><li><div class="t">14:30–16:30</div><div class="c"><div class="place">🛍 <strong>워드 빌리지</strong> → <strong>돈키호테 + 월마트</strong></div><div class="what">하와이 소품 편집숍 → 마카다미아·기념품 과자 대량 구매</div><div class="park">🅿️ 워드 무료 · 월마트 <strong>3시간 이내</strong> · 돈키호테 노상 미터 $1.50/시간</div></div></li><li><div class="t">16:30–17:30</div><div class="c"><div class="place">콘도 휴식 · <strong>짐 대부분 싸기</strong></div><div class="what">11/10은 22시 귀가, 11/11 07:30 출발</div><div class="park">🅿️ 발렛</div></div></li><li><div class="t">17:30–20:00</div><div class="c"><div class="place"><strong>Michel's at the Colony Surf</strong> (2895 Kalakaua, 17:00–21:00)</div><div class="what"><strong>마지막 만찬</strong> — 오션프런트 프렌치 · 일몰 · <strong>예약 필수 · 스마트 캐주얼</strong></div><div class="park">🅿️ 발렛 (무료 여부 미확인)</div></div></li></ol>
+<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:M%C4%81kaha_Valley,_Hawaii.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/M%C4%81kaha_Valley%2C_Hawaii.jpg/960px-M%C4%81kaha_Valley%2C_Hawaii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="마카하 비치" loading="lazy" decoding="async"></a><figcaption><b>마카하 비치</b><small>© The Eloquent Peasant · CC BY-SA 4.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kaena_Point_Aerial.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Kaena_Point_Aerial.jpg/960px-Kaena_Point_Aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="카에나 포인트·요코하마 베이" loading="lazy" decoding="async"></a><figcaption><b>카에나 포인트·요코하마 베이</b><small>© Travis.Thurston · CC BY-SA 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Skyline_and_boat_from_Kaka%27ako_Waterfront_Park.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Skyline_and_boat_from_Kaka%27ako_Waterfront_Park.jpg/960px-Skyline_and_boat_from_Kaka%27ako_Waterfront_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="워드 빌리지" loading="lazy" decoding="async"></a><figcaption><b>워드 빌리지</b><small>© The Eloquent Peasant · CC BY-SA 4.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–08:50</div><div class="c"><div class="place"><strong>Café Kaila</strong> (Market City, 월 07:00–18:00)</div><div class="what">아침 — 수상 경력 팬케이크 · 평일이라 대기 짧음</div><div class="park">🅿️ Market City 주차장 (요금 미확인)</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 — H-1 서쪽 끝(카폴레이) → <strong>93번 Farrington Hwy</strong></div><div class="what">약 45분 · 가이드북 「93번 서쪽 코스」</div></div></li><li><div class="t">09:45–10:30</div><div class="c"><div class="place">🏝 <strong>코올리나 라군</strong></div><div class="what">바다를 막아 만든 잔잔한 인공 라군 4개 · 산책로로 이어짐</div><div class="park">🅿️ <strong>무료 공용 주차</strong> (일출~일몰, 선착순 · 라군 4가 약 100칸으로 가장 큼)</div></div></li><li><div class="t">10:30–11:00</div><div class="c"><div class="place">93번 따라 북쪽으로</div><div class="what">나나쿨리 → 와이아나에 해안 드라이브</div></div></li><li><div class="t">11:00–11:20</div><div class="c"><div class="place"><strong>마카하 비치 파크</strong></div><div class="what">서쪽 대표 해변 · 큰 파도 구경</div><div class="park">🅿️ 무료 · 차량털이 주의</div></div></li><li><div class="t">11:30–12:00</div><div class="c"><div class="place"><strong>요코하마 베이 (케아와울라 비치)</strong></div><div class="what"><strong>93번 도로가 끝나는 곳</strong> · 카에나 포인트 쪽 거친 해안</div><div class="park">🅿️ 무료 · 카에나 포인트 비포장 차량 진입로는 폭풍 피해로 폐쇄 (걸어서만)</div></div></li><li><div class="t">12:00–12:40</div><div class="c"><div class="place">코올리나로 돌아오기</div></div></li><li><div class="t">12:45–13:45</div><div class="c"><div class="place"><strong>Monkeypod Kitchen</strong> (코올리나, 점심 11:00–15:30)</div><div class="what">점심 — 하와이 식재료 피자·버거·피시 타코</div><div class="park">🅿️ 유료일 수 있음 (영수증 인증, 미확인)</div></div></li><li><div class="t">13:45–14:30</div><div class="c"><div class="place">와이키키 쪽으로 (H-1 동쪽, 40~50분)</div></div></li><li><div class="t">14:30–16:30</div><div class="c"><div class="place">🛍 <strong>워드 빌리지</strong> → <strong>돈키호테 + 월마트</strong></div><div class="what">하와이 소품 편집숍 → 마카다미아·기념품 과자 대량 구매 · ☕ <strong>Morning Brew 카카아코</strong> (월 07–16) · Ward Centre 건물은 2026.6 폐점 → 옛 상점 목록 주의</div><div class="park">🅿️ 워드 무료 · 월마트 <strong>3시간 이내</strong> · 돈키호테 노상 미터 $1.50/시간</div></div></li><li><div class="t">16:30–17:30</div><div class="c"><div class="place">콘도 휴식 · <strong>짐 대부분 싸기</strong></div><div class="what">11/10은 22시 귀가, 11/11 07:30 출발</div><div class="park">🅿️ 발렛</div></div></li><li><div class="t">17:30–20:00</div><div class="c"><div class="place"><strong>Michel's at the Colony Surf</strong> (2895 Kalakaua, 17:00–21:00)</div><div class="what"><strong>마지막 만찬</strong> — 오션프런트 프렌치 · 일몰 · <strong>예약 필수 · 스마트 캐주얼</strong> · 운영 법인 변경 신고 (10/1, 같은 자리 영업·해고 없음 예정) → <strong>예약 확정 때 영업 확인</strong></div><div class="park">🅿️ 발렛 (무료 여부 미확인)</div></div></li></ol>
 <ul>
 <li>⚠️ 서쪽 해안은 관광객이 적고 해변 주차장에 <strong>차량털이·노숙 텐트</strong>가 있는 곳도 있음 → 낮에, 정해진 정차 지점만, 차 안 비우기</li>
 <li>☔ 서쪽은 비가 거의 없지만 비 오면: <strong>비숍 박물관</strong> (실내, 매일 09–17, 하와이 역사·문화, 비거주자 주차 $16) → 오후 쇼핑은 그대로</li>
 <li>가까운 곳으로 바꾸려면 (기존 안): 09:30 <strong>라이언 수목원</strong> (월–금 09–15) · 아들들 마노아 폭포 · 푸우 우알라카아 전망대 ($7) → 12:00 <strong>Merriman's</strong> 점심 (워드 빌리지, 무료 주차) → 쇼핑</li>
 <li>아침 대안: <strong>Hau Tree</strong> (카이마나 비치 호텔, 평일 08:00–13:30, 바다 바로 앞, 발렛) · <strong>Koko Head Cafe</strong> (카이무키, 월 08–13)</li>
-<li>☕ 커피: <strong>Honolulu Coffee "Bakery on King"</strong> (2643 S King St, 06–16) · Westman Cafe (워드) — 칼라카우아의 Honolulu Coffee Experience Center는 2024.10 폐점</li>
+<li>☕ 커피: 워드 쇼핑 중 <strong>Morning Brew 카카아코</strong> (685 Auahi St, 월 07–16) · Arvo Café 카카아코(가이드북)는 14시에 닫아 오후엔 불가 · Honolulu Coffee "Bakery on King" (2643 S King St, 06–16, 2025.7 개점이라 리뷰 아직 적음) — 칼라카우아의 Honolulu Coffee Experience Center는 2024.10 폐점</li>
 <li>저녁 대안: <strong>Wolfgang's Steakhouse</strong> (로열 하와이안 센터 — $25↑ 구매 시 첫 1시간 무료, 2·3시간째 $3, 4시간째부터 $8/시간, <strong>카드만, 높이 1.88m</strong>)</li>
 <li>다이아몬드헤드를 토요일에 못 갔으면: 09:00 출발 → 다이아몬드헤드 (10시 무렵 슬롯) → 카할라 몰·Whole Foods 카할라 → 오후 쇼핑 (서쪽 해안 대신)</li>
 <li>하나우마 베이는 월·화 휴무</li>
 </ul>
 </div></article><article class="day c6" data-date="11/10"><div class="day-head"><div class="date-badge"><b>11/10</b><span>화요일</span></div><div class="day-title"><h3 id="1110-화-뵤도인-폴리네시안-문화센터-pcc">뵤도인 → 폴리네시안 문화센터 (PCC)</h3></div></div><div class="day-body">
 <p class="wx">🌧 뵤도인 비 거의 없음 · PCC 오후 약한 소나기 가능 (유럽 모델 61%, 나머지 맑음) → 우비 · <strong>밤 운전 1시간+</strong></p>
-<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:Byodo-In_Temple_in_Hawaii.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Byodo-In_Temple_in_Hawaii.jpg/960px-Byodo-In_Temple_in_Hawaii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="뵤도인 사원" loading="lazy" decoding="async"></a><figcaption><b>뵤도인 사원</b><small>© Puneet Abbott · CC BY 2.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mokolii_from_above.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Mokolii_from_above.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="차이나맨스햇 (모콜리이)" loading="lazy" decoding="async"></a><figcaption><b>차이나맨스햇 (모콜리이)</b><small>© Forest &amp; Kim Starr · CC BY 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:2023-04-20,_Polynesian_Cultural_Center,_Laie,_Hawaii,_161928.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/2023-04-20%2C_Polynesian_Cultural_Center%2C_Laie%2C_Hawaii%2C_161928.jpg/960px-2023-04-20%2C_Polynesian_Cultural_Center%2C_Laie%2C_Hawaii%2C_161928.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="폴리네시안 문화센터" loading="lazy" decoding="async"></a><figcaption><b>폴리네시안 문화센터</b><small>© Steven Pavlov · CC BY-SA 4.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–09:00</div><div class="c"><div class="place"><strong>Hau Tree</strong> (평일 08:00~) 또는 Eggs 'n Things</div><div class="what">아침</div><div class="park">🅿️ 발렛 / 도보</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 — Likelike → Kahekili</div><div class="what">짐은 전날 밤 정리 완료</div></div></li><li><div class="t">09:30–10:30</div><div class="c"><div class="place"><strong>뵤도인 사원</strong> (08:30–16:30, 최종 입장 16:15)</div><div class="what">사원·잉어 연못 · 결제수단 미확인 → <strong>카드·현금 둘 다</strong> · <strong>해변복 차림 피하기</strong></div><div class="park">🅿️ 유료 (금액 확인)</div></div></li><li><div class="t">10:40</div><div class="c"><div class="place">쿠알로아 지나며 차이나맨스햇 전망</div><div class="what">쿠알로아 랜치는 예약 투어라 참고만</div><div class="park">🅿️ 쿠알로아 비치파크 무료 (미확인)</div></div></li><li><div class="t">11:20–12:00</div><div class="c"><div class="place"><strong>Seven Brothers 라이에</strong> (화 11–21) 또는 <strong>Giovanni's 카후쿠</strong> (10:30–18:30) 또는 후킬라우 마켓플레이스</div><div class="what">점심</div><div class="park">🅿️ PCC 주차장 무료 / Giovanni's 카후쿠 전용 무료</div></div></li><li><div class="t">12:00</div><div class="c"><div class="place"><strong>PCC 도착</strong></div><div class="park">🅿️ <strong>무료 · 입구 셔틀</strong></div></div></li><li><div class="t">12:15–17:30</div><div class="c"><div class="place">PCC 마을 관람</div><div class="what">6개 마을 · <strong>카누쇼 12:50 프리쇼, 13:00–13:20 본공연</strong> · 마을 관람은 루아우 집합 시각에 맞춰 마무리</div></div></li><li><div class="t">16:40경</div><div class="c"><div class="place">루아우</div><div class="what">Aliʻi Lūʻau (~18:05) / Gateway 뷔페 (~19:00)</div></div></li><li><div class="t">18:45</div><div class="c"><div class="place"><strong>HĀ: Breath of Life</strong> 착석</div><div class="what">공연 19:15–20:35</div></div></li><li><div class="t">20:50–22:05</div><div class="c"><div class="place">귀가 (약 75분)</div><div class="what">Kam Hwy 조명 적은 2차선 · <strong>작은형 혼자 운전</strong> → 피곤하면 PCC 왕복 버스 · 출발 전 GoAkamai로 Likelike·H-3 야간 통제 확인</div></div></li></ol>
+<div class="gallery"><figure><a href="https://commons.wikimedia.org/wiki/File:Byodo-In_Temple_in_Hawaii.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Byodo-In_Temple_in_Hawaii.jpg/960px-Byodo-In_Temple_in_Hawaii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="뵤도인 사원" loading="lazy" decoding="async"></a><figcaption><b>뵤도인 사원</b><small>© Puneet Abbott · CC BY 2.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mokolii_from_above.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Mokolii_from_above.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="차이나맨스햇 (모콜리이)" loading="lazy" decoding="async"></a><figcaption><b>차이나맨스햇 (모콜리이)</b><small>© Forest &amp; Kim Starr · CC BY 3.0</small></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:2023-04-20,_Polynesian_Cultural_Center,_Laie,_Hawaii,_161928.jpg" target="_blank" rel="noopener"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/2023-04-20%2C_Polynesian_Cultural_Center%2C_Laie%2C_Hawaii%2C_161928.jpg/960px-2023-04-20%2C_Polynesian_Cultural_Center%2C_Laie%2C_Hawaii%2C_161928.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="폴리네시안 문화센터" loading="lazy" decoding="async"></a><figcaption><b>폴리네시안 문화센터</b><small>© Steven Pavlov · CC BY-SA 4.0</small></figcaption></figure></div><ol class="tl"><li><div class="t">08:00–09:00</div><div class="c"><div class="place"><strong>Hau Tree</strong> (평일 08:00~) 또는 Eggs 'n Things</div><div class="what">아침</div><div class="park">🅿️ 발렛 / 도보</div></div></li><li><div class="t">09:00</div><div class="c"><div class="place">출발 — Likelike → Kahekili</div><div class="what">짐은 전날 밤 정리 완료</div></div></li><li><div class="t">09:30–10:30</div><div class="c"><div class="place"><strong>뵤도인 사원</strong> (08:30–16:30, 최종 입장 16:15)</div><div class="what">사원·잉어 연못 · 입장 성인 $10 · 65세 이상 $8 · <strong>카드만 (현금 불가)</strong> · <strong>해변복 차림 피하기</strong></div><div class="park">🅿️ <strong>시간당 $6</strong> (입장료 별도)</div></div></li><li><div class="t">10:40–11:00</div><div class="c"><div class="place">(선택) <strong>트로피컬 팜스 마카다미아</strong> (와이카네 길가 49-227 Kamehameha Hwy, 화 09–17:30)</div><div class="what">마카다미아 무료 시식·커피 — 가이드북 인기 장소 (구글 리뷰 7,771)</div><div class="park">🅿️ 무료</div></div></li><li><div class="t">11:10</div><div class="c"><div class="place">쿠알로아 지나며 차이나맨스햇 전망</div><div class="what">쿠알로아 랜치는 예약 투어라 참고만</div><div class="park">🅿️ 쿠알로아 비치파크 무료 (미확인)</div></div></li><li><div class="t">11:35–12:05</div><div class="c"><div class="place"><strong>Seven Brothers 라이에</strong> (화 11–21) 또는 <strong>Giovanni's 카후쿠</strong> (10:30–18:30, 카후쿠면 11:50까지 식사 끝) 또는 후킬라우 마켓플레이스</div><div class="what">점심 — 늦어지면 후킬라우에서 간단히</div><div class="park">🅿️ PCC 주차장 무료 / Giovanni's 카후쿠 전용 무료</div></div></li><li><div class="t">12:20</div><div class="c"><div class="place"><strong>PCC 도착</strong> (12:50 카누 프리쇼 목표)</div><div class="park">🅿️ <strong>무료 · 입구 셔틀</strong></div></div></li><li><div class="t">12:30–16:15</div><div class="c"><div class="place">PCC 마을 관람</div><div class="what">6개 마을 · <strong>카누쇼 12:50 프리쇼, 13:00–13:20 본공연</strong> · 예약 확인서의 <strong>루아우 집합 시각</strong>에 맞춰 이동 (마을 운영은 17:30까지)</div></div></li><li><div class="t">16:40경</div><div class="c"><div class="place">루아우</div><div class="what">Aliʻi Lūʻau (~18:05) / Gateway 뷔페 (~19:00)</div></div></li><li><div class="t">18:45</div><div class="c"><div class="place"><strong>HĀ: Breath of Life</strong> 착석</div><div class="what">공연 19:15–20:35</div></div></li><li><div class="t">20:50–22:05</div><div class="c"><div class="place">귀가 (약 75분)</div><div class="what">Kam Hwy 조명 적은 2차선 · <strong>작은형 혼자 운전</strong> → 피곤하면 PCC 왕복 버스 · 출발 전 GoAkamai로 Likelike·H-3 야간 통제 확인</div></div></li></ol>
 <ul>
 <li>PCC 패키지 (성인 1인, 세금 별도): Super Ambassador $293.95 · <strong>Aliʻi Lūʻau $197.95</strong> · Gateway Buffet $157.95 (할인 $138.95 표시 — 11/10 적용은 결제창 확인) · Lūʻau &amp; HĀ $138.95 (16:40부터, 마을 없음) · Islands + HĀ $123.95 (저녁 없음)</li>
 <li>밤 운전이 부담되면 <strong>PCC 공식 왕복 버스 $28/인</strong> (와이키키 22:30경 도착)</li>
 <li>뵤도인 대신 <strong>호오말루히아 식물원</strong> (화 09–16, 무료, 권장 체류 약 2시간)도 가능 — 하나만</li>
 <li>느슨한 B안: 오전 와이키키 쇼핑 (로열 하와이안 센터·인터내셔널 마켓플레이스, 10시 오픈) → 10:45 바로 출발 → 라이에 점심</li>
 <li>Kahuku Farms 카페는 화요일 휴무</li>
+<li>점심 대안: <strong>Kahuku Superette</strong> 포케 (Giovanni's 카후쿠 옆 · Frolic 추천 포케) · Romy's는 현지 평이 좋지만 조리가 오래 걸려 PCC 시간이 빠듯</li>
 </ul>
 </div></article><article class="day c7" data-date="11/11"><div class="day-head"><div class="date-badge"><b>11/11</b><span>수요일</span></div><div class="day-title"><h3 id="1111-수-출발-veterans-day-공휴일">출발 (Veterans Day 공휴일)</h3></div></div><div class="day-body">
 <p class="wx">🌤 6개 모델 모두 맑음 · 바람 강함</p>
@@ -468,6 +470,633 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li>가이드북처럼 83번을 하루에 한 바퀴(72번 → 83번 → 노스쇼어 → H-2) 도는 건 약 5시간 + 정차라 부모님과는 무리 → 우리는 3일에 나눠서 지나감</li>
 </ul>
 
+</section><section class="sec rank"><div class="sec-head"><span class="sec-ic">🏆</span><h2 id="장소-우선순위-구글-리뷰-수-순-113">장소 우선순위</h2><small>구글 리뷰 수 순 (11/3)</small></div>
+<blockquote>
+<p>리뷰가 많을수록 위에 있어요. 조사한 곳은 가이드북 지도 웨이포인트 316곳과 일정·대안 장소를 합친 <strong>348곳</strong>이에요. 형식은 <strong>장소 · 지역 · 리뷰 수 · ★평점 — 우리 일정</strong>이에요. ✅는 일정에 들어간 곳, ↪는 대안, 📖는 가이드북 지도에 있는 곳이에요.<br />
+<strong>수치 출처:</strong> 11/3에 <strong>구글 지도 API(Places API)로 직접 받은 값</strong>이에요. 구글에서 같은 이름이 다른 지점으로 잡힌 몇 곳(하나우마 베이·Hawaiian Island Cafe 등)은 집계 사이트(Wanderlog) 값을 그대로 썼어요. 리뷰 수는 <strong>인기(사람이 많이 감)</strong>를 보여 주고 <strong>맛·질</strong>과는 다를 수 있어요. 그래서 평점과 현지 평가를 함께 봐요.</p>
+</blockquote>
+<h3 id="식당카페디저트-상위-40">🍽 식당·카페·디저트 (상위 40)</h3>
+<ol>
+<li><strong>듀크스 와이키키 (Duke's Waikiki)</strong> · 와이키키 · 19,643 · ★4.4 — ↪ 11/7 저녁 대안</li>
+<li><strong>티키스 그릴 (Tiki's Grill &amp; Bar)</strong> · 와이키키 · 16,115 · ★4.7 — ↪ 11/4 저녁 대안</li>
+<li><strong>레너드스 베이커리 (Leonard's Bakery)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 13,628 · ★4.6 — ✅ 11/5 간식(트럭) 📖</li>
+<li><strong>마루가메 우동 (Marugame Udon Waikiki)</strong> · 와이키키 · 13,440 · ★4.5 — ↪ 11/8 저녁 대안 📖</li>
+<li><strong>지오반니 할레이바 (Giovanni's Shrimp Truck Haleiwa)</strong> · 노스쇼어·라이에 · 10,449 · ★4.1 — ✅ 11/8 점심 📖</li>
+<li><strong>니코스 피어 38 (Nico's Pier 38)</strong> · 다운타운·차이나타운 · 8,758 · ★4.4 — ↪ 11/4 점심 대안 📖</li>
+<li><strong>레인보우 드라이브인 (Rainbow Drive-In)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 8,087 · ★4.3 —  📖</li>
+<li><strong>지오반니 카후쿠 (Giovanni's Shrimp Truck Kahuku)</strong> · 노스쇼어·라이에 · 7,821 · ★4.4 — ↪ 11/10 점심 대안</li>
+<li><strong>야드 하우스 (Yard House)</strong> · 와이키키 · 7,774 · ★4.5 —  📖</li>
+<li><strong>하드락 카페 (Hard Rock Cafe Honolulu)</strong> · 와이키키 · 7,570 · ★4.4 —  📖</li>
+<li><strong>Costco Wholesale</strong> ·  · 7,460 · ★4.4</li>
+<li><strong>마츠모토 셰이브아이스 (Matsumoto Shave Ice)</strong> · 노스쇼어·라이에 · 6,978 · ★4.6 — ✅ 11/8 빙수 📖</li>
+<li><strong>레스토랑 604 (Restaurant 604)</strong> · 진주만 · 6,089 · ★4.4 — ✅ 11/5 점심</li>
+<li><strong>멍키포드 키친 코올리나 (Monkeypod Kitchen by Merriman Ko Olina)</strong> · 서부 · 5,526 · ★4.4 — ✅ 11/9 점심 📖</li>
+<li><strong>에그스앤띵스 (Eggs 'n Things Waikiki)</strong> · 와이키키 · 5,209 · ★4.1 — ✅ 11/8·11/11 아침</li>
+<li><strong>그린 월드 커피 팜 (Green World Coffee Farm)</strong> · 중부 · 4,980 · ★4.6 — ✅ 11/8 커피 📖</li>
+<li><strong>마우이 브루잉 (Maui Brewing Co. Waikiki)</strong> · 와이키키 · 4,866 · ★4.1</li>
+<li><strong>테즈 베이커리 (Ted's Bakery)</strong> · 노스쇼어·라이에 · 4,682 · ★4.5 — ✅ 11/8 간식</li>
+<li><strong>울프강 스테이크하우스 (Wolfgang's Steakhouse Waikiki)</strong> · 와이키키 · 4,554 · ★4.2 — ↪ 11/9 저녁 대안</li>
+<li><strong>Liliha Bakery Nimitz</strong> ·  · 4,344 · ★4.5 — ↪ 11/4 점심 대안</li>
+<li><strong>와이키키 브루잉 (Waikiki Brewing Company)</strong> · 와이키키 · 4,269 · ★4.2 —  📖</li>
+<li><strong>코나 커피 퍼베이어스 (Kona Coffee Purveyors)</strong> · 와이키키 · 4,167 · ★4.4 — ✅ 11/4 커피 📖</li>
+<li><strong>아일랜드 빈티지 커피 (Island Vintage Coffee Royal Hawaiian Center)</strong> · 와이키키 · 3,825 · ★4.3 —  📖</li>
+<li><strong>마구로 스폿 (Maguro Spot)</strong> · 와이키키 · 3,750 · ★4.6 —  📖</li>
+<li><strong>헤븐리 아일랜드 라이프스타일 (Heavenly Island Lifestyle)</strong> · 와이키키 · 3,698 · ★4.4 —  📖</li>
+<li><strong>헬레나스 하와이안 푸드 (Helena's Hawaiian Food)</strong> · 다운타운·차이나타운 · 3,683 · ★4.5 —  📖</li>
+<li><strong>오아후 멕시칸 그릴 (Oahu Mexican Grill)</strong> · 와이키키 · 3,422 · ★3.9 —  📖</li>
+<li><strong>할레이바 조스 (Haleiwa Joe's)</strong> · 노스쇼어·라이에 · 3,407 · ★4.5 — ↪ 11/8 저녁 대안</li>
+<li><strong>모쿠 키친 (Moku Kitchen)</strong> · 카카아코·워드 · 3,400 · ★4.4 —  📖</li>
+<li><strong>스윗 이즈 카페 (Sweet E's Cafe)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 3,387 · ★4.7 —  📖</li>
+<li><strong>루스 크리스 (Ruth's Chris Steak House Waikiki)</strong> · 와이키키 · 3,180 · ★4.5 —  📖</li>
+<li><strong>토미 바하마 (Tommy Bahama Restaurant Waikiki)</strong> · 와이키키 · 3,090 · ★4.6 —  📖</li>
+<li><strong>스카이 와이키키 (SKY Waikiki)</strong> · 와이키키 · 2,950 · ★4 —  📖</li>
+<li><strong>할레이바 비치 하우스 (Haleiwa Beach House)</strong> · 노스쇼어·라이에 · 2,919 · ★4.5 — ✅ 11/8 저녁</li>
+<li><strong>버즈 스테이크하우스 (Buzz's Original Steak House)</strong> · 동부 해안·카일루아 · 2,831 · ★4.3 — ✅ 11/6 저녁</li>
+<li><strong>오노 시푸드 (Ono Seafood)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 2,807 · ★4.6 —  📖</li>
+<li><strong>하이웨이 인 카카아코 (Highway Inn Kakaako)</strong> · 카카아코·워드 · 2,793 · ★4.5 — ✅ 11/4 점심</li>
+<li><strong>하우스 위다웃 어 키 (House Without a Key (Halekulani))</strong> · 와이키키 · 2,762 · ★4.4 — ✅ 11/7 저녁 📖</li>
+<li><strong>부호 코치나 (BUHO Cocina y Cantina)</strong> · 와이키키 · 2,721 · ★4 —  📖</li>
+<li><strong>세븐 브라더스 라이에 (Seven Brothers Burgers Laie)</strong> · 노스쇼어·라이에 · 2,564 · ★4.7 — ✅ 11/10 점심 📖</li>
+</ol>
+<ul>
+<li>순위 밖 일정 장소: 아란치노 디 마레 (Arancino di Mare) 2,489 (11/4 저녁) · 코코 헤드 카페 (Koko Head Cafe) 2,245 (11/9 아침 대안) · 하우 트리 (Hau Tree (Kaimana Beach Hotel)) 1,975 (11/10 아침) · 카페 카일라 (Cafe Kaila) 1,789 (11/9 아침) · 무스비 카페 이야스메 (Musubi Cafe Iyasume) 1,644 (11/11 간식) · 로미스 (Romy's Kahuku Prawns &amp; Shrimp) 1,598 (11/8 점심 대안) · 포티 나이너 (Forty Niner Restaurant Aiea) 1,573 (11/5 점심 대안) · Side Street Inn Waikiki 1,564 (11/5 저녁) · 아일랜드 브루 커피하우스 (Island Brew Coffeehouse Hawaii Kai) 1,463 (11/6 커피) · 카이 커피 (Kai Coffee Hawaii) 1,397 (11/11 커피) · 릴리하 베이커리 알라모아나 (Liliha Bakery Ala Moana) 1,394 (11/7 점심) · 로이스 하와이카이 (Roy's Hawaii Kai) 1,283 (11/6 저녁 대안) · 칼라파와이 카페 (Kalapawai Cafe &amp; Deli) 1,268 (11/6 점심) · 미셸스 (Michel's at the Colony Surf) 1,249 (11/9 저녁) · 하이웨이 인 와이파후 (Highway Inn Waipahu) 1,235 (11/5 점심 대안) · 메리먼스 호놀룰루 (Merriman's Honolulu) 1,077 (11/9 점심 대안) · 모에나 카페 (Moena Cafe) 933 (11/6 점심 대안) · 아일랜드 빈티지 커피 할레이바 (Island Vintage Coffee Haleiwa) 739 (11/8 아사이볼 대안) · 아일랜드 스노우 (Island Snow Hawaii) 648 (11/6 빙수) · 모닝 브루 (Morning Brew Kakaako) 545 (11/9 커피) · 로라 이모네 (Laura's Korean BBQ (Young's Lunch Wagon Korean BBQ)) 313 (11/8 점심 대안) · 호놀룰루 커피 베이커리 온 킹 (Honolulu Coffee Bakery on King) 56 (11/9 커피 대안) · 마카이 마켓 푸드코트 (Makai Market Food Court) 41 (11/7 점심 대안)</li>
+</ul>
+<h3 id="관광해변하이킹-상위-30">🏝 관광·해변·하이킹 (상위 30)</h3>
+<ol>
+<li><strong>돌 플랜테이션 (Dole Plantation)</strong> · 중부 · 39,051 · ★4.2 — ✅ 11/8 오전 📖</li>
+<li><strong>진주만 (Pearl Harbor National Memorial)</strong> · 진주만 · 27,799 · ★4.8 — ✅ 11/5 오전 📖</li>
+<li><strong>와이키키 불꽃놀이 (Hilton Hawaiian Village Friday fireworks)</strong> · 와이키키 · 27,376 · ★4.2</li>
+<li><strong>폴리네시안 문화센터 (Polynesian Cultural Center)</strong> · 노스쇼어·라이에 · 24,590 · ★4.7 — ✅ 11/10 오후·저녁 📖</li>
+<li><strong>쿠알로아 랜치 (Kualoa Ranch)</strong> · 동부 해안·카일루아 · 22,287 · ★4.7 —  📖</li>
+<li><strong>다이아몬드헤드 (Diamond Head State Monument)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 17,392 · ★4.7 — ✅ 11/7 하이킹 📖</li>
+<li><strong>미주리 전함 (Battleship Missouri Memorial)</strong> · 진주만 · 14,694 · ★4.8 — ↪ 11/5 선택 대안</li>
+<li><strong>카일루아 비치 파크 (Kailua Beach Park)</strong> · 동부 해안·카일루아 · 13,497 · ★4.8 — ✅ 11/6 오후 📖</li>
+<li><strong>호놀룰루 동물원 (Honolulu Zoo)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 10,470 · ★4.2 —  📖</li>
+<li><strong>와이메아 밸리 (Waimea Valley)</strong> · 노스쇼어·라이에 · 9,349 · ★4.6 — ✅ 11/8 오후 📖</li>
+<li><strong>할로나 블로홀 (Halona Blowhole Lookout)</strong> · 동부 해안·카일루아 · 8,041 · ★4.7 — ✅ 11/6 오전 📖</li>
+<li><strong>뵤도인 사원 (Byodo-In Temple)</strong> · 동부 해안·카일루아 · 7,913 · ★4.7 — ✅ 11/10 오전 📖</li>
+<li><strong>호오말루히아 식물원 (Hoomaluhia Botanical Garden)</strong> · 동부 해안·카일루아 · 7,550 · ★4.7 — ↪ 11/6·11/10 대안 📖</li>
+<li><strong>알라모아나 비치 파크 (Ala Moana Beach Park)</strong> · 알라모아나·마노아 · 7,233 · ★4.6</li>
+<li><strong>하나우마 베이 (Hanauma Bay Nature Preserve)</strong> · 동부 해안·카일루아 · 7,153 · ★4.6 —  📖</li>
+<li><strong>와이메아 베이 (Waimea Bay Beach Park)</strong> · 노스쇼어·라이에 · 6,704 · ★4.8 — ✅ 11/8 지나감 📖</li>
+<li><strong>진주만 항공 박물관 (Pearl Harbor Aviation Museum)</strong> · 진주만 · 6,689 · ★4.6 — ↪ 11/5 선택 대안</li>
+<li><strong>이올라니 궁전 (Iolani Palace)</strong> · 다운타운·차이나타운 · 6,097 · ★4.6 —  📖</li>
+<li><strong>시 라이프 파크 (Sea Life Park Hawaii)</strong> · 동부 해안·카일루아 · 5,732 · ★4.1 —  📖</li>
+<li><strong>비숍 박물관 (Bishop Museum)</strong> · 다운타운·차이나타운 · 5,723 · ★4.6 — ↪ 11/9 비 올 때 대안 📖</li>
+<li><strong>누우아누 팔리 전망대 (Nuuanu Pali Lookout)</strong> · 동부 해안·카일루아 · 5,721 · ★4.7 —  📖</li>
+<li><strong>마노아 폭포 (Manoa Falls Trail)</strong> · 알라모아나·마노아 · 5,479 · ★4.7 —  📖</li>
+<li><strong>샤크스 코브 (Shark's Cove)</strong> · 노스쇼어·라이에 · 5,340 · ★4.7 — ✅ 11/8 선택 📖</li>
+<li><strong>마카푸우 등대 트레일 (Makapuu Point Lighthouse Trail)</strong> · 동부 해안·카일루아 · 5,201 · ★4.8 — ✅ 11/6 하이킹</li>
+<li><strong>듀크 카하나모쿠 동상 (Duke Kahanamoku Statue)</strong> · 와이키키 · 5,055 · ★4.6 —  📖</li>
+<li><strong>마카푸우 전망대 (Makapuu Lookout)</strong> · 동부 해안·카일루아 · 4,612 · ★4.8</li>
+<li><strong>쿠알로아 리저널 파크 (Kualoa Regional Park)</strong> · 동부 해안·카일루아 · 4,020 · ★4.7 — ✅ 11/10 지나감 📖</li>
+<li><strong>와이키키 비치 (Waikiki Beach)</strong> · 와이키키 · 3,616 · ★4.7 —  📖</li>
+<li><strong>탄탈루스 전망대 (Puu Ualakaa State Wayside (Tantalus Lookout))</strong> · 알라모아나·마노아 · 3,616 · ★4.8 —  📖</li>
+<li><strong>라니카이 필박스 (Lanikai Pillbox Hike)</strong> · 동부 해안·카일루아 · 3,593 · ★4.8 — ✅ 11/6 선택</li>
+</ol>
+<ul>
+<li>순위 밖 일정 장소: 라나이 전망대 (Lanai Lookout) 3,581 (11/6 오전) · 선셋 비치 파크 (Sunset Beach Park) 2,465 (11/8 일몰) · 마카하 비치 파크 (Makaha Beach Park) 2,282 (11/9 오전) · 라니카이 비치 (Lanikai Beach) 2,205 (11/6 오후) · 라니아케아 비치 (Laniakea Beach) 1,175 (11/8 오후) · 코올리나 라군 (Ko Olina Lagoons) 1,146 (11/9 오전) · 라이언 수목원 (Lyon Arboretum) 879 (11/9 대안) · 케아와울라 비치(요코하마 베이) (Keawaula Beach (Yokohama Bay)) 669 (11/9 오전) · 푸우 오 마후카 헤이아우 (Puu o Mahuka Heiau) 278 (11/8 선택)</li>
+</ul>
+<h3 id="쇼핑-상위-25">🛍 쇼핑 (상위 25)</h3>
+<ol>
+<li><strong>알라모아나 센터 (Ala Moana Center)</strong> · 알라모아나·마노아 · 26,916 · ★4.5 — ✅ 11/7 쇼핑 📖</li>
+<li><strong>삭스 오프 피프스 (Saks OFF 5TH Ala Moana)</strong> · 알라모아나·마노아 · 26,916 · ★4.5 —  📖</li>
+<li><strong>월마트 (Walmart Keeaumoku)</strong> · 알라모아나·마노아 · 16,122 · ★4.1 — ✅ 11/4·11/9 장보기 📖</li>
+<li><strong>로열 하와이안 센터 (Royal Hawaiian Center)</strong> · 와이키키 · 12,716 · ★4.4 —  📖</li>
+<li><strong>인터내셔널 마켓 플레이스 (International Market Place)</strong> · 와이키키 · 10,175 · ★4.4 —  📖</li>
+<li><strong>알로하 스타디움 스왑밋 (Aloha Stadium Swap Meet)</strong> · 진주만 · 9,383 · ★4.5 —  📖</li>
+<li><strong>돈키호테 (Don Quijote Honolulu (Kaheka))</strong> · 알라모아나·마노아 · 8,712 · ★4.3 — ✅ 11/4·11/9 장보기 📖</li>
+<li><strong>트로피컬 팜스 마카다미아 (Tropical Farms Macadamia Nuts)</strong> · 동부 해안·카일루아 · 7,771 · ★4.5 — ✅ 11/10 선택 📖</li>
+<li><strong>코스트코 이윌레이 (Costco Iwilei)</strong> · 다운타운·차이나타운 · 7,460 · ★4.4 —  📖</li>
+<li><strong>와이켈레 프리미엄 아울렛 (Waikele Premium Outlets)</strong> · 서부 · 6,731 · ★4.2 — ✅ 11/5 쇼핑 📖</li>
+<li><strong>푸드랜드 팜스 (Foodland Farms Ala Moana)</strong> · 알라모아나·마노아 · 6,426 · ★4.5 — ✅ 11/7 장보기 📖</li>
+<li><strong>펄리지 센터 (Pearlridge Center)</strong> · 진주만 · 5,931 · ★4.3 —  📖</li>
+<li><strong>노스쇼어 마켓플레이스 (North Shore Marketplace)</strong> · 노스쇼어·라이에 · 5,141 · ★4.5 — ✅ 11/8 쇼핑</li>
+<li><strong>카할라 몰 (Kahala Mall)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 4,552 · ★4.3 —  📖</li>
+<li><strong>카 마카나 알리이 (Ka Makana Ali'i)</strong> · 서부 · 3,708 · ★4.4 —  📖</li>
+<li><strong>로스 와이키키 (Ross Dress for Less Waikiki)</strong> · 와이키키 · 3,520 · ★4.2 —  📖</li>
+<li><strong>후킬라우 마켓플레이스 (Hukilau Marketplace)</strong> · 노스쇼어·라이에 · 3,342 · ★4.6 — ↪ 11/10 점심 대안</li>
+<li><strong>KCC 파머스마켓 (KCC Farmers Market)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 3,214 · ★4.4 — ✅ 11/7 아침 📖</li>
+<li><strong>메이시스 알라모아나 (Macy's Ala Moana)</strong> · 알라모아나·마노아 · 3,036 · ★4.2 —  📖</li>
+<li><strong>알로하 타워 (Aloha Tower Marketplace)</strong> · 다운타운·차이나타운 · 2,676 · ★4.1 —  📖</li>
+<li><strong>워드 빌리지 (Ward Village)</strong> · 카카아코·워드 · 2,464 · ★4.2 — ✅ 11/9 쇼핑</li>
+<li><strong>홀푸드 카일루아 (Whole Foods Market Kailua)</strong> · 동부 해안·카일루아 · 2,285 · ★4.3 — ✅ 11/6 쇼핑</li>
+<li><strong>반스 앤 노블 (Barnes &amp; Noble Ala Moana)</strong> · 알라모아나·마노아 · 2,231 · ★4.5 —  📖</li>
+<li><strong>홀푸드 카할라 (Whole Foods Market Kahala)</strong> · 다이아몬드헤드·카파훌루·카이무키 · 1,838 · ★4.3 —  📖</li>
+<li><strong>마우나케아 마켓플레이스 (Maunakea Marketplace)</strong> · 다운타운·차이나타운 · 1,526 · ★4.1 —  📖</li>
+</ol>
+<ul>
+<li>
+<p>순위 밖 일정 장소: 타깃 알라모아나 (Target Ala Moana) 1,408 (11/7 쇼핑) · 할레이바 스토어 랏 (Haleiwa Store Lots) 1,335 (11/8 쇼핑) · 타깃 카일루아 (Target Kailua) 839 (11/6 쇼핑)</p>
+</li>
+<li>
+<p>❌ <strong>폐업:</strong> 노드스트롬 랙 와이키키 (Nordstrom Rack Waikiki Trade Center) · 아일랜드 올리브 오일 (Island Olive Oil Company) · 사우스 쇼어 페이퍼리 (South Shore Paperie) · 호누스 갈비 앤 스시 (Honu's Kalbi &amp; Sushi) · 아이 러브 날로 ('Ai Love Nalo) · 오노 스테이크 앤 쉬림프 (Ono Steaks and Shrimp Shack) · 마리포사 (Mariposa) · 에브리 데이 베러 바이 그린 메도스 (Every Day Better by Green Meadows) · 오코노미야키 치보 (Okonomiyaki Chibo) · Westman Cafe · Neiman Marcus · Coffee Gallery — 니먼 마커스·마리포사는 2026.5, 커피 갤러리는 2026.1 폐업 · 'Ai Love Nalo·Ono Steaks는 폐업 또는 장기 휴업 표시라 후보에서 뺐어요</p>
+</li>
+<li>❓ <strong>리뷰 수 미확인 3곳:</strong> 매직 인 파라다이스 (Magic in Paradise) · 알렉산더 앤 볼드윈 빌딩 (Alexander &amp; Baldwin Building) · 주드 빌딩 (Judd Building)</li>
+</ul>
+<h3 id="우리-끼니-판단-리뷰-수-현지-평가">🍽 우리 끼니 판단 — 리뷰 수 + 현지 평가</h3>
+<blockquote>
+<p><strong>바꾸는 기준:</strong> 같은 동선·시간대의 대안이 <strong>리뷰 수 2배 이상</strong>이고 평점이 같거나 높을 때만 바꿔요.<br />
+- 그 대안이 현지 평가에서 "관광객용"이거나 호불호가 갈리고, 지금 장소에 <strong>지역 수상(Hale ʻAina 등)이나 현지인 추천</strong>이 있으면 그대로 둬요.<br />
+- <strong>마지막 만찬처럼 분위기가 목적인 끼니는 예외</strong>로 해요.</p>
+<p><strong>결과:</strong> 식사 15끼는 모두 그대로 두고 <strong>커피 4곳을 바꿨어요.</strong> 동선에 걸리는 가이드북 인기 장소 1곳(트로피컬 팜스)은 선택 정차로 더했어요.<br />
+숫자는 11/3에 <strong>구글 지도 API로 직접 받은 값</strong>이에요(리뷰 수 · ★평점). "리뷰 수 1위"는 사람이 가장 많이 갔다는 뜻이고 맛 순위는 아니에요.</p>
+</blockquote>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>날짜 · 끼니</th>
+<th>지금 장소 (리뷰 · ★ · 현지)</th>
+<th>같은 동선 대안</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/4 점심</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Highway Inn 카카아코 (2,793 · 4.5 · 👍 Hale ʻAina 2026 하와이 음식 은상)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Nico's Pier 38 (8,758 · 4.4 · 🤔 해산물 은상, "후리카케 아히만 추천") · Liliha 니미츠 (4,344 · 4.5 · 👍)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — Nico's는 리뷰가 3배지만 평점이 낮고 현지 평이 갈려요. 둘 다 은상이에요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/4 저녁</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Arancino di Mare (2,489 · 4.4 · 👍 이탈리안 금상, 브랜드)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Tiki's (16,115 · 4.7 · 🤔 "전망은 좋고 음식은 기억에 안 남음")</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 첫날이라 호텔 1층이 편해요. 전망을 원하면 Tiki's로 가요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/4 커피</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Kai Coffee (1,397 · 4.4)</span></td>
+<td data-label="같은 동선 대안"><span class="v"><strong>Kona Coffee Purveyors</strong> (4,167 · 4.4 · 도보 8분 · <strong>수 07–16</strong>)</span></td>
+<td data-label="판단"><span class="v"><strong>변경</strong> — 리뷰 3배, 평점 같음. 16시에 닫으니 체크인 뒤 바로 가요. 늦으면 Kai Coffee로 가요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/5 점심</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Restaurant 604 (6,089 · 4.4 · 👍)</span></td>
+<td data-label="같은 동선 대안"><span class="v">—</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 진주만 근처 리뷰 수 1위예요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/5 저녁</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Side Street Inn 와이키키 (1,564 · 4.6 · 👍 바 음식 동상, 브랜드)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Yard House (7,774 · 4.5) · 마루가메 (13,440 · 4.5)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 5인 가족이 나눠 먹는 큰 접시 요리라 현지 추천이 맞아요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 커피</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Island Brew (1,463 · 4.5 · 🤔 "전망 좋고 비쌈")</span></td>
+<td data-label="같은 동선 대안"><span class="v">Hawaiian Island Cafe (901 · 4.7)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 하와이카이 리뷰 수 1위예요. 마리나 전망을 보며 짧게 쉬어요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 점심</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Kalapawai Café (1,268 · 4.5 · 👍)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Cinnamon's (2,438 · 4.4) · Over Easy (1,847 · 4.7, 브런치)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 리뷰 차이가 2배 미만이에요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 저녁</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Buzz's (2,831 · 4.3 · 👍 야외 식사 은상)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Kona Brewing 하와이카이 (2,290 · 4.5) · Roy's (1,283 · 4.6 · 🤔)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 카일루아 리뷰 수 1위예요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/7 점심</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Liliha 알라모아나 (1,394 · 4.3 · 👍 로컬 체인 동상)</span></td>
+<td data-label="같은 동선 대안"><span class="v">몰 안에 더 높은 곳 없음</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong></span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/7 커피</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Westman Cafe (144 · 4.4)</span></td>
+<td data-label="같은 동선 대안"><span class="v">KCC 마켓 커피 부스</span></td>
+<td data-label="판단"><span class="v"><strong>삭제</strong> — 2026.3에 옮긴 뒤 리뷰가 아직 적어요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/7 저녁</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">House Without a Key (2,762 · 4.4 · 🤔 분위기 은상)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Duke's (19,643 · 4.4 · 🧳 "현지인은 조식 뷔페 말고는 안 감")</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — Duke's는 리뷰가 7배지만 현지 평가가 "관광객용"이에요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 아침</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Eggs 'n Things (5,209 · 4.1 · 🤔 아침 동상, 체인)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Heavenly (3,698 · 4.4)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 도보 1분이라 노스쇼어 출발이 빨라요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 커피</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Island Vintage 할레이바 (739 · 4.5 · 👍)</span></td>
+<td data-label="같은 동선 대안"><span class="v"><strong>Green World Coffee Farm</strong> (4,980 · 4.6 · 돌 플랜테이션 가는 길 · 일 07–18)</span></td>
+<td data-label="판단"><span class="v"><strong>변경</strong> — 리뷰 7배이고 99번 도로 길가라 돌아가지 않아요. Island Vintage는 아사이볼용으로 남겨요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 빙수</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">마츠모토 (6,978 · 4.6 · 🤔 "유명세만큼은 아님")</span></td>
+<td data-label="같은 동선 대안"><span class="v">Aoki's (642 · 4.8 · 바로 옆 · Frolic 추천)</span></td>
+<td data-label="판단"><span class="v"><strong>유지 + 메모</strong> — 줄이 길면 현지인이 더 좋아하는 옆집 Aoki's로 가요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 점심</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Giovanni's 할레이바 (10,449 · 4.1 · 🤔 갈릭 쉬림프 독자·기자 순위 3위)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Big Wave Shrimp (2,363 · 4.6 · 독자 투표 1위) · Young's 한식 트럭 (313 · 4.4)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 조사한 노스쇼어 식당 중 리뷰 수가 가장 많아요. 맛 순위 1위는 아니에요. 줄이 길면 Big Wave로 가요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 저녁</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Haleiwa Beach House (2,919 · 4.5 · 👍)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Haleiwa Joe's (3,407 · 4.5 · 🤔 "대기 길고 메뉴 편차")</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong></span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 아침</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Café Kaila (1,789 · 4.6 · 👍 <strong>아침·브런치 금상 2025·2026</strong>)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Sweet E's (3,387 · 4.7)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 현지 독자 투표 2년 연속 1위예요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 점심</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Monkeypod 코올리나 (5,526 · 4.4 · 👍)</span></td>
+<td data-label="같은 동선 대안"><span class="v">—</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 서쪽 해안 리뷰 수 1위예요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 커피</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Honolulu Coffee Bakery on King (56 · 4.0)</span></td>
+<td data-label="같은 동선 대안"><span class="v"><strong>Morning Brew 카카아코</strong> (545 · 4.4 · 월 07–16)</span></td>
+<td data-label="판단"><span class="v"><strong>변경</strong> — 워드 쇼핑(14:30~) 동선 안에서 16시까지 열어요. Arvo(643 · 4.5)는 14시에 닫아서 뺐어요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 저녁</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Michel's (1,249 · 4.5 · 👍 "가장 로맨틱" 동상)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Ruth's Chris (3,180 · 4.5) · Wolfgang's (4,554 · 4.2 · 🤔)</span></td>
+<td data-label="판단"><span class="v"><strong>유지 (예외)</strong> — 기준만 보면 Ruth's Chris가 리뷰 2.5배에 평점이 같아 교체 대상이에요. 마지막 만찬이라 바다 전망과 분위기를 우선했어요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/10 아침</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Hau Tree (1,975 · 4.2 · 👍 <strong>야외 식사 금상</strong> · 호텔 브런치 동상)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Heavenly (3,698 · 4.4)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — 리뷰 차이가 2배 미만이고 지역 수상이 있어요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/10 점심</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Seven Brothers 라이에 (2,564 · 4.7 · 🤔)</span></td>
+<td data-label="같은 동선 대안"><span class="v">Giovanni's 카후쿠 (7,821 · 4.4 · 🤔) · 후킬라우 마켓 (3,342 · 4.6) · Romy's (1,598 · 3.8 · 기자 순위 1위지만 조리가 오래 걸림)</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong> — Giovanni's 카후쿠는 리뷰가 3배지만 평점이 낮고, 라이에가 PCC 바로 옆이에요.</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/11 아침</span></td>
+<td data-label="지금 장소 (리뷰 · ★ · 현지)"><span class="v">Eggs 'n Things · 무스비 이야스메 (1,644 · 4.5 · 👍)</span></td>
+<td data-label="같은 동선 대안"><span class="v">—</span></td>
+<td data-label="판단"><span class="v"><strong>유지</strong></span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>👍 현지인 추천 · 🤔 호불호 · 🧳 관광객용(현지인 비추) — 아래 🗣 현지인 평가 목록 참고</li>
+</ul>
+
+</section><section class="sec generic"><div class="sec-head"><span class="sec-ic">💵</span><h2 id="식당-메뉴-가격-대표-메뉴-1인-예상-113-조사">식당 메뉴 가격</h2><small>대표 메뉴 · 1인 예상 (11/3 조사)</small></div>
+<blockquote>
+<p>메뉴판 가격 기준이고, 여기에 <strong>세금 4.712%</strong>와 <strong>팁 18~20%</strong>(카운터 주문·푸드트럭은 팁 없음)가 붙어요. 그래서 실제 결제액은 표 가격의 <strong>약 1.25배</strong>예요. 카드 수수료(3~4%)나 서비스료를 따로 받는 곳은 비고에 적었어요. <em>(추정)</em> 표시는 최신 메뉴판을 못 구해서 옛 메뉴판이나 비슷한 가게를 보고 어림한 값이에요.</p>
+</blockquote>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>날짜 · 끼니</th>
+<th>식당</th>
+<th>대표 메뉴 · 가격</th>
+<th>1인 예상</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/4 점심</span></td>
+<td data-label="식당"><span class="v">Highway Inn 카카아코</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">라우라우 콤보 $23.99 · 칼루아 피그 콤보 $19.99 · 비프 스튜 콤보 $19.99 · 피피카울라(육포) $13.99</span></td>
+<td data-label="1인 예상"><span class="v">$22–32</span></td>
+<td data-label="비고"><span class="v">2026.5 메뉴판 · 주방 수수료 5% 별도</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/4 저녁</span></td>
+<td data-label="식당"><span class="v">Tiki's Grill &amp; Bar</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">1944 마이타이 $23 · 피시 타코·버거·아히 포케 $22–32 <em>(추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$45–70 <em>(추정)</em></span></td>
+<td data-label="비고"><span class="v">음식 가격은 공식 메뉴 접속 불가</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/4 저녁</span></td>
+<td data-label="식당"><span class="v">Arancino di Mare</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">새우 피자 $35 · 카르보나라 피자 $33 · 성게 스파게티 $40</span></td>
+<td data-label="1인 예상"><span class="v">$40–60</span></td>
+<td data-label="비고"><span class="v">주문 페이지 가격 (날짜 없음)</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/5 점심</span></td>
+<td data-label="식당"><span class="v">Restaurant 604</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">피시앤칩스 $22 · 아히 카츠 $28 · 로코모코·치킨 카츠 각 $20</span></td>
+<td data-label="1인 예상"><span class="v">$20–30</span></td>
+<td data-label="비고"><span class="v">공식 메뉴판 (코덱스 확인)</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/5 저녁</span></td>
+<td data-label="식당"><span class="v">Side Street Inn 와이키키</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">팬프라이 폭찹 $36 · 'Works' 볶음밥 $41.50 · 갈릭 치킨 $31 · 갈비 시가 · <strong>4~5인 세트 $195</strong></span></td>
+<td data-label="1인 예상"><span class="v">$35–50</span></td>
+<td data-label="비고"><span class="v">2026.9 기사 · 카드 수수료 3% · 개점 때는 BYOB(콜키지 $10/인) — 지금 주류 조건은 예약 때 확인</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 커피</span></td>
+<td data-label="식당"><span class="v">Island Brew Coffeehouse</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">드립·코나 $4–7 · 라테 $5.5–8 · 아사이볼 $14–17 <em>(모두 추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$12–22</span></td>
+<td data-label="비고"><span class="v">메뉴판이 이미지라 확인 불가</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 점심</span></td>
+<td data-label="식당"><span class="v">Kalapawai Café &amp; Deli</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">후리카케 생선 샌드위치 $19 · 비치 버거 $18 · 포케볼 $16</span></td>
+<td data-label="1인 예상"><span class="v">$18–25</span></td>
+<td data-label="비고"><span class="v">메뉴 날짜 불명</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 간식</span></td>
+<td data-label="식당"><span class="v">Island Snow</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">빙수 $7–12 <em>(추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$8–14</span></td>
+<td data-label="비고"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 저녁</span></td>
+<td data-label="식당"><span class="v">Buzz's Original Steak House</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">데리야키 스테이크 $28–34 · 서로인 10oz $32–38 · 새우 스캠피 $34–40 <em>(모두 추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$30–50</span></td>
+<td data-label="비고"><span class="v">공식은 "가격은 전화 문의" · 메인에 샐러드(시저·하우스·시금치) 또는 수프 + 채소 포함 · 1인 최소 $14</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/6 대안</span></td>
+<td data-label="식당"><span class="v">Roy's Hawaii Kai</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">미소야키 버터피시 $48–56 · 수플레 $16–19 <em>(모두 추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$65–100</span></td>
+<td data-label="비고"><span class="v">메뉴판 비공개</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/7 점심</span></td>
+<td data-label="식당"><span class="v">Liliha Bakery 알라모아나</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">코코퍼프 $3.19 (6개 $17.50) · 녹차 코코퍼프 $3.59 · 로코모코 $18.95 · 마카다미아 와플 $12.95</span></td>
+<td data-label="1인 예상"><span class="v">빵 $4–10 · 식사 $15–22</span></td>
+<td data-label="비고"><span class="v">2026.4.17 메뉴판</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/7 저녁</span></td>
+<td data-label="식당"><span class="v">House Without a Key</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">라와이아 롤 $29 · 생선찜 $48 · 갈비찜 $60 · 화덕 피자 $30</span></td>
+<td data-label="1인 예상"><span class="v">저녁 $70–100</span></td>
+<td data-label="비고"><span class="v">할레쿨라니 메뉴판 · 세금·팁 별도</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/7 대안</span></td>
+<td data-label="식당"><span class="v">Duke's Waikiki</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">피시 타코 $29 · 립&amp;치킨 $31 · 코코넛 새우 $29.50 · 치즈버거 $23.50 · 훌라 파이 $15 · 저녁 프라임립 뷔페 $64</span></td>
+<td data-label="1인 예상"><span class="v">$33–55</span></td>
+<td data-label="비고"><span class="v">2026.10 메뉴판 · 마이타이 $18</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 아침</span></td>
+<td data-label="식당"><span class="v">Eggs 'n Things</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">마카다미아 팬케이크 $15 · 로코모코 $18.95 · 오믈렛 $17.95</span></td>
+<td data-label="1인 예상"><span class="v">$20–30</span></td>
+<td data-label="비고"><span class="v">카드 수수료 3%</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 간식</span></td>
+<td data-label="식당"><span class="v">마츠모토 셰이브아이스</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">스몰 $4 · 라지 $4.50 · 이치방 스페셜 $7.50 (아이스크림·팥·모찌)</span></td>
+<td data-label="1인 예상"><span class="v">$5–9</span></td>
+<td data-label="비고"><span class="v">2026.11 메뉴판</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 점심</span></td>
+<td data-label="식당"><span class="v">Giovanni's</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">스캠피 · 핫앤스파이시 · 레몬버터 플레이트 각 <strong>$18.50</strong> (새우 12마리 + 밥 2스쿱) · 하프 $9.50</span></td>
+<td data-label="1인 예상"><span class="v">$19–25</span></td>
+<td data-label="비고"><span class="v"><strong>현금 권장</strong> · 핫앤스파이시는 아주 매움, 환불 없음</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 간식</span></td>
+<td data-label="식당"><span class="v">Ted's Bakery</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">초코 하우피아 파이 한 판 $24.52 · 플레이트 런치 $11–16 <em>(옛 메뉴)</em></span></td>
+<td data-label="1인 예상"><span class="v">파이 한 조각 $4–6 <em>(추정)</em></span></td>
+<td data-label="비고"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 저녁</span></td>
+<td data-label="식당"><span class="v">Haleiwa Beach House</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">쉬림프 스캠피 $39 · 타이 프라이드 치킨 $38 · 갈비찜 $39 (점심 갈릭 쉬림프 $27)</span></td>
+<td data-label="1인 예상"><span class="v">저녁 $45–65</span></td>
+<td data-label="비고"><span class="v">2025.6 메뉴판 · 서비스료 3% · 화 휴무</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 대안</span></td>
+<td data-label="식당"><span class="v">Haleiwa Joe's</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">코코넛 새우 $33.95 · 스티키 립 하프 $29.95 · 생선 구이 $36.95 · 아히 $21.95</span></td>
+<td data-label="1인 예상"><span class="v">$40–60</span></td>
+<td data-label="비고"><span class="v">2025.6 메뉴판 · 저녁 16:30–</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/8 대안</span></td>
+<td data-label="식당"><span class="v">마루가메 우동</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">가케 우동 $8–9 · 니쿠타마(소고기) $13–15 · 튀김 개당 $2.50–4.50 <em>(추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$14–22</span></td>
+<td data-label="비고"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 아침</span></td>
+<td data-label="식당"><span class="v">Café Kaila</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">팬케이크·와플 $11–13 · 오믈렛 $14–16 · 콤보 $14–17 <em>(옛 메뉴 + 인상분 추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$13–20</span></td>
+<td data-label="비고"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 점심</span></td>
+<td data-label="식당"><span class="v">Monkeypod Kitchen 코올리나</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">피시 타코 $22–26 · 버거 $22–28 · 화덕 피자 $21–25 <em>(추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$28–45</span></td>
+<td data-label="비고"><span class="v">수수료 약 4% · 메뉴판 확인 불가</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 저녁</span></td>
+<td data-label="식당"><span class="v">Michel's at the Colony Surf</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v"><strong>5코스 테이스팅 $130</strong> (와인 페어링 +$40) · 비프 웰링턴 $74 · 필레&amp;랍스터 $76 · 랍스터 비스크 $22 <em>(단품은 2024 메뉴판)</em></span></td>
+<td data-label="1인 예상"><span class="v">$110–160</span></td>
+<td data-label="비고"><span class="v">예약 필수 · 세금·팁 별도</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/9 대안</span></td>
+<td data-label="식당"><span class="v">Merriman's Honolulu</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">마카다미아 생선 $46 · 스테이크 프리츠 $48 · (점심) 스매시 버거 $17 · 피시 타코 $19</span></td>
+<td data-label="1인 예상"><span class="v">점심 $20–30 · 저녁 $60–90</span></td>
+<td data-label="비고"><span class="v">수수료 4%</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/10 아침</span></td>
+<td data-label="식당"><span class="v">Hau Tree</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">에그 베네딕트 $26–37 · 로코모코 $31 · 비치 버거 $29</span></td>
+<td data-label="1인 예상"><span class="v">$35–50</span></td>
+<td data-label="비고"><span class="v">6명 이상 팁 20% 자동</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/10 점심</span></td>
+<td data-label="식당"><span class="v">Seven Brothers 라이에</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">치즈버거 $11–13 · 스페셜 버거 $14–17 · 감자튀김 $6–9 <em>(모두 추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$16–24</span></td>
+<td data-label="비고"><span class="v">—</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/10 저녁</span></td>
+<td data-label="식당"><span class="v">PCC Aliʻi Lūʻau</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">패키지 성인 <strong>$197.95</strong> (마을 관람 + 루아우 + 공연)</span></td>
+<td data-label="1인 예상"><span class="v">—</span></td>
+<td data-label="비고"><span class="v">세금 별도 · 시즌별 변동</span></td>
+</tr>
+<tr>
+<td data-label="날짜 · 끼니"><span class="v">11/11 간식</span></td>
+<td data-label="식당"><span class="v">무스비 카페 이야스메</span></td>
+<td data-label="대표 메뉴 · 가격"><span class="v">스팸 무스비 $3–4 · 도시락 $9–14 <em>(추정)</em></span></td>
+<td data-label="1인 예상"><span class="v">$8–15</span></td>
+<td data-label="비고"><span class="v">—</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>5인 기준 하루 식비 대략: 아침 $100–150 · 점심 $100–200 · 저녁 $250–500 (Michel's 날은 $650–800) — 모두 세금·팁 포함 전 금액</li>
+</ul>
+
+</section><section class="sec generic"><div class="sec-head"><span class="sec-ic">🗣</span><h2 id="현지인-평가-레딧지역-매체현지-수상-113">현지인 평가</h2><small>레딧·지역 매체·현지 수상 (11/3)</small></div>
+<blockquote>
+<p>일정과 대안에 넣은 84곳을 대상으로, 하와이 주민이 쓴 글(레딧 r/Hawaii·r/HawaiiFood·r/Honolulu·r/oahu)과 지역 매체(HONOLULU 매거진·Frolic·Hawaii News Now)를 찾아봤어요. <strong>수상</strong>은 현지 독자·기자가 뽑는 <strong>Hale ʻAina 2026</strong>(식당상), <strong>Best of HONOLULU 2026</strong>, Frolic 순위예요. 가이드북에만 있는 나머지 장소는 수상 목록과만 대조했어요. ↓ 목록 아래 참고<br />
+⚠️ 주민 글은 한두 사람 의견일 수 있어요. "호불호"는 나쁘다는 뜻이 아니라 <strong>기대치를 맞추라</strong>는 뜻이에요.</p>
+</blockquote>
+<p><strong>11/4</strong></p>
+<ul>
+<li><strong>Highway Inn 카카아코</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 은상 하와이 음식 — 지역 Reddit에서는 하와이 전통음식을 먹기 좋은 곳으로 추천하며, 카카아코점의 플레이트와 안주 가격도 괜찮다는 의견이 있습니다.</li>
+<li><strong>월마트 Keeaumoku</strong> — 🤔 호불호 — 지역 주민들은 상온 식품과 생활용품을 저렴하게 사는 용도로 이용하지만, 잠금 진열대 때문에 쇼핑이 불편하다는 불만도 있습니다.</li>
+<li><strong>돈키호테 Kaheka</strong> — 👍 추천 — 2025년 지역 Reddit에서 Kaheka점은 돈키호테 중에서도 상품 구색이 가장 넓다는 평가를 받았습니다.</li>
+<li><strong>Arancino di Mare</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 금상 이탈리안 — 지역 Reddit에서 Arancino를 이탈리안 추천으로 꼽고, 지역지 독자상에서도 지지가 확인됩니다.</li>
+<li><strong>Tiki's Grill &amp; Bar</strong> — 🤔 호불호 — HONOLULU의 음식 평론은 관광객 구경과 함께 즐기는 제대로 된 바 음식으로 호평했지만, 2026년 지역 Reddit에는 분위기에 비해 음식이 기억에 남지 않고 비싸다는 의견이 있습니다.</li>
+<li><strong>Kai Coffee</strong> — ❔ 자료 없음 — 지역 Reddit에는 Kai Coffee의 커피와 직원들을 좋아한다는 의견이 있지만, 하얏트점으로 특정되는 주민 평가는 확인하지 못했습니다.</li>
+</ul>
+<p><strong>11/5</strong></p>
+<ul>
+<li><strong>진주만 방문자센터 (USS Arizona)</strong> — 👍 추천 — 방문자센터 자원봉사 경험자는 무료 전시와 Arizona 방문을 위해 비싼 상업 투어를 살 필요가 없다고 설명합니다.</li>
+<li><strong>Restaurant 604</strong> — 👍 추천 — 진주만 근처 식당을 묻는 지역 Reddit에서 주차가 넉넉하고 괜찮은 곳이라는 추천이 있습니다.</li>
+<li><strong>와이켈레 프리미엄 아울렛</strong> — 🤔 호불호 — 현지 이용자는 주말 혼잡과 불편한 주차장을 지적하며, 가까이 있을 때 들르는 정도로 평가합니다.</li>
+<li><strong>Side Street Inn Waikiki</strong> — 👍 추천 · ⚠️ 이전 · 🏅 Hale ʻAina 2026 동상 바 음식 — 지역 음식 매체가 돼지갈비구이와 포르투갈 소시지·차슈 볶음밥의 푸짐한 공유 접시를 추천해 5인 가족에게 잘 맞습니다.</li>
+<li><strong>Highway Inn 와이파후</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 은상 하와이 음식 — 지역 Reddit에서 전통 하와이 음식 추천으로 반복 등장하며, Pouhala역 바로 옆이라 연장자와 함께 들르기 좋다는 추천도 있습니다.</li>
+</ul>
+<p><strong>11/6</strong></p>
+<ul>
+<li><strong>Island Brew Coffeehouse</strong> — 🤔 호불호 — 주민들은 물가의 넓은 야외 좌석과 바람을 좋아해 독서·휴식 장소로 추천합니다.</li>
+<li><strong>라나이 룩아웃</strong> — ❔ 자료 없음 — 지역 Reddit에 전망·별 관찰 장소로 언급되지만, 주민 추천의 강도를 판단할 자료는 부족합니다.</li>
+<li><strong>할로나 블로홀</strong> — ❔ 자료 없음 — 최근 주민들의 추천·비추천을 판정할 자료는 부족하지만, 현지 보도에서 차량털이와 전망대 아래 바위로 내려갔다 파도에 휩쓸리는 위험이 확인됩니다.</li>
+<li><strong>마카푸우 등대 트레일</strong> — 👍 추천 — 오아후로 돌아와 부모님을 돌본다는 주민의 쉬운 산책로 질문에서 추천되지만, 그늘이 없어 이른 시간 방문이 핵심이라는 의견입니다.</li>
+<li><strong>Kalapawai Café &amp; Deli</strong> — 👍 추천 — HONOLULU는 카일루아의 오래된 지역 식당으로 소개하며 카페·델리의 피자와 간편한 식사를 다룹니다.</li>
+<li><strong>카일루아 비치파크 (주차)</strong> — 👍 추천 — 지역 Reddit에서는 그늘에서 더위를 피하기 좋은 해변공원으로 추천합니다.</li>
+<li><strong>라니카이 비치</strong> — 🤔 호불호 — 지역 주민들도 아름다움은 인정하지만, 해변 접근 차량 때문에 집에서 나가기조차 어렵다는 불만이 큽니다.</li>
+<li><strong>라니카이 필박스 (아들들)</strong> — 🤔 호불호 — 전망은 좋지만 주민들은 등산객 증가에 따른 침식과 주택가 주차난을 지적하며, 2026년에도 낙상 후 헬기 구조가 있었습니다.</li>
+<li><strong>Island Snow</strong> — 👍 추천 — 지역 Reddit의 빙수 추천에서 Island Snow를 즐겨 찾는다는 의견이 있고, 다른 유명점의 대안으로도 꼽힙니다.</li>
+<li><strong>Target Kailua</strong> — 🤔 호불호 — 지역 Reddit에는 카일루아점도 온라인보다 매장 가격이 비싼 상품이 있다는 불만이 있어 가격 비교가 유용합니다.</li>
+<li><strong>Whole Foods Kailua</strong> — 🤔 호불호 — 카일루아 주민들은 라나이의 해피아워와 가격을 좋아한다는 의견이 있지만, 2026년에는 매장 조명·분위기와 음식 코너에 대한 불만도 나옵니다.</li>
+<li><strong>Buzz's Original Steak House</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 은상 야외 식사 — 카일루아에서 자란 현지 음식 필자는 가족 기념일과 부모님 모시기에 좋은 동네 명소로 평가합니다.</li>
+<li><strong>Roy's Hawaii Kai</strong> — 🤔 호불호 — 오랫동안 Hawaii Kai점을 이용했다는 주민은 음식과 서비스를 옹호하며 2층 창가의 일몰을 추천합니다.</li>
+</ul>
+<p><strong>11/7</strong></p>
+<ul>
+<li><strong>다이아몬드헤드</strong> — 👍 추천 — 주민들의 비교적 쉬운 하이킹 추천에 포함되지만, 60~70대 부모님에게도 가벼운 평지 산책이라고 보기는 어렵습니다.</li>
+<li><strong>KCC 파머스마켓</strong> — 🤔 호불호 — 지역 Reddit에는 매주 간다는 주민도 있지만, 혼잡하고 비싼 관광객 중심 시장이 됐다는 비판도 있습니다.</li>
+<li><strong>알라모아나 센터</strong> — 🤔 호불호 — 주민들도 이용하지만 최근 지역 Reddit에는 청결·시설 관리에 대한 불만이 있습니다.</li>
+<li><strong>Liliha Bakery 알라모아나</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 동상 로컬 체인 — 2026년 지역 Reddit에서 고령의 어머니와 이용하기에는 본점보다 알라모아나 등 다른 지점이 편하다는 실제 가족 후기가 있습니다.</li>
+<li><strong>Foodland Farms 알라모아나</strong> — 🤔 호불호 — 지역 주민들은 포케와 즉석식·핫바의 선택 폭을 좋아하지만 일반 장보기 가격은 비싸다고 평가합니다.</li>
+<li><strong>Westman Cafe</strong> — 🤔 호불호 · ⚠️ 이전 — 2026년 현지 음식 평론은 공원을 바라보는 라나이와 동네 사람들이 모이는 분위기를 좋게 보면서도, 고급 콘도·리조트 같은 성격을 지적합니다.</li>
+<li><strong>House Without a Key</strong> — 🤔 호불호 · 🏅 Hale ʻAina 2026 은상 분위기; 동상 야외 식사 — 지역지 독자상에서는 분위기와 야외 식사가 높게 평가되지만, 2026년 주민임을 밝힌 Reddit 이용자는 서비스에 실망했다고 했습니다.</li>
+<li><strong>Duke's Waikiki</strong> — 🧳 관광객용 · 🏅 Hale ʻAina 2026 결선 뷔페 — 2026년 지역 Reddit에서 주민임을 밝힌 이용자는 조식 뷔페 외에는 피한다고 했고, 다른 이용자들도 저녁 음식이 가격 대비 평범하다고 평가합니다.</li>
+</ul>
+<p><strong>11/8</strong></p>
+<ul>
+<li><strong>Eggs 'n Things Eggspress</strong> — 🤔 호불호 · 🏅 Hale ʻAina 2026 동상 아침 — 현지 Reddit에는 와이키키 지점의 긴 대기와 평범한 음식에 대한 비판이 있지만, 독자 투표에서는 체인이 아침식사 동상을 받았다.</li>
+<li><strong>돌 플랜테이션</strong> — 🧳 관광객용 — 현지 Reddit에서는 노스쇼어 이동 중 잠깐 들르는 관광시설 정도로 보고, 일부러 시간을 많이 쓰거나 돌휩을 위해 줄 설 가치는 낮다는 반응이 많다.</li>
+<li><strong>할레이바 스토어 랏</strong> — 🤔 호불호 — 현지 매체는 쇼핑·간식 정차지로 소개하지만, 주민 댓글에는 정비된 공간을 좋게 보는 의견과 옛 할레이바 분위기가 사라졌다는 아쉬움이 함께 있다.</li>
+<li><strong>North Shore Marketplace</strong> — ❔ 자료 없음 — 상가 전체에 대한 충분한 주민 평가를 찾지 못했다.</li>
+<li><strong>마츠모토 셰이브아이스</strong> — 🤔 호불호 — 추억 때문에 줄이 짧으면 간다는 주민도 있지만, 현지 Reddit에서는 유명세에 비해 평범하고 Aoki’s가 낫다는 의견이 반복된다.</li>
+<li><strong>Island Vintage Coffee 할레이바</strong> — 👍 추천 · 🏅 Best of HNL 2026 결선 로컬 커피 로스터 — 현지 음식평론가는 관광객이 많아도 아사이볼의 과일과 꿀, 세심한 구성이 좋아 현지인도 가볼 만하다고 평가했다.</li>
+<li><strong>Giovanni's 할레이바</strong> — 🤔 호불호 — 갈릭 새우 맛은 인정해도 오래 기다릴 정도는 아니라는 의견과, 새우 익힘·밥·가격에 실망했다는 현지 댓글이 함께 있다.</li>
+<li><strong>라니아케아 비치 (거북이)</strong> — 🤔 호불호 — 주민들의 핵심 불만은 거북이 관찰 차량으로 생기는 정체와 도로 횡단 위험이다.</li>
+<li><strong>와이메아 밸리</strong> — 👍 추천 — 노스쇼어 거주자라고 밝힌 댓글은 정원과 폭포 산책을 추천하면서 할레이바에서 오는 정체를 경고한다.</li>
+<li><strong>푸우 오 마후카 헤이아우</strong> — 👍 추천 — 오래된 현지 매체는 조용히 쉬며 역사와 전망을 접할 곳으로 추천한다.</li>
+<li><strong>샤크스 코브</strong> — 🤔 호불호 — 현지에서는 소중한 해양환경으로 여기지만 겨울철 입수 장소로는 주의가 필요하며, 큰 파도가 바위 위 사람까지 덮친 사례가 보도됐다.</li>
+<li><strong>Ted's Bakery</strong> — 🤔 호불호 — 초콜릿 하우피아·초콜릿 마카다미아 파이를 여전히 좋아하는 주민이 있지만, 최근 현지 댓글에는 가격 상승과 예전보다 못한 품질에 대한 불만도 많다.</li>
+<li><strong>에후카이 비치파크 (파이프라인)</strong> — 🤔 호불호 — 현지 매체가 겨울 서핑 관전 장소로 소개하는 파이프라인 해변이다.</li>
+<li><strong>선셋비치</strong> — 🤔 호불호 — 노스쇼어 거주자는 풍경을 즐길 해변으로 추천하면서 가을부터 겨울 너울이 커져 수영하기 어려울 수 있다고 경고한다.</li>
+<li><strong>Haleiwa Beach House</strong> — 👍 추천 — 2026년 현지 취재에서 와이알루아 주민 가이드가 바다 전망을 이유로 추천했고, 기자도 감자튀김과 바닷바람을 즐기는 편안한 식사를 좋게 평가했다.</li>
+<li><strong>마루가메 우동</strong> — 👍 추천 — 2026년 현지 우동 추천 글에서도 지지를 받으며, 하와이에 살았던 이용자는 달콤한 소고기를 그리운 일상 음식으로 꼽았다.</li>
+</ul>
+<p><strong>11/9</strong></p>
+<ul>
+<li><strong>Café Kaila</strong> — 👍 추천 · 🏅 Hale ʻAina 2025·26 금상 아침, 브런치 — 현지 독자 투표에서 꾸준히 강한 아침·브런치 식당이며, 매체는 몰트 와플·시나몬 프렌치토스트와 수제 아침 메뉴를 추천한다.</li>
+<li><strong>코올리나 라군</strong> — 🤔 호불호 — 코올리나 거주자는 잔잔한 수영 장소로 추천하지만, 주민들의 큰 불만은 부족한 무료 공공 주차와 비싼 유료 주차다.</li>
+<li><strong>마카하 비치 파크</strong> — 🤔 호불호 — 지역 서핑 문화와 주민 애착이 강한 해변이지만, 2025년에는 모래사장 축소가 보도됐고 2026년 9월 큰 파도는 주변 도로와 주거지에 피해를 냈다.</li>
+<li><strong>요코하마 베이 (케아와울라 비치)</strong> — 🤔 호불호 — 현지 댓글은 파도가 거칠 때 경험 없는 방문객이 입수하는 것을 경계하며, 인근 카에나 해역의 중대 사고도 보도됐다.</li>
+<li><strong>Monkeypod Kitchen 코올리나</strong> — 👍 추천 · 🏅 Hale ʻAina 2025 동상 칵테일, 로컬 체인 — 현지 매체는 세심한 칵테일, 마이타이, 반야외 좌석과 라이브 음악을 좋게 평가했다.</li>
+<li><strong>워드 빌리지</strong> — 🤔 호불호 — 주민들은 재개발로 단골 상점과 지역 공동체 공간이 사라지는 점을 아쉬워한다.</li>
+<li><strong>Honolulu Coffee Bakery on King</strong> — ❔ 자료 없음 · 🏅 Best of HNL 2026 1위 로컬 커피 로스터 — 이 지점 자체에 대한 충분한 독립 주민 평가는 찾지 못했으며, 브랜드의 독자 투표 수상과 구분해야 한다.</li>
+<li><strong>Michel's at the Colony Surf</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 동상 가장 로맨틱 — 현지 독자 투표에서 바닷가 기념일 식사 장소로 인정받았다.</li>
+<li><strong>비숍 박물관</strong> — 👍 추천 — 가족 회원권을 오래 썼다는 이용자와 박물관 자원봉사자가 하와이 역사·문화·자연을 깊게 배우는 장소로 추천한다.</li>
+<li><strong>라이언 수목원</strong> — 👍 추천 — 현지 Reddit에서 좋아하는 정원으로 추천되지만 평일 근무시간에만 열어 방문하기 어렵다는 반응도 있다.</li>
+<li><strong>Merriman's Honolulu</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 금상 비즈니스 점심; 금상 로컬 체인 — 2026년 현지 독자 투표에서 점심 장소로 강한 지지를 받았다.</li>
+<li><strong>Hau Tree</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 동상 호텔 브런치; 동상 가장 로맨틱 — 현지 독자들은 해변 분위기와 호텔 브런치를 높게 평가한다.</li>
+<li><strong>Wolfgang's Steakhouse</strong> — 🤔 호불호 — 드라이에이징 스테이크를 최고로 꼽는 현지 의견과, 정가 저녁은 기대에 못 미치고 해피아워만 괜찮다는 의견이 공존한다.</li>
+</ul>
+<p><strong>11/10</strong></p>
+<ul>
+<li><strong>뵤도인 사원</strong> — 👍 추천 — 현지 커뮤니티에서 명상할 조용한 장소로 추천된다.</li>
+<li><strong>쿠알로아 비치파크 (차이나맨스햇 전망)</strong> — ❔ 자료 없음 — 차이나맨스햇 전망 정차지에 대한 명확한 주민 평가를 충분히 확보하지 못했다.</li>
+<li><strong>Seven Brothers 라이에</strong> — 🤔 호불호 — 현지 버거 추천 글에서 자주 거론되지만 퍽퍽하고 맛이 약하다는 반대 의견도 있다.</li>
+<li><strong>Giovanni's 카후쿠</strong> — 🤔 호불호 — 현지 새우트럭 토론에는 카후쿠 Giovanni’s를 고집하는 팬도 있고, 유명세와 대기에 비해 다른 집이 낫다는 의견도 있다.</li>
+<li><strong>후킬라우 마켓플레이스</strong> — 🤔 호불호 — 현지 매체는 먹거리와 무료 휴식 공간을 장점으로 보지만, 인위적으로 재현한 옛 마을 분위기와 관광 중심 개발을 우려하는 주민 의견도 전한다.</li>
+<li><strong>폴리네시안 문화센터</strong> — 🤔 호불호 — 인근에 살았다는 이용자와 폴리네시아계 전 직원은 공연·문화 체험을 추천하지만, 다른 의견은 LDS 운영과 문화의 관광 상품화를 비판한다.</li>
+<li><strong>호오말루히아 식물원</strong> — 👍 추천 — 현지 매체는 코올라우산 전망과 산책·피크닉을 추천하며, 도로 한가운데서 사진을 찍지 말라고 강조한다.</li>
+</ul>
+<p><strong>11/11</strong></p>
+<ul>
+<li><strong>무스비 카페 이야스메 (모나크점)</strong> — 👍 추천 · 🏅 Best of HNL 2026 결선 무스비, 포장 무스비 — 현지 독자 투표에서 간편 무스비 브랜드로 지지를 받지만 모나크점 단독 평가는 아니다.</li>
+</ul>
+<p><strong>식사 대안</strong></p>
+<ul>
+<li><strong>Liliha Bakery Nimitz Honolulu</strong> — 👍 추천 · 🏅 Hale ʻAina 2026 동상 로컬 체인 — 현지 이용자는 공항에서 손님을 데려갈 때 니미츠점을 택한다며 다양한 메뉴와 코코퍼프를 추천한다.</li>
+<li><strong>Nico's Pier 38 Honolulu</strong> — 🤔 호불호 — 공항 픽업 뒤 데려가는 주민 단골이 있고 후리카케 아히를 특히 추천하지만, 일반 메뉴는 평범하고 예전보다 비싸졌다는 반응도 있다.</li>
+<li><strong>Forty Niner Restaurant Aiea</strong> — 👍 추천 — 2025년 현지 뉴스에서 오래된 단골들이 여전히 줄 서는 지역 식당으로 소개됐다.</li>
+<li><strong>Leonard's Bakery Honolulu</strong> — 👍 추천 — 관광객이 많아도 카파훌루 본점 말라사다는 여전히 좋다는 현지 댓글이 확인된다.</li>
+<li><strong>Moena Cafe Hawaii Kai</strong> — 👍 추천 · 🏅 Best of HNL 2026 1위 로코모코 — 2026년 현지 독자 투표에서 로코모코가 1위로 선정됐다.</li>
+<li><strong>Koko Head Cafe Kaimuki</strong> — 👍 추천 · 🏅 Hale ʻAina 2025 결선 아침 — 현지 매체는 창의적인 하와이식 브런치가 대기할 가치가 있다고 평가하며, 콘지와 스킬릿 요리를 소개한다.</li>
+<li><strong>Haleiwa Joe's</strong> — 🤔 호불호 — 현지 댓글은 거대한 프라임립과 전망을 좋아하면서 긴 대기와 나머지 메뉴의 편차를 지적한다.</li>
+<li><strong>Romy's Kahuku Prawns</strong> — 👍 추천 — 현지 음식 커뮤니티에는 Giovanni’s보다 Romy’s의 새우·프론을 선호한다는 의견이 있다.</li>
+<li><strong>Kua Aina Haleiwa</strong> — 🤔 호불호 — 현지 버거 토론에서 꾸준히 추천되는 집이지만, 할레이바 거주자는 최근 버거가 너무 짜서 끊었다고 적었다.</li>
+<li><strong>Makai Market Food Court Ala Moana</strong> — 🤔 호불호 — 현지인은 편리한 식사 장소로 이용하지만 입점점별 편차가 크고, 일부 체인의 가격·추가 비용에 불만이 있다.</li>
+<li><strong>Eggs 'n Things Saratoga Waikiki</strong> — 🤔 호불호 · 🏅 Hale ʻAina 2026 동상 아침 — 체인은 현지 독자 투표에서 아침 동상을 받았지만, Reddit에는 와이키키 매장들의 관광객 대기와 맛에 대한 비판도 있다.</li>
+<li><strong>Helena's Hawaiian Food</strong> — 👍 추천 · 🏅 Hale ʻAina 2025·26 금상 하와이 음식 — 현지 독자 투표와 음식평론에서 모두 지지가 강한 하와이 음식점이다.</li>
+<li><strong>Rainbow Drive-In</strong> — 🤔 호불호 · 🏅 독자 투표 클래식 로코모코 2위 — 지역 매체 독자 투표에선 여전히 로코모코 2위지만, 최근 현지 Reddit에선 예전보다 고기·그레이비 품질이 떨어졌다는 비판이 많아요.</li>
+<li><strong>Ono Seafood Kapahulu</strong> — 🤔 호불호 — 스파이시 아히를 단골 메뉴로 꼽는 현지 팬이 있는 반면, 가격 상승과 관광객 줄·주차 때문에 다른 포케집을 택한다는 의견도 많다.</li>
+<li>
+<p><strong>Kono's North Shore</strong> — 🤔 호불호 — 노스쇼어에 살았다는 이용자는 칼루아포크 아침 부리토를 추천하지만, 다른 현지 댓글에는 가격과 서비스에 대한 불만도 있다.</p>
+</li>
+<li>
+<p>📖 <strong>가이드북에만 있는 곳 중 수상한 곳:</strong> Over Easy (카일루아) — 아침 은상 · Plumeria Beach House (카할라) — 호텔 브런치·뷔페 금상 · Aloha Beer Co. — 브루펍 금상 · Waiola Shave Ice (카파훌루) — 가족 부문 빙수 수상 · J. Dolan's (다운타운) — 피자 수상 · Helena's Hawaiian Food — 하와이 음식 금상 (화–금만)</p>
+</li>
+<li>🏅 <strong>우리 목록에 없는 현지 수상 맛집 (동선 근처):</strong> Mountain Magic 셰이브아이스 (와이켈레 센터 트레일러 · 독자 투표 빙수 1위) · Aoki's 셰이브아이스 (할레이바, 마츠모토 옆) · Big Wave Shrimp (할레이바 · 갈릭 쉬림프 독자 1위) · Kahuku Superette 포케 (카후쿠 Giovanni's 옆) · Asato's 셰이브아이스 (하얏트, 예약제) · Halekūlani Bakery (페이스트리 독자 1위) · Tanioka's 포케 (와이파후)</li>
+<li>수상 출처: <a href="https://www.honolulumagazine.com/hale-aina-award-winners-the-best-restaurants-in-hawaii/" target="_blank" rel="noopener">Hale ʻAina 2026</a> · <a href="https://www.honolulumagazine.com/best-of-honolulu-2026/" target="_blank" rel="noopener">Best of HONOLULU 2026</a> · <a href="https://www.honolulumagazine.com/dishes-that-define-oahu/" target="_blank" rel="noopener">Dishes That Define Oʻahu</a> · <a href="https://www.honolulumagazine.com/ranking-best-north-shore-garlic-shrimp/" target="_blank" rel="noopener">Frolic 갈릭 쉬림프 순위</a> · <a href="https://www.honolulumagazine.com/our-favorite-shave-ice-honolulu/" target="_blank" rel="noopener">Frolic 셰이브아이스</a> — 스타 애드버타이저 ʻIlima 상은 최신판을 찾지 못했어요</li>
+</ul>
+
 </section><section class="sec places"><div class="sec-head"><span class="sec-ic">⭐</span><h2 id="구글-지도-장소-누르면-지도-앱이-열림-저장-별표">구글 지도 장소</h2><small>누르면 지도 앱이 열림 → 저장 → 별표</small></div>
 <blockquote>
 <p>링크를 누르면 구글 지도에서 장소가 열려요 → <strong>저장 → 별표표시된 장소</strong>. 체인점은 지점이 맞는지 주소를 한 번 보고 저장하세요.</p>
@@ -486,7 +1115,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Don+Quijote+801+Kaheka+St+Honolulu" target="_blank" rel="noopener">돈키호테 Kaheka — 장보기</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Arancino+di+Mare+Waikiki+Beach+Marriott" target="_blank" rel="noopener">Arancino di Mare — 저녁 (메리어트 1층)</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Tiki%27s+Grill+%26+Bar+Waikiki" target="_blank" rel="noopener">Tiki's Grill &amp; Bar — 저녁 대안</a></li>
-<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kai+Coffee+Hawaii+Hyatt+Regency+Waikiki" target="_blank" rel="noopener">Kai Coffee — 커피 (하얏트 로비)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kona+Coffee+Purveyors+International+Market+Place+Honolulu" target="_blank" rel="noopener">Kona Coffee Purveyors — 커피 (인터내셔널 마켓플레이스)</a></li>
 </ul>
 <h3 id="115-목-진주만아울렛">🗓 11/5 (목) 진주만·아울렛</h3>
 <ul>
@@ -495,6 +1124,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Waikele+Premium+Outlets" target="_blank" rel="noopener">와이켈레 프리미엄 아울렛</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Side+Street+Inn+280+Beach+Walk+Honolulu" target="_blank" rel="noopener">Side Street Inn Waikiki — 저녁</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Highway+Inn+Waipahu" target="_blank" rel="noopener">Highway Inn 와이파후 — 점심 대안</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Mountain+Magic+Shave+Ice+94-817+Lumiaina+St+Waipahu" target="_blank" rel="noopener">Mountain Magic 셰이브아이스 — 와이켈레 간식 (독자 투표 1위)</a></li>
 </ul>
 <h3 id="116-금-동부-해안">🗓 11/6 (금) 동부 해안</h3>
 <ul>
@@ -519,7 +1149,6 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ala+Moana+Center" target="_blank" rel="noopener">알라모아나 센터</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Liliha+Bakery+Ala+Moana+Center" target="_blank" rel="noopener">Liliha Bakery 알라모아나 — 점심</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Foodland+Farms+Ala+Moana" target="_blank" rel="noopener">Foodland Farms 알라모아나 — 장보기</a></li>
-<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Westman+Cafe+Ward+Village" target="_blank" rel="noopener">Westman Cafe — 커피</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=House+Without+a+Key+Halekulani" target="_blank" rel="noopener">House Without a Key — 저녁</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Duke%27s+Waikiki" target="_blank" rel="noopener">Duke's Waikiki — 저녁 대안</a></li>
 </ul>
@@ -530,7 +1159,11 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Haleiwa+Store+Lots" target="_blank" rel="noopener">할레이바 스토어 랏</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=North+Shore+Marketplace+Haleiwa" target="_blank" rel="noopener">North Shore Marketplace</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Matsumoto+Shave+Ice+Haleiwa" target="_blank" rel="noopener">마츠모토 셰이브아이스</a></li>
-<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Island+Vintage+Coffee+Haleiwa" target="_blank" rel="noopener">Island Vintage Coffee 할레이바 — 커피</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Green+World+Coffee+Farm+Wahiawa" target="_blank" rel="noopener">Green World Coffee Farm — 커피 (돌 플랜테이션 가는 길)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Island+Vintage+Coffee+Haleiwa" target="_blank" rel="noopener">Island Vintage Coffee 할레이바 — 아사이볼</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Aoki%27s+Shave+Ice+Haleiwa" target="_blank" rel="noopener">Aoki's 셰이브아이스 — 마츠모토 줄이 길면</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Big+Wave+Shrimp+Truck+Haleiwa" target="_blank" rel="noopener">Big Wave Shrimp — 점심 대안 (갈릭 쉬림프 독자 1위)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Young%27s+Lunch+Wagon+Korean+BBQ+66-521+Kamehameha+Hwy+Haleiwa" target="_blank" rel="noopener">Young's 한식 트럭 (가이드북 '로라 이모네' 추정) — 점심 대안</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Giovanni%27s+Shrimp+Truck+Haleiwa" target="_blank" rel="noopener">Giovanni's 할레이바 — 점심</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Laniakea+Beach" target="_blank" rel="noopener">라니아케아 비치 (거북이)</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Waimea+Valley" target="_blank" rel="noopener">와이메아 밸리</a></li>
@@ -550,7 +1183,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Keawaula+Beach+Yokohama+Bay+Oahu" target="_blank" rel="noopener">요코하마 베이 (케아와울라 비치)</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Monkeypod+Kitchen+Ko+Olina" target="_blank" rel="noopener">Monkeypod Kitchen 코올리나 — 점심</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ward+Village+Honolulu" target="_blank" rel="noopener">워드 빌리지</a></li>
-<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Honolulu+Coffee+Bakery+on+King+2643+S+King+St" target="_blank" rel="noopener">Honolulu Coffee Bakery on King — 커피</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Morning+Brew+685+Auahi+St+Honolulu" target="_blank" rel="noopener">Morning Brew 카카아코 — 커피 (워드 쇼핑 중, 월 07–16)</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Michel%27s+at+the+Colony+Surf" target="_blank" rel="noopener">Michel's at the Colony Surf — 저녁</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bishop+Museum+Honolulu" target="_blank" rel="noopener">비숍 박물관 — 비 올 때</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Lyon+Arboretum" target="_blank" rel="noopener">라이언 수목원 — 대안</a></li>
@@ -565,12 +1198,28 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Seven+Brothers+Burgers+Laie" target="_blank" rel="noopener">Seven Brothers 라이에 — 점심</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Giovanni%27s+Shrimp+Truck+Kahuku" target="_blank" rel="noopener">Giovanni's 카후쿠 — 점심 대안</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hukilau+Marketplace+Laie" target="_blank" rel="noopener">후킬라우 마켓플레이스</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Tropical+Farms+Macadamia+Nuts+49-227+Kamehameha+Hwy" target="_blank" rel="noopener">트로피컬 팜스 마카다미아 — 선택 (무료 시식)</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Polynesian+Cultural+Center" target="_blank" rel="noopener">폴리네시안 문화센터</a></li>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hoomaluhia+Botanical+Garden" target="_blank" rel="noopener">호오말루히아 식물원 — 대안</a></li>
 </ul>
 <h3 id="1111-수-출발">🗓 11/11 (수) 출발</h3>
 <ul>
 <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Musubi+Cafe+Iyasume+2427+Kuhio+Ave+Honolulu" target="_blank" rel="noopener">무스비 카페 이야스메 (모나크점) — 기내 간식</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kai+Coffee+Hawaii+Hyatt+Regency+Waikiki" target="_blank" rel="noopener">Kai Coffee — 커피 (하얏트 로비, 도보 2분)</a></li>
+</ul>
+<h3 id="가이드북-인기-장소-일정-밖-구글-리뷰-많은-순">📖 가이드북 인기 장소 — 일정 밖 (구글 리뷰 많은 순)</h3>
+<ul>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kualoa+Ranch" target="_blank" rel="noopener">쿠알로아 랜치 (11/10 지나감 · 투어는 예약)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Royal+Hawaiian+Center" target="_blank" rel="noopener">로열 하와이안 센터 (와이키키 쇼핑)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Honolulu+Zoo" target="_blank" rel="noopener">호놀룰루 동물원</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=International+Market+Place+Waikiki" target="_blank" rel="noopener">인터내셔널 마켓 플레이스 (와이키키 쇼핑)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Yard+House+Waikiki" target="_blank" rel="noopener">야드 하우스 (와이키키 비치워크)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hard+Rock+Cafe+Honolulu" target="_blank" rel="noopener">하드락 카페 호놀룰루</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hanauma+Bay+Nature+Preserve" target="_blank" rel="noopener">하나우마 베이 (예약 · 월·화 휴무)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Iolani+Palace" target="_blank" rel="noopener">이올라니 궁전 (일·월 휴관)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Nuuanu+Pali+Lookout" target="_blank" rel="noopener">누우아누 팔리 전망대 (06–18)</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Duke+Kahanamoku+Statue" target="_blank" rel="noopener">듀크 카하나모쿠 동상</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Maguro+Spot+Waikiki" target="_blank" rel="noopener">마구로 스폿 (포케 포장)</a></li>
 </ul>
 
 </section><section class="sec ref"><div class="sec-head"><span class="sec-ic">🥾</span><h2 id="3-하이킹-가이드북-표와-조사-결과-대조">하이킹</h2><small>가이드북 표와 조사 결과 대조</small></div>
@@ -588,7 +1237,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <tr>
 <td data-label="코스"><span class="v">① 라니카이 필박스</span></td>
 <td data-label="가이드북 (난이도 · 왕복 · 해발 · 시간)"><span class="v">초중급 · 2.9km · 198m · 1h30</span></td>
-<td data-label="조사 결과 (2026.11)"><span class="v">왕복 약 1시간 (비치파크 접근 포함 약 2시간) · <strong>초반 로프 잡는 급경사 흙길, 난간 없음</strong> · 라니카이 길가 <strong>종일 주차금지</strong> (2026.7~) → 카일루아 비치파크에서 도보 15분</span></td>
+<td data-label="조사 결과 (2026.11)"><span class="v">왕복 약 1시간 (비치파크 접근 포함 약 2시간) · <strong>초반 로프 잡는 급경사 흙길, 난간 없음</strong> · 라니카이 길가 <strong>종일 주차금지 계획</strong> (시행 범위는 현장 표지판) → 카일루아 비치파크에서 도보 15분</span></td>
 <td data-label="판정"><span class="v">거리 비슷 · <strong>난이도는 가이드북보다 어려움</strong> · 주차 정보 바뀜</span></td>
 <td data-label="부모님"><span class="v">비추천 (아들만, 선택)</span></td>
 </tr>
@@ -697,8 +1346,10 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </section><section class="sec generic"><div class="sec-head"><span class="sec-ic">🍽</span><h2 id="5-가이드북-식당명소-현재-영업-확인-112">가이드북 식당·명소</h2><small>현재 영업 확인 (11/2)</small></div>
 <ul>
 <li>❌ <strong>폐업</strong>: 마리포사 (니먼마커스 알라모아나와 함께 2026.5 폐업) · 알라모아나 마이 타이 바 (2020) → 칵테일은 <strong>로열 하와이안 마이 타이 바</strong> (매일 11–23)</li>
-<li>❓ <strong>영업 미확인</strong> → 출발 전 전화: 오노 스테이크 앤 슈림프 쉑 (☎ 808-259-0808) · 스윗 이즈 카페 (☎ 808-737-7771) · 오아후 멕시칸 그릴 · "로라 이모네" (가게 식별 불가)</li>
-<li>⚠️ <strong>출처 상충</strong>: 레인보우 드라이브인 — 공식 사이트는 매일 07–21, 2026년 임시휴업 공지도 있음 → ☎ 808-737-0177</li>
+<li>❌ <strong>후보에서 제외</strong>: 오노 스테이크 앤 슈림프 쉑 · 'Ai Love Nalo — 폐업·장기 휴업 표시가 있고 재개 확인이 안 됨</li>
+<li>❓ <strong>영업 미확인</strong> → 출발 전 전화: 스윗 이즈 카페 (☎ 808-737-7771) · 오아후 멕시칸 그릴</li>
+<li>⚠️ <strong>출처 상충</strong>: 레인보우 드라이브인 — 공식 사이트는 매일 07–21, 2026년 임시휴업 공지도 있음 → ☎ 808-737-0177 · 현지 평 엇갈림 — 레딧은 "예전만 못하다", 지역 매체 독자 투표는 로코모코 2위 (칼리히점은 2026 폐점, 카파훌루 본점은 별개)</li>
+<li>🔎 <strong>"로라 이모네" 확인</strong>: 가이드북 지도 좌표로 찾음 → 할레이바 푸드트럭 구역(지오반니 할레이바 남쪽 약 200m). 구글에선 같은 구역 한식 트럭이 <strong>Young's Lunch Wagon Korean BBQ</strong> (66-521 Kamehameha Hwy, 313건 ★4.4) — 같은 곳인지는 확인 불가</li>
 </ul>
 <div class="tw"><table>
 <thead>
@@ -911,6 +1562,32 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </tbody>
 </table></div>
 
+</section><section class="sec generic"><div class="sec-head"><span class="sec-ic">📖</span><h2 id="가이드북-지도-대조-한빛-리얼가이드-웨이포인트-316곳-113">가이드북 지도 대조</h2><small>한빛 리얼가이드 웨이포인트 316곳 (11/3)</small></div>
+<blockquote>
+<p>가이드북 지역별 구글 마이맵 6개(와이키키 · 다이아몬드헤드 · 알라모아나·워드·카카아코 · 다운타운·차이나타운 · 오아후 동부 · 오아후 서북부)를 내려받아, 좌표와 이름을 우리 노트와 하나씩 맞춰 봤어요. 가이드북 사진만 보고 만든 목록에서 <strong>빠졌던 곳 약 40곳</strong>은 아래 🏆 우선순위 표에 넣었어요.</p>
+</blockquote>
+<ul>
+<li>✅ <strong>맞음:</strong> 일정에 넣은 가이드북 장소는 이름과 지점이 웨이포인트와 같아요.</li>
+<li>세븐 브라더스는 가이드북도 <strong>라이에점</strong> → 11/10 ✓</li>
+<li>지오반니는 가이드북 지점이 <strong>할레이바점</strong> → 11/8 ✓</li>
+<li>아르보 카페는 <strong>카카아코 본점과 와이키키 서프잭점</strong> 두 곳이 있어요.</li>
+<li>가이드북의 '하우 트리 라나이'는 지금 이름이 <strong>Hau Tree</strong>예요.</li>
+<li>🔎 <strong>새로 알아낸 것:</strong> 가이드북의 <strong>"로라 이모네"</strong> 좌표는 할레이바 푸드트럭 구역이에요(지오반니 할레이바에서 남쪽으로 약 200m). 구글에서는 이 구역 한식 트럭이 <strong>Young's Lunch Wagon Korean BBQ</strong> (66-521 Kamehameha Hwy, 리뷰 313 · ★4.4)로 나와요. 가이드북의 '로라 이모네'와 같은 곳인지는 확인하지 못했어요. 11/8 점심 대안으로 쓸 수 있어요.</li>
+<li>❌ <strong>가이드북 지도에는 있지만 문을 닫은 곳</strong></li>
+<li>마리포사·니먼 마커스 (2026.5)</li>
+<li>삭스 오프 피프스 알라모아나 (2026.2)</li>
+<li>알라모아나 센터 마이 타이 바 (2020) — 로열 하와이안점은 영업 중</li>
+<li>커피 갤러리 (2026.1)</li>
+<li>구글 지도 '폐업' 표시: 오코노미야키 치보 · 호누스 갈비 &amp; 스시 · 사우스 쇼어 페이퍼리 · 노드스트롬 랙 와이키키 · 아일랜드 올리브 오일 · 에브리 데이 베러</li>
+<li>더 쿠키 코너 칼라카우아점</li>
+<li>코코네네 칼라카우아 옛 지점 — 인터내셔널 마켓플레이스점은 영업 중</li>
+<li>❓ <strong>상태가 엇갈리는 곳:</strong> 'Ai Love Nalo · Ono Steaks and Shrimp Shack은 폐업·장기 휴업 표시가 있어 <strong>이번 여행 후보에서 뺐어요.</strong> 빈 어바웃 타운 와이키키점은 공식 사이트엔 영업, 집계 사이트엔 임시휴업으로 나와요.</li>
+<li>📍 <strong>위치가 바뀐 곳</strong></li>
+<li>Westman Cafe는 와이키키점을 닫고 <strong>워드 빌리지(1000 Auahi St)</strong>로 옮겼어요 (2026.3).</li>
+<li>Side Street Inn은 카파훌루점을 닫고 <strong>와이키키 비치워크(280 Beach Walk) 2층</strong>으로 옮겼어요 (2026.9).</li>
+<li>Na Mea Hawaii는 워드를 떠나 1525 Bernice St로 옮겼어요.</li>
+</ul>
+
 </section><section class="sec generic"><div class="sec-head"><span class="sec-ic">🅿️</span><h2 id="6-주차-한눈에">주차 한눈에</h2></div>
 <div class="tw"><table>
 <thead>
@@ -930,7 +1607,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </tr>
 <tr>
 <td data-label="구분"><span class="v">예약·유료</span></td>
-<td data-label="내용"><span class="v">다이아몬드헤드 $10 (예약 슬롯 2시간) · 진주만 $7 (카드) · 팔리 전망대 $7 · 푸우 우알라카아 $7 · 마노아 폭포 $7 · 와이메아 밸리 1시간 $2 · 최대 4시간 $5 · 뵤도인 유료 (금액 확인)</span></td>
+<td data-label="내용"><span class="v">다이아몬드헤드 $10 (예약 슬롯 2시간) · 진주만 $7 (카드) · 팔리 전망대 $7 · 푸우 우알라카아 $7 · 마노아 폭포 $7 · 와이메아 밸리 1시간 $2 · 최대 4시간 $5 · 뵤도인 시간당 $6</span></td>
 </tr>
 <tr>
 <td data-label="구분"><span class="v">현금만</span></td>
@@ -938,7 +1615,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </tr>
 <tr>
 <td data-label="구분"><span class="v">카드만</span></td>
-<td data-label="내용"><span class="v">진주만 · 다이아몬드헤드 · 로열 하와이안 센터 주차장</span></td>
+<td data-label="내용"><span class="v">진주만 · 다이아몬드헤드 · 로열 하와이안 센터 주차장 · 뵤도인 (입장·주차)</span></td>
 </tr>
 <tr>
 <td data-label="구분"><span class="v">무료</span></td>
@@ -950,7 +1627,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </tr>
 <tr>
 <td data-label="구분"><span class="v">주차 금지·견인</span></td>
-<td data-label="내용"><span class="v">라니카이 Mokulua Dr 종일 금지 · 알라모아나 몰 밖 용무 · 와이메아 밸리 해변용 · 라이언 수목원 폭포 등산객</span></td>
+<td data-label="내용"><span class="v">라니카이 Mokulua Dr 종일 금지 계획 (현장 표지판 우선) · 알라모아나 몰 밖 용무 · 와이메아 밸리 해변용 · 라이언 수목원 폭포 등산객</span></td>
 </tr>
 <tr>
 <td data-label="구분"><span class="v">높이 제한 1.88m</span></td>
@@ -979,11 +1656,11 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 </tr>
 <tr>
 <td data-label="구분"><span class="v">동선·시간</span></td>
-<td data-label="변경"><span class="v">귀국일 콘도 <strong>07:30 출발</strong> · 11/4 <strong>추가 운전자 등록 + 호텔 짐 보관을 점심보다 먼저</strong> · 11/5 USS Arizona <strong>1시간 전 도착 → 09:15 이후 슬롯</strong> · 11/6 뵤도인 → 11/10로 이동, 필박스는 2시간 선택 · 11/7 다이아몬드헤드 <strong>09:00 출차</strong> 기준 · 11/7 장보기 왕복 제거 · 11/8 <strong>에후카이 필박스 삭제</strong> · 11/9 수목원 위주로 축소 · 11/10 짐은 전날 밤</span></td>
+<td data-label="변경"><span class="v">귀국일 콘도 <strong>07:30 출발</strong> · 11/4 <strong>추가 운전자 등록 + 호텔 짐 보관을 점심보다 먼저</strong> · 11/5 USS Arizona <strong>1시간 전 도착 → 10:45 이후 슬롯</strong> · 11/6 뵤도인 → 11/10로 이동, 필박스는 2시간 선택 · 11/7 다이아몬드헤드 <strong>10시 무렵 입장 · 12:00까지 출차</strong> · 11/7 장보기 왕복 제거 · 11/8 <strong>에후카이 필박스 삭제</strong> · 11/9 서쪽 해안 드라이브 (수목원은 대안) · 11/10 짐은 전날 밤</span></td>
 </tr>
 <tr>
 <td data-label="구분"><span class="v">리스크</span></td>
-<td data-label="변경"><span class="v">Acadia 7인승 <strong>2+2+3 좌석</strong> 확인 · 진주만 투명 가방·포드섬 여권 · 고파도 물가 접근 금지 · 월마트 3시간 제한 · 공휴일 미터 · 뵤도인 요금·결제 미확인 → 전화</span></td>
+<td data-label="변경"><span class="v">Acadia 7인승 <strong>2+2+3 좌석</strong> 확인 · 진주만 투명 가방·포드섬 여권 · 고파도 물가 접근 금지 · 월마트 3시간 제한 · 공휴일 미터 · 뵤도인 성인 $10 · 65세 이상 $8 · 카드만</span></td>
 </tr>
 <tr>
 <td data-label="구분"><span class="v">11/3 항공 변경</span></td>
@@ -992,6 +1669,10 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 <tr>
 <td data-label="구분"><span class="v">11/3 사용자 확인</span></td>
 <td data-label="변경"><span class="v">큰형 추가 운전자 등록 안 함 → <strong>작은형 단독 운전</strong> · 짐칸 문제없음 → 좌석·적재 확인 삭제</span></td>
+</tr>
+<tr>
+<td data-label="구분"><span class="v">11/3 2차 검수</span></td>
+<td data-label="변경"><span class="v">가이드북 지도 대조·리뷰 순위·현지 평가·메뉴 가격 추가 뒤 Codex 재검수 13건 반영 — 11/9 커피 Arvo(14시 마감) → <strong>Morning Brew</strong> · 11/10 <strong>트로피컬 팜스 → 쿠알로아</strong> 순서, PCC 12:20 도착·마을 관람 16:15까지 · 뵤도인 <strong>카드만</strong> · Restaurant 604 메뉴 가격 정정 · 'Ai Love Nalo·Ono Steaks 후보 제외 · 라니카이 주차금지는 "계획"으로 · Michel's 운영 법인 변경은 예약 때 확인 · 리뷰 수는 구글 API 실측값으로 교체</span></td>
 </tr>
 <tr>
 <td data-label="구분"><span class="v">체크리스트</span></td>
@@ -1135,7 +1816,7 @@ footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; color: var(--m
 
 </section>
 </main>
-<footer>업데이트 2026-11-03 02:04 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
+<footer>업데이트 2026-11-03 02:43 KST · 영업시간·주차는 2026-11-02 웹 조사 + Codex 검수 기준입니다. (미확인) 항목은 방문 전날 구글맵·전화로 다시 확인하세요. 체크 표시는 이 기기에만 저장됩니다. 사진: Wikimedia Commons 자유 이용 사진 — 사진을 누르면 저작자·라이선스 원문으로 이동합니다.</footer>
 <button class="top-btn" id="topBtn" aria-label="맨 위로">↑</button>
 <script>
 (function () {
